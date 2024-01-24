@@ -8,3 +8,4 @@ the p5.js library.
 2. Use this library to build a logic simulator
 that can simulate simple digital logic gates.
 
+[Drawing Gates](./01-drawing-gates.md)

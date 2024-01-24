@@ -111,6 +111,7 @@ function drawInverter(x, y, w, h, l) {
   circle(x + w, y + h / 2, w / 5);
 }
 ```
+## The AND Gate
 
 ### Sample AND Prompt
 
@@ -229,7 +230,9 @@ believes that ellipse is more general and easier to
 customize.  I think that circle with only three parameters
 is a little easier to read.
 
-### XOR Prompt
+## XOR Gate
+
+### XNOR Prompt
 
 ![](logic-gate-xor.png)
 
@@ -244,7 +247,7 @@ It got the result [pretty close](https://editor.p5js.org/dmccreary/sketches/-QpW
 to the end and add a noFill() for the new extra curve.  
 This is an easy to change.
 
-### XNOR
+## XNOR
 
 ![](logic-gate-xnor.png)
 
