@@ -165,7 +165,7 @@ function drawAND(x, y, w, h, l) {
 }
 ```
 
-## Attempts to Draw an OR Gate
+## Failed Attempts at OR Gate
 
 ![](../img/draw-or-v1.png)
 
@@ -196,3 +196,31 @@ reasonably well and the curves do match up pretty
 closely with the official [SVG drawing](https://upload.wikimedia.org/wikipedia/commons/b/b5/OR_ANSI.svg) of the OR gate.
 If you want a precise mapping you can also write a program
 that converts the SVG points to a set of (x,y) points.
+
+## NOR Symbol Prompt
+
+![](../img/logic-gate-nor.png)
+
+Once we have a good OR gate, we can ask GPT to
+just use that to create a NOR gate.  All
+it has to do is add a circle on the output.
+
+Here is the [code it generated](https://chat.openai.com/share/de86221d-6d59-4f54-8a53-d93b3682378c):
+
+```js
+function drawNOR(x, y, w, h, l) {
+  // Draw the OR part
+  drawOR(x, y, w, h, l);
+
+  // Draw the NOT circle at the output
+  let outputX = x + w + l * 0.5;
+  let outputY = y + h / 2;
+  let circleRadius = l * 0.3;
+  ellipse(outputX, outputY, circleRadius, circleRadius);
+}
+```
+
+So it is clear that GPT-4 has been trained on how
+to add a small bit of drawing to an existing function.
+
+Note that it tends to use ellipse() rather than circle().
