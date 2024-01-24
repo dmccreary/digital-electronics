@@ -358,8 +358,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#attempts-to-draw-an-or-gate" class="md-nav__link">
-    Attempts to Draw an OR Gate
+  <a href="#failed-attempts-at-or-gate" class="md-nav__link">
+    Failed Attempts at OR Gate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nor-symbol-prompt" class="md-nav__link">
+    NOR Symbol Prompt
   </a>
   
 </li>
@@ -592,7 +599,7 @@ Use beginShape() and endShape() around the points.
 <span class="w">  </span><span class="nx">line</span><span class="p">(</span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">w</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">l</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="attempts-to-draw-an-or-gate">Attempts to Draw an OR Gate</h2>
+<h2 id="failed-attempts-at-or-gate">Failed Attempts at OR Gate</h2>
 <p><img alt="" src="../../img/draw-or-v1.png" /></p>
 <p>This is where GPT-4 falls apart.  Despite
 my best attempts, I could not get GPT-4
@@ -616,6 +623,35 @@ reasonably well and the curves do match up pretty
 closely with the official <a href="https://upload.wikimedia.org/wikipedia/commons/b/b5/OR_ANSI.svg">SVG drawing</a> of the OR gate.
 If you want a precise mapping you can also write a program
 that converts the SVG points to a set of (x,y) points.</p>
+<h2 id="nor-symbol-prompt">NOR Symbol Prompt</h2>
+<p><img alt="" src="../../img/logic-gate-nor.png" /></p>
+<p>Once we have a good OR gate, we can ask GPT to
+just use that to create a NOR gate.  All
+it has to do is add a circle on the output.</p>
+<p>Here is the <a href="https://chat.openai.com/share/de86221d-6d59-4f54-8a53-d93b3682378c">code it generated</a>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">drawNOR</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">h</span><span class="p">,</span><span class="w"> </span><span class="nx">l</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Draw the OR part</span>
+<span class="w">  </span><span class="nx">drawOR</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">y</span><span class="p">,</span><span class="w"> </span><span class="nx">w</span><span class="p">,</span><span class="w"> </span><span class="nx">h</span><span class="p">,</span><span class="w"> </span><span class="nx">l</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Draw the NOT circle at the output</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">outputX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">w</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">l</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.5</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">outputY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">h</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">circleRadius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">l</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.3</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">ellipse</span><span class="p">(</span><span class="nx">outputX</span><span class="p">,</span><span class="w"> </span><span class="nx">outputY</span><span class="p">,</span><span class="w"> </span><span class="nx">circleRadius</span><span class="p">,</span><span class="w"> </span><span class="nx">circleRadius</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>So it is clear that GPT-4 has been trained on how
+to add a small bit of drawing to an existing function.</p>
+<p>Note that it tends to use ellipse() rather than circle().</p>
 
 
 
