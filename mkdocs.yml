@@ -7,6 +7,15 @@ repo_url: 'https://github.com/dmccreary/digital-electronics'
 
 nav:
   - Home: index.md
+  - Lessons:
+    - Introduction: lessons/index.md
+    - Boolean Algebra: lessons/boolean-algebra.md
+    - Logic Gates: lessons/logic-gates.md
+  - Sims:
+    - Logic Gates: sims/logic-gates/index.md
+    - Drawing Gates: sims/logic-gates/01-drawing-gates.md
+  - Glossary: glossary.md
+  - How we built this site: how-we-built-this-site.md
   - Contact: contact.md
  
 # CoderDojo Microsite Standards from here down
