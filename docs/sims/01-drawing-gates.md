@@ -224,3 +224,38 @@ So it is clear that GPT-4 has been trained on how
 to add a small bit of drawing to an existing function.
 
 Note that it tends to use ellipse() rather than circle().
+I don't know exactly why it does this.  Perhaps it
+believes that ellipse is more general and easier to
+customize.  I think that circle with only three parameters
+is a little easier to read.
+
+### XOR Prompt
+
+![](../img/logic-gate-xor.png)
+
+```linenums="0"
+Now can you please repeat the same process 
+but this time generate the code for an exclusive OR.  
+Please call the new function drawXOR and make the 
+parameters exactly the same.
+```
+
+It got the result [pretty close](https://editor.p5js.org/dmccreary/sketches/-QpW3TjCl).  The only real cleanup is to move the new arc
+to the end and add a noFill() for the new extra curve.  
+This is an easy to change.
+
+### XNOR
+
+![](../img/logic-gate-xnor.png)
+
+Our last function is XNOR, which just adds
+a circle to the XOR symbol.
+
+[Edit the XNOR MicroSim](https://editor.p5js.org/dmccreary/sketches/ax5hivj1b)
+
+Note that we did not automatically fill the circle with
+black.  We decided to inherit the fill from the drawing
+context.  Forcing the circle to fill with black is
+a valid option and might make drawings a little easier
+to read.  This could also be an additional parameter
+to these functions.
