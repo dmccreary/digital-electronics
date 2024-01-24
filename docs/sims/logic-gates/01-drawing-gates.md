@@ -231,7 +231,7 @@ is a little easier to read.
 
 ### XOR Prompt
 
-![](../img/logic-gate-xor.png)
+![](logic-gate-xor.png)
 
 ```linenums="0"
 Now can you please repeat the same process 
