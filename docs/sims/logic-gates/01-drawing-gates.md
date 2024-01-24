@@ -40,7 +40,7 @@ Draw the tests on a lightgray background.
 
 ### Sample Buffer Response
 
-![](../img/draw-buffer.png)
+![](draw-buffer.png)
 
 ```ps
 // Draw Buffer Function
@@ -83,7 +83,7 @@ Draw the tests on a lightgray background.
 
 ### Inverter Response
 
-![](../img/draw-inverter.png)
+![](draw-inverter.png)
 
 ```js
 // Draw Inverter
@@ -127,7 +127,7 @@ Use beginShape() and endShape() around the points.
 
 ### Sample AND Response
 
-![](../img/draw-and.png)
+![](draw-and.png)
 
 ```js
 // Draw And Logic Gate
@@ -167,7 +167,7 @@ function drawAND(x, y, w, h, l) {
 
 ## Failed Attempts at OR Gate
 
-![](../img/draw-or-v1.png)
+![](draw-or-v1.png)
 
 This is where GPT-4 falls apart.  Despite
 my best attempts, I could not get GPT-4
@@ -185,7 +185,7 @@ I think this really demonstrates the limits
 of what GPT-4 is capable of, and what it
 can't do.
 
-![](../img/logic-gate-or-test.png)
+![](logic-gate-or-test.png)
 
 [Edit the Logical OR gate MicroSim](https://editor.p5js.org/dmccreary/sketches/uVb20rFLC)
 
@@ -199,7 +199,7 @@ that converts the SVG points to a set of (x,y) points.
 
 ## NOR Symbol Prompt
 
-![](../img/logic-gate-nor.png)
+![](logic-gate-nor.png)
 
 Once we have a good OR gate, we can ask GPT to
 just use that to create a NOR gate.  All
@@ -246,7 +246,7 @@ This is an easy to change.
 
 ### XNOR
 
-![](../img/logic-gate-xnor.png)
+![](logic-gate-xnor.png)
 
 Our last function is XNOR, which just adds
 a circle to the XOR symbol.
