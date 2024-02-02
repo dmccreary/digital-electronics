@@ -1,6 +1,6 @@
 # Flip Flop MicroSim
 
-![Image Name](./image.png){ width="400" }
+![Flip Flop](./flip-flop.png){ width="400" }
 
 [Run the Flip Flop MicroSim](flip-flop.html){ .md-button .md-button--primary }
 [Edit the Flip Flop MicroSim](https://editor.p5js.org/dmccreary/sketches/AwlOJNtQd)
