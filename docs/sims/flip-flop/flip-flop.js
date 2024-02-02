@@ -21,7 +21,7 @@ let wr1 = 100; // wire row 1
 let wr2 =200; // wire row 2
 
 function setup() {
-  const canvas = createCanvas(canvasWidth, 300);
+  const canvas = createCanvas(canvasWidth, canvasHeight);
   var mainElement = document.querySelector('main');
   canvas.parent(mainElement);
   textSize(16);
@@ -44,11 +44,8 @@ function draw() {
   text('Q', wc2+50, wr1-30);
   text('Q̅', wc2+50, wr2+20);
   
-  
   // Cross wires
   stroke('black');
-  
-
   
   // little verticles on right
   line(wc2, 80, wc2, 100);
