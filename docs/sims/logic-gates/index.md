@@ -2,7 +2,7 @@
 
 ![](./logic-gates.png){ width="400" }
 
-[Run the Logic Gates MicroSim](./template.html){ .md-button .md-button--primary }
+[Run the Logic Gates MicroSim](./logic-gates.html){ .md-button .md-button--primary }
 [Edit the Logic Gates MicroSim](https://editor.p5js.org/dmccreary/sketches/SpFEWepWj)
 
 Our goal in this simulation is to:
