@@ -2,77 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/about/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/contact/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/glossary/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/how-we-built-this-site/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/license/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/references/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/lessons/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/lessons/boolean-algebra/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/lessons/logic-gates/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/flip-flop/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/logic-gates/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/logic-gates/01-drawing-gates/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/sims/shift-register/</loc>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/template/</loc>
-         <lastmod>2024-10-13</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-01-19</lastmod>
     </url>
 </urlset>
