@@ -1,11 +1,12 @@
 # MicroSim Template
 
+<iframe src="main.html" width="500" height="350"></iframe>
 <figure markdown>
    ![Image Name](./image.png){ width="400" }
    <figcaption>Figure caption.</figcaption>
 </figure>
 
-[Run the MicroSim](./template.html){ .md-button .md-button--primary }
+[Run the MicroSim](./main.html){ .md-button .md-button--primary }
 [Edit the MicroSim]()
 
 ## About this MicroSim

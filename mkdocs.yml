@@ -17,6 +17,7 @@ nav:
     - Logic Gates: sims/logic-gates/index.md
     - Drawing Gates: sims/logic-gates/01-drawing-gates.md
     - Flip-flop: sims/flip-flop/index.md
+    - Shift Register: sims/shift-register/index.md
   - Glossary: glossary.md
   - License: license.md
   - How we built this site: how-we-built-this-site.md
