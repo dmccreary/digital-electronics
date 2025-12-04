@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Website content for a college course in digital electronics with MicroSims. All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+        <meta name="description" content="Interactive simulation library for drawing and testing digital logic gates including AND, OR, NOT, NAND, NOR, XOR, and XNOR gates.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -22,11 +22,11 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>Logic Gates - Digital Electronics</title>
+        <title>Logic Gates MicroSim - Digital Electronics</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#logical-gate-simulations" class="md-skip">
+        <a href="#logic-gates-microsim" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Logic Gates
+              Logic Gates MicroSim
             
           </span>
         </div>
@@ -396,6 +396,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Logic Gates
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -405,6 +416,136 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-gate-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Gate Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target Audience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -581,6 +722,125 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-gate-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Gate Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target Audience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -597,25 +857,134 @@
   
 
 
-<h1 id="logical-gate-simulations">Logical Gate Simulations</h1>
-<p><img alt="" src="logic-gates.png" width="400" /></p>
-<p><a class="md-button md-button--primary" href="logic-gates.html">Run the Logic Gates MicroSim</a>
-<a href="https://editor.p5js.org/dmccreary/sketches/SpFEWepWj">Edit the Logic Gates MicroSim</a></p>
+<h1 id="logic-gates-microsim">Logic Gates MicroSim</h1>
+<iframe src="main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+<p><strong>Copy this iframe to your website:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/digital-electronics/sims/logic-gates/main.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;450px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p><a class="md-button md-button--primary" href="main.html">Run the Logic Gates MicroSim in Fullscreen</a>
+<a class="md-button" href="https://editor.p5js.org/dmccreary/sketches/SpFEWepWj">Edit in the p5.js Editor</a></p>
+<h2 id="description">Description</h2>
+<p>This interactive simulation provides a visual library of digital logic gates, demonstrating how each gate processes binary inputs to produce outputs. The simulation uses p5.js to render high-quality gate symbols following standard IEEE conventions.</p>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li>Visual representation of all common logic gate types</li>
+<li>Interactive inputs to test gate behavior</li>
+<li>Real-time output display</li>
+<li>Standard IEEE gate symbols</li>
+<li>Reusable gate drawing library for building complex circuits</li>
+</ul>
+<h3 id="how-to-use">How to Use</h3>
+<ol>
+<li>Click on input nodes to toggle between 0 (LOW) and 1 (HIGH) states</li>
+<li>Observe how the output changes based on the gate's logic function</li>
+<li>Experiment with different input combinations to understand each gate's truth table</li>
+<li>Use the gate library as a foundation for building more complex circuits</li>
+</ol>
+<h3 id="logic-gate-types">Logic Gate Types</h3>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Symbol</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AND</td>
+<td>Flat back, curved front</td>
+<td>Output is 1 only when ALL inputs are 1</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>Curved back, pointed front</td>
+<td>Output is 1 when ANY input is 1</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>Triangle with bubble</td>
+<td>Inverts the input</td>
+</tr>
+<tr>
+<td>NAND</td>
+<td>AND with bubble</td>
+<td>Inverted AND output</td>
+</tr>
+<tr>
+<td>NOR</td>
+<td>OR with bubble</td>
+<td>Inverted OR output</td>
+</tr>
+<tr>
+<td>XOR</td>
+<td>OR with extra curved line</td>
+<td>Output is 1 when inputs DIFFER</td>
+</tr>
+<tr>
+<td>XNOR</td>
+<td>XOR with bubble</td>
+<td>Output is 1 when inputs are SAME</td>
+</tr>
+</tbody>
+</table>
+<h2 id="goals">Goals</h2>
 <p>Our goal in this simulation is to:</p>
 <ol>
-<li>Use generative AI to build a library
-of high-quality logical gate drawings using
-the p5.js library.</li>
-<li>Use this library to build a logic simulator
-that can simulate simple digital logic gates.</li>
+<li>Use generative AI to build a library of high-quality logical gate drawings using the p5.js library.</li>
+<li>Use this library to build a logic simulator that can simulate simple digital logic gates.</li>
 </ol>
-<p><a href="01-drawing-gates/">Drawing Gates</a></p>
+<p><a href="01-drawing-gates/">Drawing Gates</a> - Tutorial on creating gate graphics</p>
+<h2 id="lesson-plan">Lesson Plan</h2>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>After completing this lesson, students will be able to:</p>
+<ul>
+<li>Identify and draw the standard symbols for each logic gate type</li>
+<li>Create truth tables for each logic gate</li>
+<li>Predict the output of a logic gate given any combination of inputs</li>
+<li>Explain the relationship between basic gates (AND, OR, NOT) and derived gates (NAND, NOR, XOR, XNOR)</li>
+</ul>
+<h3 id="target-audience">Target Audience</h3>
+<ul>
+<li>High school electronics and computer science students</li>
+<li>College students in introductory digital logic courses</li>
+<li>Prerequisites: Understanding of binary numbers (0 and 1)</li>
+</ul>
+<h3 id="activities">Activities</h3>
+<ol>
+<li>
+<p><strong>Exploration Activity</strong>: Interact with each gate type, testing all possible input combinations and recording results.</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong>: Complete the truth table worksheet for each gate, verifying answers with the simulation.</p>
+</li>
+<li>
+<p><strong>Extension Activity</strong>: Design a simple circuit using multiple gates (e.g., a half-adder) and predict its behavior before testing.</p>
+</li>
+</ol>
+<h3 id="assessment">Assessment</h3>
+<ul>
+<li>Draw the symbol for each of the seven logic gates from memory</li>
+<li>Given a truth table, identify which logic gate it represents</li>
+<li>Explain why NAND and NOR gates are called "universal gates"</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Logic_gate">Wikipedia: Logic Gate</a> - Overview of logic gate types and applications</li>
+<li><a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/logic-gate-introduction/">All About Circuits: Logic Gates</a> - Comprehensive tutorial on digital logic gates</li>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a> - Documentation for the p5.js library used in this simulation</li>
+<li><a href="https://standards.ieee.org/standard/91-1984.html">IEEE Std 91-1984</a> - Standard for logic gate symbols</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

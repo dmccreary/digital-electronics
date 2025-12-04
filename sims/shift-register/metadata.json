@@ -1,0 +1,47 @@
+{
+  "title": "Shift Register MicroSim",
+  "description": "Interactive simulation of a 74HC594 shift register with logic analyzer display, demonstrating serial-to-parallel data conversion and timing relationships.",
+  "creator": "Dan McCreary",
+  "date": "2024-01-15",
+  "subject": [
+    "Digital Electronics",
+    "Shift Register",
+    "74HC594",
+    "Serial to Parallel",
+    "Sequential Logic",
+    "Logic Analyzer"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude AI"
+  ],
+  "identifier": "https://dmccreary.github.io/digital-electronics/sims/shift-register/",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "concepts": [
+    "Shift Register",
+    "Serial Data",
+    "Parallel Data",
+    "Clock Signal",
+    "Latch",
+    "74HC594",
+    "Logic Analyzer"
+  ],
+  "prerequisites": [
+    "Flip-Flops",
+    "Binary Numbers",
+    "Clock Signals"
+  ],
+  "library": "p5.js"
+}
