@@ -1,0 +1,47 @@
+{
+  "title": "Logic Gates MicroSim",
+  "description": "Interactive simulation library for drawing and testing digital logic gates including AND, OR, NOT, NAND, NOR, XOR, and XNOR gates with standard IEEE symbols.",
+  "creator": "Dan McCreary",
+  "date": "2024-01-15",
+  "subject": [
+    "Digital Electronics",
+    "Logic Gates",
+    "Boolean Algebra",
+    "Combinational Logic",
+    "Digital Circuits"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude AI"
+  ],
+  "identifier": "https://dmccreary.github.io/digital-electronics/sims/logic-gates/",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Remember",
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "AND Gate",
+    "OR Gate",
+    "NOT Gate",
+    "NAND Gate",
+    "NOR Gate",
+    "XOR Gate",
+    "XNOR Gate",
+    "Truth Table",
+    "Boolean Logic"
+  ],
+  "prerequisites": [
+    "Binary Numbers",
+    "Boolean Values"
+  ],
+  "library": "p5.js"
+}

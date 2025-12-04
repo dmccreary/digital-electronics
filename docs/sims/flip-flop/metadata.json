@@ -1,0 +1,46 @@
+{
+  "title": "Flip Flop MicroSim",
+  "description": "Interactive simulation demonstrating SR flip-flop behavior using NAND gates, showing how digital memory circuits store binary states through cross-coupled feedback.",
+  "creator": "Dan McCreary",
+  "date": "2024-01-15",
+  "subject": [
+    "Digital Electronics",
+    "Flip-Flop",
+    "SR Latch",
+    "NAND Gates",
+    "Sequential Logic",
+    "Memory Circuits"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude AI"
+  ],
+  "identifier": "https://dmccreary.github.io/digital-electronics/sims/flip-flop/",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "concepts": [
+    "Flip-Flop",
+    "SR Latch",
+    "NAND Gate",
+    "Sequential Logic",
+    "Binary Memory",
+    "Feedback Loop"
+  ],
+  "prerequisites": [
+    "Logic Gates",
+    "Boolean Algebra",
+    "Binary Numbers"
+  ],
+  "library": "p5.js"
+}
