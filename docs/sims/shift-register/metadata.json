@@ -43,5 +43,26 @@
     "Binary Numbers",
     "Clock Signals"
   ],
-  "library": "p5.js"
+  "library": "p5.js",
+  "visualizationType": [
+    "graph",
+    "interactive-demo",
+    "map",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of shift register",
+    "Explore shift register through interactive visualization",
+    "Apply knowledge of shift register to solve problems",
+    "Experiment with parameters to observe their effects on shift register"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }
