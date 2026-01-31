@@ -8,6 +8,23 @@ repo_url: 'https://github.com/dmccreary/digital-electronics'
 nav:
   - Home: index.md
   - About: about.md
+  - Chapters:
+    - List of Chapters: chapters/index.md
+    - 1. Number Systems: chapters/01-number-systems-binary-arithmetic/index.md
+    - 2. Boolean Algebra: chapters/02-boolean-algebra-fundamentals/index.md
+    - 3. Logic Gates: chapters/03-logic-gates-digital-signals/index.md
+    - 4. Combinational Design: chapters/04-combinational-logic-design/index.md
+    - 5. K-Maps: chapters/05-logic-minimization-kmaps/index.md
+    - 6. Building Blocks: chapters/06-combinational-building-blocks/index.md
+    - 7. Sequential Logic: chapters/07-intro-sequential-logic/index.md
+    - 8. Flip-Flops: chapters/08-flip-flops-timing/index.md
+    - 9. FSM Fundamentals: chapters/09-fsm-fundamentals/index.md
+    - 10. FSM Applications: chapters/10-fsm-design-applications/index.md
+    - 11. Registers & Counters: chapters/11-registers-counters-datapath/index.md
+    - 12. Verilog Basics: chapters/12-verilog-hdl-fundamentals/index.md
+    - 13. Verilog Modeling: chapters/13-verilog-modeling/index.md
+    - 14. Testbenches: chapters/14-testbenches-simulation/index.md
+    - 15. FPGA & Lab: chapters/15-fpga-lab-skills/index.md
   - Lessons:
     - Introduction: lessons/index.md
     - Boolean Algebra: lessons/boolean-algebra.md
