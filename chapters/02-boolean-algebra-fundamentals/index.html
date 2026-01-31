@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://dmccreary.github.io/digital-electronics/chapters/02-boolean-algebra-fundamentals/">
       
       
-        <link rel="prev" href="../01-number-systems-binary-arithmetic/">
+        <link rel="prev" href="../01-number-systems-binary-arithmetic/quiz/">
       
       
-        <link rel="next" href="../03-logic-gates-digital-signals/">
+        <link rel="next" href="quiz/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -282,63 +282,33 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
         
       
     
@@ -387,16 +357,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../01-number-systems-binary-arithmetic/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../01-number-systems-binary-arithmetic/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     1. Number Systems
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -410,486 +407,53 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    2. Boolean Algebra
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    2. Boolean Algebra
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    
       
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#concepts-covered" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concepts Covered
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction-welcome-to-the-world-of-true-and-false" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction: Welcome to the World of True and False
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-variables-and-constants-the-building-blocks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boolean Variables and Constants: The Building Blocks
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Boolean Variables and Constants: The Building Blocks">
-      <ul class="md-nav__list">
         
-          <li class="md-nav__item">
-  <a href="#boolean-constants" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boolean Constants
-    </span>
-  </a>
-  
-</li>
+          
         
-          <li class="md-nav__item">
-  <a href="#boolean-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boolean Variables
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#the-three-fundamental-operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      The Three Fundamental Operations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="The Three Fundamental Operations">
-      <ul class="md-nav__list">
         
-          <li class="md-nav__item">
-  <a href="#not-operation-inversion" class="md-nav__link">
-    <span class="md-ellipsis">
-      NOT Operation (Inversion)
-    </span>
-  </a>
-  
-</li>
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
         
-          <li class="md-nav__item">
-  <a href="#and-operation-conjunction" class="md-nav__link">
-    <span class="md-ellipsis">
-      AND Operation (Conjunction)
-    </span>
-  </a>
-  
-</li>
         
-          <li class="md-nav__item">
-  <a href="#or-operation-disjunction" class="md-nav__link">
-    <span class="md-ellipsis">
-      OR Operation (Disjunction)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="OR Operation (Disjunction)">
-      <ul class="md-nav__list">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
-          <li class="md-nav__item">
-  <a href="#diagram-three-fundamental-operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Three Fundamental Operations
-    </span>
-  </a>
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-expressions-building-more-complex-logic" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boolean Expressions: Building More Complex Logic
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Boolean Expressions: Building More Complex Logic">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#order-of-operations-precedence" class="md-nav__link">
-    <span class="md-ellipsis">
-      Order of Operations (Precedence)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-functions-expressions-with-a-name" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boolean Functions: Expressions with a Name
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#truth-tables-the-complete-picture" class="md-nav__link">
-    <span class="md-ellipsis">
-      Truth Tables: The Complete Picture
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Truth Tables: The Complete Picture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#truth-tables-as-specifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Truth Tables as Specifications
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Truth Tables as Specifications">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-truth-table-builder" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Truth Table Builder
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#introduction-to-boolean-algebra-laws" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction to Boolean Algebra Laws
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identity-law" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identity Law
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#null-law-annulment-law" class="md-nav__link">
-    <span class="md-ellipsis">
-      Null Law (Annulment Law)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#idempotent-law" class="md-nav__link">
-    <span class="md-ellipsis">
-      Idempotent Law
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#complement-law" class="md-nav__link">
-    <span class="md-ellipsis">
-      Complement Law
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commutative-law" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commutative Law
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#associative-law" class="md-nav__link">
-    <span class="md-ellipsis">
-      Associative Law
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#distributive-law" class="md-nav__link">
-    <span class="md-ellipsis">
-      Distributive Law
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Distributive Law">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-boolean-algebra-laws-explorer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Boolean Algebra Laws Explorer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#absorption-law" class="md-nav__link">
-    <span class="md-ellipsis">
-      Absorption Law
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#de-morgans-theorem" class="md-nav__link">
-    <span class="md-ellipsis">
-      De Morgan's Theorem
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="De Morgan's Theorem">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-de-morgans-theorem-visualizer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: De Morgan's Theorem Visualizer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dual-expression" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dual Expression
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consensus-theorem" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consensus Theorem
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-proof-techniques" class="md-nav__link">
-    <span class="md-ellipsis">
-      Boolean Proof Techniques
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Boolean Proof Techniques">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#method-1-truth-table-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method 1: Truth Table Verification
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-2-algebraic-manipulation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method 2: Algebraic Manipulation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-3-reducing-to-canonical-forms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method 3: Reducing to Canonical Forms
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Method 3: Reducing to Canonical Forms">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-boolean-simplification-stepper" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Boolean Simplification Stepper
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#putting-it-all-together" class="md-nav__link">
-    <span class="md-ellipsis">
-      Putting It All Together
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-mistakes-to-avoid" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Mistakes to Avoid
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary-and-key-takeaways" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary and Key Takeaways
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#practice-problems" class="md-nav__link">
-    <span class="md-ellipsis">
-      Practice Problems
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
+  <span class="md-ellipsis">
+    2. Boolean Algebra
+  </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Boolean Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -899,15 +463,71 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-logic-gates-digital-signals/" class="md-nav__link">
+      <a href="quiz/" class="md-nav__link">
         
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../03-logic-gates-digital-signals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     3. Logic Gates
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -919,16 +539,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../04-combinational-logic-design/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../04-combinational-logic-design/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     4. Combinational Design
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -940,16 +587,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../05-logic-minimization-kmaps/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../05-logic-minimization-kmaps/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     5. K-Maps
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -961,16 +635,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../06-combinational-building-blocks/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../06-combinational-building-blocks/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     6. Building Blocks
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -982,16 +683,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../07-intro-sequential-logic/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../07-intro-sequential-logic/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     7. Sequential Logic
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1003,16 +731,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../08-flip-flops-timing/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../08-flip-flops-timing/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     8. Flip-Flops
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1024,16 +779,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../09-fsm-fundamentals/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../09-fsm-fundamentals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     9. FSM Fundamentals
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1045,16 +827,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../10-fsm-design-applications/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../10-fsm-design-applications/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     10. FSM Applications
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1066,16 +875,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../11-registers-counters-datapath/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../11-registers-counters-datapath/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     11. Registers & Counters
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1087,16 +923,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../12-verilog-hdl-fundamentals/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../12-verilog-hdl-fundamentals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     12. Verilog Basics
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1108,16 +971,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../13-verilog-modeling/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../13-verilog-modeling/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     13. Verilog Modeling
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1129,16 +1019,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../14-testbenches-simulation/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../14-testbenches-simulation/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     14. Testbenches
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1150,16 +1067,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../15-fpga-lab-skills/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../15-fpga-lab-skills/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     15. FPGA & Lab
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1311,6 +1255,8 @@
       
         
       
+        
+      
     
     
     
@@ -1339,6 +1285,26 @@
   
 
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2093,47 +2059,42 @@
 <h4 id="diagram-three-fundamental-operations">Diagram: Three Fundamental Operations</h4>
 <iframe src="../../sims/fundamental-operations/main.html" width="100%" height="450" scrolling="no"></iframe>
 
-<details markdown="1">
+<details>
 <summary>Three Fundamental Operations Interactive</summary>
-Type: microsim
-
-Bloom Level: Understand (L2)
-Bloom Verb: Demonstrate
-
-Learning Objective: Demonstrate how the three fundamental Boolean operations (AND, OR, NOT) transform input values into output values through interactive exploration.
-
-Instructional Rationale: Interactive toggle switches allow students to immediately see the cause-and-effect relationship between inputs and outputs, reinforcing the truth table patterns through hands-on experimentation.
-
-Canvas Layout:
-
-- Three panels side by side showing NOT, AND, and OR operations
-- Each panel has clickable input toggles (squares that show 0 or 1)
-- NOT panel: one input, one output
-- AND/OR panels: two inputs, one output
-- Operation symbol and name displayed in each panel
-- Output displays prominently with color coding (0=gray, 1=green)
-
-Interactive Elements:
-
-- Click on input squares to toggle between 0 and 1
-- Outputs update immediately when inputs change
-- Visual connection lines from inputs through operation symbol to output
-
-Visual Style:
-
-- Clean, modern design with rounded rectangles for inputs/outputs
-- Color scheme: inputs in blue tones, outputs green when 1, gray when 0
-- Operation symbols clearly labeled (NOT: inverter triangle, AND: D-shape, OR: curved shape)
-
-Data Visibility:
-
-- Current input values always visible
-- Current output value always visible
-- Expression shown below each operation (e.g., "A AND B = 1")
-
-Implementation: p5.js with canvas-based toggle buttons
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Demonstrate</p>
+<p>Learning Objective: Demonstrate how the three fundamental Boolean operations (AND, OR, NOT) transform input values into output values through interactive exploration.</p>
+<p>Instructional Rationale: Interactive toggle switches allow students to immediately see the cause-and-effect relationship between inputs and outputs, reinforcing the truth table patterns through hands-on experimentation.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Three panels side by side showing NOT, AND, and OR operations</li>
+<li>Each panel has clickable input toggles (squares that show 0 or 1)</li>
+<li>NOT panel: one input, one output</li>
+<li>AND/OR panels: two inputs, one output</li>
+<li>Operation symbol and name displayed in each panel</li>
+<li>Output displays prominently with color coding (0=gray, 1=green)</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Click on input squares to toggle between 0 and 1</li>
+<li>Outputs update immediately when inputs change</li>
+<li>Visual connection lines from inputs through operation symbol to output</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Clean, modern design with rounded rectangles for inputs/outputs</li>
+<li>Color scheme: inputs in blue tones, outputs green when 1, gray when 0</li>
+<li>Operation symbols clearly labeled (NOT: inverter triangle, AND: D-shape, OR: curved shape)</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Current input values always visible</li>
+<li>Current output value always visible</li>
+<li>Expression shown below each operation (e.g., "A AND B = 1")</li>
+</ul>
+<p>Implementation: p5.js with canvas-based toggle buttons</p>
 </details>
-
 <h2 id="boolean-expressions-building-more-complex-logic">Boolean Expressions: Building More Complex Logic</h2>
 <p>Now that we have our three fundamental operations, we can combine them to create <strong>Boolean expressions</strong>—formulas that describe more complex logical relationships.</p>
 <p>A <strong>Boolean expression</strong> is any valid combination of:</p>
@@ -2243,47 +2204,42 @@ Implementation: p5.js with canvas-based toggle buttons
 <h4 id="diagram-truth-table-builder">Diagram: Truth Table Builder</h4>
 <iframe src="../../sims/truth-table-builder/main.html" width="100%" height="500" scrolling="no"></iframe>
 
-<details markdown="1">
+<details>
 <summary>Truth Table Builder MicroSim</summary>
-Type: microsim
-
-Bloom Level: Apply (L3)
-Bloom Verb: Execute
-
-Learning Objective: Enable students to build truth tables for Boolean expressions by entering expressions and seeing the complete truth table generated automatically.
-
-Instructional Rationale: Active construction of truth tables reinforces understanding of how Boolean expressions map inputs to outputs. The immediate feedback helps students verify their mental model.
-
-Canvas Layout:
-
-- Top section: Expression input area with example expressions shown
-- Variable selector: Choose 2, 3, or 4 variables
-- Main area: Generated truth table with all rows
-- Highlight feature: Click any row to highlight input-output path
-
-Interactive Elements:
-
-- Text input field for Boolean expression using notation: AND (*), OR (+), NOT (!)
-- Dropdown to select number of variables (2-4)
-- "Generate" button to create truth table
-- Clickable rows to highlight and explain the evaluation
-- Example expressions as clickable chips to auto-populate
-
-Visual Style:
-
-- Table with alternating row colors for readability
-- Output column color-coded: green for 1, gray for 0
-- Expression parsing feedback (valid/invalid indicator)
-- Current row highlighted when clicked
-
-Error Handling:
-
-- Display helpful message for invalid expressions
-- Suggest corrections for common syntax errors
-
-Implementation: p5.js with string parsing for expression evaluation
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Execute</p>
+<p>Learning Objective: Enable students to build truth tables for Boolean expressions by entering expressions and seeing the complete truth table generated automatically.</p>
+<p>Instructional Rationale: Active construction of truth tables reinforces understanding of how Boolean expressions map inputs to outputs. The immediate feedback helps students verify their mental model.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Top section: Expression input area with example expressions shown</li>
+<li>Variable selector: Choose 2, 3, or 4 variables</li>
+<li>Main area: Generated truth table with all rows</li>
+<li>Highlight feature: Click any row to highlight input-output path</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Text input field for Boolean expression using notation: AND (*), OR (+), NOT (!)</li>
+<li>Dropdown to select number of variables (2-4)</li>
+<li>"Generate" button to create truth table</li>
+<li>Clickable rows to highlight and explain the evaluation</li>
+<li>Example expressions as clickable chips to auto-populate</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Table with alternating row colors for readability</li>
+<li>Output column color-coded: green for 1, gray for 0</li>
+<li>Expression parsing feedback (valid/invalid indicator)</li>
+<li>Current row highlighted when clicked</li>
+</ul>
+<p>Error Handling:</p>
+<ul>
+<li>Display helpful message for invalid expressions</li>
+<li>Suggest corrections for common syntax errors</li>
+</ul>
+<p>Implementation: p5.js with string parsing for expression evaluation</p>
 </details>
-
 <h2 id="introduction-to-boolean-algebra-laws">Introduction to Boolean Algebra Laws</h2>
 <p>Now we arrive at the heart of this chapter: the <strong>laws of Boolean algebra</strong>. These laws are your toolkit for manipulating and simplifying Boolean expressions. Learn them well, and you'll be able to transform complex, gate-hungry expressions into elegant, minimal circuits.</p>
 <p>Why do we care about simplification? Because simpler expressions mean:</p>
@@ -2355,48 +2311,43 @@ Implementation: p5.js with string parsing for expression evaluation
 <h4 id="diagram-boolean-algebra-laws-explorer">Diagram: Boolean Algebra Laws Explorer</h4>
 <iframe src="../../sims/boolean-laws-explorer/main.html" width="100%" height="550" scrolling="no"></iframe>
 
-<details markdown="1">
+<details>
 <summary>Boolean Algebra Laws Interactive Explorer</summary>
-Type: microsim
-
-Bloom Level: Understand (L2)
-Bloom Verb: Explain
-
-Learning Objective: Students will be able to explain how each Boolean algebra law transforms expressions by stepping through concrete examples with specific values.
-
-Instructional Rationale: Seeing the same law applied with different variable values helps students generalize the pattern. Step-through interaction ensures they can't skip ahead without seeing the transformation.
-
-Canvas Layout:
-
-- Law selector at top (dropdown or tabs): Identity, Null, Idempotent, Complement, Commutative, Associative, Distributive
-- Left side: Original expression with variable value toggles
-- Center: Transformation arrow with law name
-- Right side: Equivalent simplified expression
-- Bottom: Evaluation showing both sides equal the same result
-
-Interactive Elements:
-
-- Dropdown/tabs to select which law to explore
-- Toggle buttons for variable values (A=0/1, B=0/1, C=0/1)
-- "Step" button to show transformation step by step
-- Visual highlighting of which part of expression is being transformed
-
-Data Visibility:
-
-- Original expression: A + 0 = A (with current value of A shown)
-- After applying law: Result shown
-- Verification: Both sides evaluated to show equality
-
-Visual Style:
-
-- Clean mathematical notation
-- Transformation arrows between equivalent forms
-- Color coding: variables in blue, constants in gray, result in green
-- Law name and formula shown prominently
-
-Implementation: p5.js with canvas-based controls
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain</p>
+<p>Learning Objective: Students will be able to explain how each Boolean algebra law transforms expressions by stepping through concrete examples with specific values.</p>
+<p>Instructional Rationale: Seeing the same law applied with different variable values helps students generalize the pattern. Step-through interaction ensures they can't skip ahead without seeing the transformation.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Law selector at top (dropdown or tabs): Identity, Null, Idempotent, Complement, Commutative, Associative, Distributive</li>
+<li>Left side: Original expression with variable value toggles</li>
+<li>Center: Transformation arrow with law name</li>
+<li>Right side: Equivalent simplified expression</li>
+<li>Bottom: Evaluation showing both sides equal the same result</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Dropdown/tabs to select which law to explore</li>
+<li>Toggle buttons for variable values (A=0/1, B=0/1, C=0/1)</li>
+<li>"Step" button to show transformation step by step</li>
+<li>Visual highlighting of which part of expression is being transformed</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Original expression: A + 0 = A (with current value of A shown)</li>
+<li>After applying law: Result shown</li>
+<li>Verification: Both sides evaluated to show equality</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Clean mathematical notation</li>
+<li>Transformation arrows between equivalent forms</li>
+<li>Color coding: variables in blue, constants in gray, result in green</li>
+<li>Law name and formula shown prominently</li>
+</ul>
+<p>Implementation: p5.js with canvas-based controls</p>
 </details>
-
 <h2 id="absorption-law">Absorption Law</h2>
 <p>The <strong>Absorption Law</strong> lets you simplify expressions where a term "absorbs" a more complex term:</p>
 <p>[A + A \cdot B = A]
@@ -2480,49 +2431,44 @@ Implementation: p5.js with canvas-based controls
 <h4 id="diagram-de-morgans-theorem-visualizer">Diagram: De Morgan's Theorem Visualizer</h4>
 <iframe src="../../sims/de-morgans-visualizer/main.html" width="100%" height="500" scrolling="no"></iframe>
 
-<details markdown="1">
+<details>
 <summary>De Morgan's Theorem Interactive Visualizer</summary>
-Type: microsim
-
-Bloom Level: Understand (L2)
-Bloom Verb: Interpret
-
-Learning Objective: Students will be able to interpret De Morgan's theorem by seeing how expressions with the bar broken and unbroken produce identical outputs for all input combinations.
-
-Instructional Rationale: Visualizing both forms of an expression side-by-side with the same inputs creates a strong mental link between the equivalent forms. The "break the bar" animation reinforces the transformation rule.
-
-Canvas Layout:
-
-- Two-column display showing both forms of De Morgan's theorem
-- Left column: Original form (e.g., \(\overline{A \cdot B}\))
-- Right column: Transformed form (e.g., \(\overline{A} + \overline{B}\))
-- Shared input toggles at top for A and B values
-- Gate diagram below each expression showing equivalent circuits
-- Animation showing "break the bar" transformation
-
-Interactive Elements:
-
-- Toggle buttons for A and B inputs
-- "Break the Bar" button triggers animation showing transformation
-- Tab selector for: \(\overline{A \cdot B}\) form vs \(\overline{A + B}\) form
-- Both sides update simultaneously when inputs change
-
-Visual Style:
-
-- Expression notation with proper overlines
-- Circuit symbols shown below expressions
-- Color-coded: inputs blue, intermediate values yellow, outputs green
-- Animation shows bar "breaking" and operation symbol changing
-
-Data Visibility:
-
-- Input values prominently displayed
-- Intermediate computation steps shown
-- Final outputs shown with equality check (both should always match)
-
-Implementation: p5.js with animation for bar-breaking effect
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Interpret</p>
+<p>Learning Objective: Students will be able to interpret De Morgan's theorem by seeing how expressions with the bar broken and unbroken produce identical outputs for all input combinations.</p>
+<p>Instructional Rationale: Visualizing both forms of an expression side-by-side with the same inputs creates a strong mental link between the equivalent forms. The "break the bar" animation reinforces the transformation rule.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Two-column display showing both forms of De Morgan's theorem</li>
+<li>Left column: Original form (e.g., <span class="arithmatex">\(\overline{A \cdot B}\)</span>)</li>
+<li>Right column: Transformed form (e.g., <span class="arithmatex">\(\overline{A} + \overline{B}\)</span>)</li>
+<li>Shared input toggles at top for A and B values</li>
+<li>Gate diagram below each expression showing equivalent circuits</li>
+<li>Animation showing "break the bar" transformation</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Toggle buttons for A and B inputs</li>
+<li>"Break the Bar" button triggers animation showing transformation</li>
+<li>Tab selector for: <span class="arithmatex">\(\overline{A \cdot B}\)</span> form vs <span class="arithmatex">\(\overline{A + B}\)</span> form</li>
+<li>Both sides update simultaneously when inputs change</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Expression notation with proper overlines</li>
+<li>Circuit symbols shown below expressions</li>
+<li>Color-coded: inputs blue, intermediate values yellow, outputs green</li>
+<li>Animation shows bar "breaking" and operation symbol changing</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Input values prominently displayed</li>
+<li>Intermediate computation steps shown</li>
+<li>Final outputs shown with equality check (both should always match)</li>
+</ul>
+<p>Implementation: p5.js with animation for bar-breaking effect</p>
 </details>
-
 <h2 id="dual-expression">Dual Expression</h2>
 <p>Every Boolean expression has a <strong>dual expression</strong> obtained by:</p>
 <ol>
@@ -2623,56 +2569,51 @@ Implementation: p5.js with animation for bar-breaking effect
 <h4 id="diagram-boolean-simplification-stepper">Diagram: Boolean Simplification Stepper</h4>
 <iframe src="../../sims/boolean-simplification-stepper/main.html" width="100%" height="550" scrolling="no"></iframe>
 
-<details markdown="1">
+<details>
 <summary>Boolean Simplification Stepper MicroSim</summary>
-Type: microsim
-
-Bloom Level: Apply (L3)
-Bloom Verb: Apply
-
-Learning Objective: Students will be able to apply Boolean algebra laws to simplify expressions step-by-step, with immediate feedback on which laws are applicable at each stage.
-
-Instructional Rationale: Guided step-through with law identification helps students internalize the simplification process. Seeing which laws apply at each step builds pattern recognition skills.
-
-Canvas Layout:
-
-- Expression display area at top showing current state
-- List of applicable laws (clickable buttons)
-- History panel showing steps taken
-- Final simplified result with gate count comparison
-- Reset and example expression buttons
-
-Interactive Elements:
-
-- Current expression displayed prominently
-- Buttons for each Boolean law that can be applied
-- Clicking a law shows preview of transformation
-- "Apply" button to confirm and advance
-- "Undo" button to step back
-- "Hint" button suggests next good step
-
-Data Visibility:
-
-- Starting expression
-- Current expression after each step
-- Law applied at each step
-- Running count of gates/terms
-
-Example Problems:
-
-- \(\overline{A} \cdot B + A \cdot B\) (simplifies to \(B\))
-- \(A + A \cdot B\) (simplifies to \(A\))
-- \(A \cdot B + A \cdot \overline{B} + \overline{A} \cdot B\) (simplifies to \(A + B\))
-
-Visual Style:
-
-- Laws color-coded by type (identity=blue, complement=green, De Morgan=orange)
-- Transformation preview in lighter color before applying
-- History shows crossed-out terms and applied law names
-
-Implementation: p5.js with expression parsing and law matching
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Apply</p>
+<p>Learning Objective: Students will be able to apply Boolean algebra laws to simplify expressions step-by-step, with immediate feedback on which laws are applicable at each stage.</p>
+<p>Instructional Rationale: Guided step-through with law identification helps students internalize the simplification process. Seeing which laws apply at each step builds pattern recognition skills.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Expression display area at top showing current state</li>
+<li>List of applicable laws (clickable buttons)</li>
+<li>History panel showing steps taken</li>
+<li>Final simplified result with gate count comparison</li>
+<li>Reset and example expression buttons</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Current expression displayed prominently</li>
+<li>Buttons for each Boolean law that can be applied</li>
+<li>Clicking a law shows preview of transformation</li>
+<li>"Apply" button to confirm and advance</li>
+<li>"Undo" button to step back</li>
+<li>"Hint" button suggests next good step</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Starting expression</li>
+<li>Current expression after each step</li>
+<li>Law applied at each step</li>
+<li>Running count of gates/terms</li>
+</ul>
+<p>Example Problems:</p>
+<ul>
+<li><span class="arithmatex">\(\overline{A} \cdot B + A \cdot B\)</span> (simplifies to <span class="arithmatex">\(B\)</span>)</li>
+<li><span class="arithmatex">\(A + A \cdot B\)</span> (simplifies to <span class="arithmatex">\(A\)</span>)</li>
+<li><span class="arithmatex">\(A \cdot B + A \cdot \overline{B} + \overline{A} \cdot B\)</span> (simplifies to <span class="arithmatex">\(A + B\)</span>)</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Laws color-coded by type (identity=blue, complement=green, De Morgan=orange)</li>
+<li>Transformation preview in lighter color before applying</li>
+<li>History shows crossed-out terms and applied law names</li>
+</ul>
+<p>Implementation: p5.js with expression parsing and law matching</p>
 </details>
-
 <h2 id="putting-it-all-together">Putting It All Together</h2>
 <p>Let's walk through a complete example that uses multiple concepts from this chapter.</p>
 <p><strong>Problem</strong>: A digital lock should open when:</p>
@@ -2876,7 +2817,7 @@ Swap AND↔OR and 0↔1 (no constants here):
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../01-number-systems-binary-arithmetic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Number Systems">
+          <a href="../01-number-systems-binary-arithmetic/quiz/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quiz">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2886,20 +2827,20 @@ Swap AND↔OR and 0↔1 (no constants here):
                 Previous
               </span>
               <div class="md-ellipsis">
-                1. Number Systems
+                Quiz
               </div>
             </div>
           </a>
         
         
           
-          <a href="../03-logic-gates-digital-signals/" class="md-footer__link md-footer__link--next" aria-label="Next: 3. Logic Gates">
+          <a href="quiz/" class="md-footer__link md-footer__link--next" aria-label="Next: Quiz">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                3. Logic Gates
+                Quiz
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Website content for a college course in digital electronics with MicroSims. All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+        <meta name="description" content="Master advanced techniques for optimizing Boolean functions to create efficient circuit implementations">
       
       
         <meta name="author" content="Dan McCreary">
@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://dmccreary.github.io/digital-electronics/chapters/05-logic-minimization-kmaps/">
       
       
-        <link rel="prev" href="../04-combinational-logic-design/">
+        <link rel="prev" href="../04-combinational-logic-design/quiz/">
       
       
-        <link rel="next" href="../06-combinational-building-blocks/">
+        <link rel="next" href="quiz/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>5. K-Maps - Digital Electronics</title>
+        <title>Logic Minimization and Karnaugh Maps - Digital Electronics</title>
       
     
     
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5. K-Maps
+              Logic Minimization and Karnaugh Maps
             
           </span>
         </div>
@@ -282,63 +282,33 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
         
       
     
@@ -387,16 +357,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../01-number-systems-binary-arithmetic/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../01-number-systems-binary-arithmetic/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     1. Number Systems
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -408,16 +405,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../02-boolean-algebra-fundamentals/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../02-boolean-algebra-fundamentals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     2. Boolean Algebra
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -429,16 +453,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../03-logic-gates-digital-signals/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../03-logic-gates-digital-signals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     3. Logic Gates
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -450,16 +501,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../04-combinational-logic-design/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../04-combinational-logic-design/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     4. Combinational Design
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -473,84 +551,53 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    5. K-Maps
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    5. K-Maps
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    
       
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
+        
+          
+        
       
-        <li class="md-nav__item">
-  <a href="#concepts-covered" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concepts Covered
-    </span>
-  </a>
-  
-</li>
+        
       
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
+    
+    
+    
       
-    </ul>
-  
-</nav>
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-    </li>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    5. K-Maps
+  </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. K-Maps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -560,15 +607,71 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-combinational-building-blocks/" class="md-nav__link">
+      <a href="quiz/" class="md-nav__link">
         
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../06-combinational-building-blocks/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     6. Building Blocks
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -580,16 +683,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../07-intro-sequential-logic/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../07-intro-sequential-logic/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     7. Sequential Logic
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -601,16 +731,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../08-flip-flops-timing/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../08-flip-flops-timing/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     8. Flip-Flops
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -622,16 +779,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../09-fsm-fundamentals/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../09-fsm-fundamentals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     9. FSM Fundamentals
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -643,16 +827,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../10-fsm-design-applications/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../10-fsm-design-applications/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     10. FSM Applications
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -664,16 +875,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../11-registers-counters-datapath/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../11-registers-counters-datapath/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     11. Registers & Counters
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -685,16 +923,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../12-verilog-hdl-fundamentals/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../12-verilog-hdl-fundamentals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     12. Verilog Basics
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -706,16 +971,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../13-verilog-modeling/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../13-verilog-modeling/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     13. Verilog Modeling
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -727,16 +1019,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../14-testbenches-simulation/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../14-testbenches-simulation/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     14. Testbenches
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -748,16 +1067,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../15-fpga-lab-skills/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../15-fpga-lab-skills/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     15. FPGA & Lab
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -909,6 +1255,8 @@
       
         
       
+        
+      
     
     
     
@@ -937,6 +1285,26 @@
   
 
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1074,6 +1442,633 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-the-quest-for-the-perfect-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: The Quest for the Perfect Circuit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k-map-4-variable-the-full-size-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      K-Map 4 Variable: The Full-Size Map
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="K-Map 4 Variable: The Full-Size Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-wrap-around-nature" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Wrap-Around Nature
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Wrap-Around Nature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-4-variable-k-map-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: 4-Variable K-Map Interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k-map-grouping-rules-the-complete-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      K-Map Grouping Rules: The Complete Guide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="K-Map Grouping Rules: The Complete Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rule-1-groups-must-be-powers-of-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 1: Groups Must Be Powers of 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-2-groups-must-be-rectangular" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 2: Groups Must Be Rectangular
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-3-groups-can-wrap-around" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 3: Groups Can Wrap Around
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-4-every-1-must-be-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 4: Every 1 Must Be Covered
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-5-overlapping-is-allowed-and-often-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 5: Overlapping Is Allowed (and Often Required)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-6-maximize-group-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 6: Maximize Group Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-7-minimize-the-number-of-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 7: Minimize the Number of Groups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rule 7: Minimize the Number of Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-k-map-grouping-rules-demonstrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: K-Map Grouping Rules Demonstrator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjacent-cells-understanding-adjacency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjacent Cells: Understanding Adjacency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adjacent Cells: Understanding Adjacency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-adjacency-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Adjacency Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-care-conditions-free-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't Care Conditions: Free Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Don't Care Conditions: Free Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-dont-cares-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Don't Cares Exist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-dont-cares" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Don't Cares
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Don't Cares">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dont-care-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Don't Care Optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prime-implicants-the-building-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prime Implicants: The Building Blocks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prime Implicants: The Building Blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-prime-implicants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Prime Implicants
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#essential-prime-implicants-the-must-haves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential Prime Implicants: The Must-Haves
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Essential Prime Implicants: The Must-Haves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-essential-prime-implicants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Essential Prime Implicants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-selection-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Selection Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Selection Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-prime-implicant-finder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Prime Implicant Finder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicant-cover-finding-the-complete-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicant Cover: Finding the Complete Solution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicant Cover: Finding the Complete Solution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-covering-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Covering Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-multiple-covers-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Multiple Covers Exist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimal-sop-the-simplest-and-or-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal SOP: The Simplest AND-OR Form
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Minimal SOP: The Simplest AND-OR Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reading-terms-from-the-k-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Terms from the K-Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimal-pos-the-simplest-or-and-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal POS: The Simplest OR-AND Form
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Minimal POS: The Simplest OR-AND Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-pos-vs-sop" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use POS vs. SOP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When to Use POS vs. SOP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sop-vs-pos-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: SOP vs POS Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-quine-mccluskey-method-when-maps-arent-enough" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Quine-McCluskey Method: When Maps Aren't Enough
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Quine-McCluskey Method: When Maps Aren't Enough">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Basic Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-walkthrough" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Walkthrough
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Walkthrough">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-quine-mccluskey-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Quine-McCluskey Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hazards-when-logic-lies-briefly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hazards: When Logic Lies (Briefly)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hazards: When Logic Lies (Briefly)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-hazards-occur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Hazards Occur
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-hazards-the-1-0-1-and-0-1-0-glitches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Hazards: The 1-0-1 and 0-1-0 Glitches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Static Hazards: The 1-0-1 and 0-1-0 Glitches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detecting-static-hazards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detecting Static Hazards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-static-1-hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of Static-1 Hazard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example of Static-1 Hazard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-static-hazard-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Static Hazard Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-hazards-multiple-glitches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Hazards: Multiple Glitches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dynamic Hazards: Multiple Glitches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-dynamic-hazards-occur" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Dynamic Hazards Occur
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hazard-free-design-eliminating-the-glitches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hazard-Free Design: Eliminating the Glitches
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hazard-Free Design: Eliminating the Glitches">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eliminating-static-1-hazards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminating Static-1 Hazards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-redundant-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Redundant Term
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminating-static-0-hazards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eliminating Static-0 Hazards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-hazards-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Hazards Matter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Hazards Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-hazard-free-design-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Hazard-Free Design Tool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-the-complete-optimization-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: The Complete Optimization Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-and-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary and Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1119,13 +2114,1017 @@
 <li><a href="../04-combinational-logic-design/">Chapter 4: Combinational Logic Design Fundamentals</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-the-quest-for-the-perfect-circuit">Introduction: The Quest for the Perfect Circuit</h2>
+<p>In Chapter 4, you learned to read the K-map like a treasure map—finding gold (simplified expressions) by grouping adjacent 1s. But here's the thing: we only showed you the small maps. A 2-variable K-map has 4 cells. A 3-variable map has 8. That's cute, but real circuits often have 4, 5, or even more input variables.</p>
+<p>Welcome to the big leagues.</p>
+<p>This chapter is about becoming a <em>master</em> of logic minimization. We're talking 4-variable K-maps with 16 cells, wrap-around groupings that would make a pretzel jealous, and fancy concepts like "prime implicants" that sound like characters from a sci-fi movie but are actually just helpful tools for finding the absolute best circuit.</p>
+<p>Why does minimization matter so much? Consider this: a chip with one million gates could potentially be reduced to 600,000 gates with proper optimization. That's 40% less silicon, 40% less power, and 40% less heat. In mobile devices and data centers, that's not just nice—it's essential.</p>
+<p>By the end of this chapter, you'll be able to look at a 16-cell K-map, spot the optimal groupings like a hawk spotting a mouse, and confidently declare "this is the minimal expression." Let's level up your optimization game!</p>
+<h2 id="k-map-4-variable-the-full-size-map">K-Map 4 Variable: The Full-Size Map</h2>
+<p>A <strong>4-variable K-map</strong> has <span class="arithmatex">\(2^4 = 16\)</span> cells, arranged in a 4×4 grid. This is the workhorse of manual logic minimization—large enough to handle real problems, but small enough to work with on paper.</p>
+<p>The layout follows Gray code ordering on both axes:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>            CD
+           00   01   11   10
+        +----+----+----+----+
+AB  00  |  0 |  1 |  3 |  2 |
+        +----+----+----+----+
+    01  |  4 |  5 |  7 |  6 |
+        +----+----+----+----+
+    11  | 12 | 13 | 15 | 14 |
+        +----+----+----+----+
+    10  |  8 |  9 | 11 | 10 |
+        +----+----+----+----+
+</code></pre></div></td></tr></table></div>
+<p>Each cell number corresponds to the minterm with that decimal value. Cell 13, for instance, is minterm <span class="arithmatex">\(m_{13}\)</span>, which is <span class="arithmatex">\(ABCD\)</span> with A=1, B=1, C=0, D=1 (binary 1101 = 13).</p>
+<p><strong>Critical observation</strong>: Both axes use Gray code order (00, 01, 11, 10). This ensures that every adjacent cell—horizontally, vertically, and <em>including wrap-around</em>—differs by exactly one variable.</p>
+<h3 id="the-wrap-around-nature">The Wrap-Around Nature</h3>
+<p>Here's where it gets interesting. In a 4-variable K-map:</p>
+<ul>
+<li>The <strong>top row</strong> is adjacent to the <strong>bottom row</strong> (cells 0-3 are adjacent to cells 8-11)</li>
+<li>The <strong>left column</strong> is adjacent to the <strong>right column</strong> (cells 0,4,12,8 are adjacent to cells 2,6,14,10)</li>
+<li>Even the <strong>corners</strong> are all mutually adjacent!</li>
+</ul>
+<p>Think of the K-map as a torus (a donut shape). If you rolled it up left-to-right and then top-to-bottom, adjacent cells would touch. This wrap-around property is essential for finding the largest possible groups.</p>
+<h4 id="diagram-4-variable-k-map-interactive">Diagram: 4-Variable K-Map Interactive</h4>
+<iframe src="../../sims/kmap-4var/main.html" width="100%" height="550" scrolling="no"></iframe>
+
+<details>
+<summary>4-Variable Karnaugh Map Interactive</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Implement</p>
+<p>Learning Objective: Students will be able to implement 4-variable K-map simplification by correctly identifying and grouping adjacent cells, including wrap-around groups.</p>
+<p>Instructional Rationale: The 4-variable K-map requires understanding both horizontal and vertical wrap-around. Interactive grouping with wrap-around visualization builds correct mental models.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Main: 4×4 K-map grid with Gray code labels on both axes</li>
+<li>Top: Row variable labels (AB)</li>
+<li>Left: Column variable labels (CD)</li>
+<li>Right: Expression builder showing current groups and terms</li>
+<li>Bottom: Control panel with grouping tools</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Click cells to toggle between 0, 1, and don't care (X)</li>
+<li>Click and drag to create groups</li>
+<li>Wrap-around visualization: when group spans edge, show connection on opposite side</li>
+<li>Color-coded groups (up to 6 different colors)</li>
+<li>Auto-solve button to show optimal grouping</li>
+<li>Step-through mode for learning</li>
+<li>Undo/redo for group editing</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Cell values with minterm numbers</li>
+<li>Gray code labels clearly shown</li>
+<li>Each group's simplified term displayed</li>
+<li>Final minimized SOP expression</li>
+<li>Literal count comparison (canonical vs. minimal)</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Clear 4×4 grid with proper spacing</li>
+<li>Wrap-around groups shown with matching colors on opposite edges</li>
+<li>Dashed lines indicating wrap-around connections</li>
+<li>Group terms labeled with color matching the group</li>
+<li>"Optimal" indicator when best solution achieved</li>
+</ul>
+<p>Implementation: p5.js with 2D wrap-around detection and group validation</p>
+</details>
+<h2 id="k-map-grouping-rules-the-complete-guide">K-Map Grouping Rules: The Complete Guide</h2>
+<p>Now that we have the full-size map, let's formalize all the grouping rules. These apply to K-maps of any size, but they become especially important with 4 variables.</p>
+<h3 id="rule-1-groups-must-be-powers-of-2">Rule 1: Groups Must Be Powers of 2</h3>
+<p>Valid group sizes are: 1, 2, 4, 8, or 16 cells. You cannot have groups of 3, 5, 6, or 7 cells. Period.</p>
+<p>Why? Because each doubling of group size eliminates one variable from the term. A group of 3 doesn't correspond to any valid Boolean simplification.</p>
+<table>
+<thead>
+<tr>
+<th>Group Size</th>
+<th>Variables Eliminated</th>
+<th>Term has...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 cell</td>
+<td>0</td>
+<td>All 4 variables</td>
+</tr>
+<tr>
+<td>2 cells</td>
+<td>1</td>
+<td>3 variables</td>
+</tr>
+<tr>
+<td>4 cells</td>
+<td>2</td>
+<td>2 variables</td>
+</tr>
+<tr>
+<td>8 cells</td>
+<td>3</td>
+<td>1 variable</td>
+</tr>
+<tr>
+<td>16 cells</td>
+<td>4</td>
+<td>Just 1 (constant)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rule-2-groups-must-be-rectangular">Rule 2: Groups Must Be Rectangular</h3>
+<p>Groups must form rectangles (including squares). You cannot have L-shaped, T-shaped, or diagonal groups.</p>
+<p>Valid shapes:</p>
+<ul>
+<li>1×1 (single cell)</li>
+<li>1×2 or 2×1 (two adjacent cells)</li>
+<li>1×4, 4×1, or 2×2 (four cells)</li>
+<li>1×8, 8×1, 2×4, or 4×2 (eight cells—possible in 5+ variable maps)</li>
+<li>4×4 (all sixteen cells)</li>
+</ul>
+<h3 id="rule-3-groups-can-wrap-around">Rule 3: Groups Can Wrap Around</h3>
+<p>The edges connect! This is the sneakiest rule and the one students most often forget.</p>
+<ul>
+<li>Top edge connects to bottom edge</li>
+<li>Left edge connects to right edge</li>
+<li>All four corners are mutually adjacent</li>
+</ul>
+<p>A group of 4 cells occupying the four corners of a 4-variable K-map is perfectly valid!</p>
+<h3 id="rule-4-every-1-must-be-covered">Rule 4: Every 1 Must Be Covered</h3>
+<p>Every cell containing a 1 must be included in at least one group. You can't leave any 1s ungrouped—that would mean missing part of the function.</p>
+<h3 id="rule-5-overlapping-is-allowed-and-often-required">Rule 5: Overlapping Is Allowed (and Often Required)</h3>
+<p>A single cell can belong to multiple groups. In fact, overlapping often leads to better solutions because it allows each group to be as large as possible.</p>
+<h3 id="rule-6-maximize-group-size">Rule 6: Maximize Group Size</h3>
+<p>Always use the largest possible groups. A group of 4 is better than two groups of 2, even if both cover the same cells. Larger groups produce simpler terms.</p>
+<h3 id="rule-7-minimize-the-number-of-groups">Rule 7: Minimize the Number of Groups</h3>
+<p>After maximizing group sizes, use as few groups as possible. Each group becomes one product term, so fewer groups mean fewer terms in your SOP expression.</p>
+<h4 id="diagram-k-map-grouping-rules-demonstrator">Diagram: K-Map Grouping Rules Demonstrator</h4>
+<iframe src="../../sims/kmap-grouping-rules/main.html" width="100%" height="500" scrolling="no"></iframe>
+
+<details>
+<summary>K-Map Grouping Rules Interactive Demonstrator</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Demonstrate</p>
+<p>Learning Objective: Students will be able to demonstrate understanding of all K-map grouping rules by identifying valid and invalid groups.</p>
+<p>Instructional Rationale: Presenting valid and invalid grouping examples side-by-side with rule explanations helps students internalize the constraints before attempting their own groupings.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Left: Rule selector (list of 7 rules)</li>
+<li>Center: K-map showing example for selected rule</li>
+<li>Right: Valid vs. invalid comparison</li>
+<li>Bottom: Quiz mode toggle</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Click through rules to see examples of each</li>
+<li>For each rule: valid grouping example vs. invalid violation</li>
+<li>"What's wrong?" quiz: show invalid grouping, student identifies the rule violated</li>
+<li>Animated highlighting of rule violations</li>
+<li>Random example generator for practice</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Current rule name and description</li>
+<li>Example K-map with grouping</li>
+<li>Clear valid/invalid indicator</li>
+<li>Explanation of why invalid cases fail</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Valid groupings in green</li>
+<li>Invalid groupings in red with X overlay</li>
+<li>Rule text prominently displayed</li>
+<li>Animation showing wrap-around connections when relevant</li>
+</ul>
+<p>Implementation: p5.js with rule library and example database</p>
+</details>
+<h2 id="adjacent-cells-understanding-adjacency">Adjacent Cells: Understanding Adjacency</h2>
+<p>The concept of <strong>adjacent cells</strong> is fundamental to K-map operation. Two cells are adjacent if they differ in exactly one variable. This is why Gray code ordering is used—it guarantees that physically adjacent cells on the map are logically adjacent.</p>
+<p>Let's trace through the adjacency for cell 5 (minterm <span class="arithmatex">\(m_5 = \overline{A}BCD\)</span>):</p>
+<table>
+<thead>
+<tr>
+<th>Cell</th>
+<th>Binary</th>
+<th>Adjacent to 5?</th>
+<th>Differs in...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>0100</td>
+<td>Yes</td>
+<td>D (0→1)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0111</td>
+<td>Yes</td>
+<td>C (0→1)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0001</td>
+<td>Yes</td>
+<td>B (1→0)</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1101</td>
+<td>Yes</td>
+<td>A (0→1)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0110</td>
+<td>No</td>
+<td>C and D both differ</td>
+</tr>
+</tbody>
+</table>
+<p>Cell 5 has exactly four adjacent cells: 4, 7, 1, and 13. Notice that 13 is not physically next to 5 on the map, but they're logically adjacent (wrap-around on the AB axis).</p>
+<div class="admonition tip">
+<p class="admonition-title">Adjacency Test</p>
+<p>To check if two cells are adjacent, convert their minterm numbers to binary and count how many bits differ. If exactly one bit differs, they're adjacent. If more than one bit differs, they're not adjacent.</p>
+</div>
+<h3 id="why-adjacency-matters">Why Adjacency Matters</h3>
+<p>When you group adjacent cells, you're exploiting the simplification:</p>
+<div class="arithmatex">\[X \cdot Y + X \cdot \overline{Y} = X\]</div>
+<p>Two adjacent cells differ by one variable, so that variable cancels out when they're grouped. Four adjacent cells (differing in two variables) cancel two variables. This is the mathematical magic behind K-map simplification.</p>
+<h2 id="dont-care-conditions-free-optimization">Don't Care Conditions: Free Optimization</h2>
+<p>In real designs, certain input combinations might never occur—or if they do occur, we don't care what the output is. These are called <strong>don't care conditions</strong>, and they're optimization gold.</p>
+<p>Don't cares are marked with an "X" (or sometimes "d") in truth tables and K-maps. The key insight:</p>
+<blockquote>
+<p><strong>You can treat don't cares as either 0 or 1, whichever gives you a better grouping.</strong></p>
+</blockquote>
+<h3 id="why-dont-cares-exist">Why Don't Cares Exist</h3>
+<p>Don't cares arise in several situations:</p>
+<ol>
+<li>
+<p><strong>Physically impossible inputs</strong>: In a BCD (Binary Coded Decimal) system, inputs 10-15 can never occur because BCD only uses 0-9.</p>
+</li>
+<li>
+<p><strong>Illegal input states</strong>: A system might have constraints that make certain combinations impossible (e.g., "A and B are never both 1").</p>
+</li>
+<li>
+<p><strong>Outputs we don't care about</strong>: Sometimes the output doesn't matter for certain inputs (e.g., we only care about the display during normal operation, not during reset).</p>
+</li>
+</ol>
+<h3 id="using-dont-cares">Using Don't Cares</h3>
+<p>When simplifying, treat each don't care as either 0 or 1, choosing whichever helps you:</p>
+<ul>
+<li>Make groups larger</li>
+<li>Make fewer groups</li>
+<li>Simplify the final expression</li>
+</ul>
+<p>You don't have to be consistent—one X might be treated as 1 (included in a group) while another X is treated as 0 (left out).</p>
+<div class="admonition example">
+<p class="admonition-title">Don't Care Example</p>
+<p>Consider a function with: <span class="arithmatex">\(F = \sum m(1, 3, 7) + d(0, 5)\)</span></p>
+<p>The 1s are at cells 1, 3, 7. The don't cares are at cells 0 and 5.</p>
+<p>Without don't cares, we might group {1, 3} and {3, 7}, getting: <span class="arithmatex">\(\overline{A}D + BC\)</span></p>
+<p>With don't cares, we could include cell 5 with cells 1, 3, 7 (if positions allow) to make a larger group. The X at cell 0 might let us extend another group.</p>
+</div>
+<h4 id="diagram-dont-care-optimization">Diagram: Don't Care Optimization</h4>
+<iframe src="../../sims/dont-care/main.html" width="100%" height="500" scrolling="no"></iframe>
+
+<details>
+<summary>Don't Care Condition Optimizer</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Use</p>
+<p>Learning Objective: Students will be able to use don't care conditions to create larger K-map groups and achieve more minimal expressions.</p>
+<p>Instructional Rationale: Interactive comparison showing minimization with and without don't cares demonstrates the tangible benefit of treating don't cares strategically.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Left: K-map with 1s, 0s, and Xs</li>
+<li>Right: Split view showing:</li>
+<li>Top: Minimal expression ignoring don't cares</li>
+<li>Bottom: Minimal expression using don't cares optimally</li>
+<li>Bottom: Literal count comparison</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Click cells to cycle through 0, 1, X</li>
+<li>Automatic grouping shown for both approaches</li>
+<li>Highlight which Xs are treated as 1s in optimal solution</li>
+<li>Toggle: Show/hide how each X is being used</li>
+<li>Example problems demonstrating significant savings</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Both expressions displayed</li>
+<li>Gate count for both solutions</li>
+<li>Literal count comparison</li>
+<li>Which don't cares are used vs. ignored</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>X cells in distinct color (purple or gray)</li>
+<li>Groups that include X cells show X with green highlight</li>
+<li>X cells not used shown with gray highlight</li>
+<li>Comparison metrics as bar chart</li>
+</ul>
+<p>Implementation: p5.js with dual minimization engine</p>
+</details>
+<h2 id="prime-implicants-the-building-blocks">Prime Implicants: The Building Blocks</h2>
+<p>Now we get into the formal terminology that makes you sound like a real digital designer (and helps you pass exams).</p>
+<p>A <strong>prime implicant</strong> is a product term that:</p>
+<ol>
+<li>Covers (is true for) one or more minterms of the function</li>
+<li>Cannot be combined with another implicant to form a simpler term</li>
+</ol>
+<p>In K-map terms, a prime implicant is a <strong>group that cannot be made any larger</strong>. It's "maxed out."</p>
+<p>Consider a group of 2 cells. If you could expand it to 4 cells (by including two more adjacent 1s or don't cares), then the 2-cell group is <em>not</em> a prime implicant—it's not maximal. Only when a group cannot grow further is it a prime implicant.</p>
+<h3 id="finding-prime-implicants">Finding Prime Implicants</h3>
+<p>To find all prime implicants:</p>
+<ol>
+<li>Start with each 1 in the K-map</li>
+<li>For each 1, find the largest group containing it</li>
+<li>The collection of all such maximal groups gives you the prime implicants</li>
+</ol>
+<p>Some 1s might be covered by multiple different maximal groups, which is fine—all of those groups are prime implicants.</p>
+<div class="admonition info">
+<p class="admonition-title">Prime vs. Implicant</p>
+<p>An <strong>implicant</strong> is any product term that implies the function (is true only when F=1). An implicant doesn't have to be maximal.</p>
+<p>A <strong>prime implicant</strong> is a maximal implicant—one that can't be simplified further.</p>
+<p>Think of it like: all prime implicants are implicants, but not all implicants are prime.</p>
+</div>
+<h2 id="essential-prime-implicants-the-must-haves">Essential Prime Implicants: The Must-Haves</h2>
+<p>Here's where optimization gets interesting. An <strong>essential prime implicant</strong> is a prime implicant that covers at least one minterm <em>not covered by any other prime implicant</em>.</p>
+<p>In other words, if a minterm can only be covered by one prime implicant, that prime implicant is essential—you <em>must</em> include it in your final expression.</p>
+<h3 id="finding-essential-prime-implicants">Finding Essential Prime Implicants</h3>
+<p>The process:</p>
+<ol>
+<li>Identify all prime implicants</li>
+<li>For each minterm, list which prime implicants cover it</li>
+<li>If a minterm is covered by only one prime implicant, that prime implicant is essential</li>
+<li>All essential prime implicants must be in the final solution</li>
+</ol>
+<h3 id="the-selection-process">The Selection Process</h3>
+<p>After including all essential prime implicants, you may still have minterms that aren't covered. For these, you need to select additional prime implicants. The goal: cover all remaining minterms with the fewest additional prime implicants (preferably the largest ones).</p>
+<p>This is where the problem can get tricky—sometimes there are multiple equally good solutions.</p>
+<h4 id="diagram-prime-implicant-finder">Diagram: Prime Implicant Finder</h4>
+<iframe src="../../sims/prime-implicants/main.html" width="100%" height="550" scrolling="no"></iframe>
+
+<details>
+<summary>Prime and Essential Prime Implicant Identifier</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Identify</p>
+<p>Learning Objective: Students will be able to identify all prime implicants and essential prime implicants in a K-map, distinguishing between required and optional implicants.</p>
+<p>Instructional Rationale: Visual identification of which minterms are covered by which prime implicants builds understanding of why certain implicants are essential while others are optional.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Left: K-map with all 1s and don't cares marked</li>
+<li>Center: List of all prime implicants with their coverage</li>
+<li>Right: Essential prime implicant selection panel</li>
+<li>Bottom: Final minimal expression construction</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Click cells to set up function</li>
+<li>"Find All Prime Implicants" button</li>
+<li>Prime implicants shown as colored groups</li>
+<li>Hover over minterm to see which PIs cover it</li>
+<li>Essential PIs highlighted automatically</li>
+<li>Step-through mode showing selection process</li>
+<li>"Why essential?" explanation on hover</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>All prime implicants listed with their terms</li>
+<li>Coverage matrix: which PIs cover which minterms</li>
+<li>Essential PIs marked with star</li>
+<li>Uncovered minterms highlighted</li>
+<li>Final selection with justification</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Prime implicants in distinct colors</li>
+<li>Essential PIs with bold outlines</li>
+<li>Minterms with single coverage highlighted</li>
+<li>Coverage lines from minterms to PIs</li>
+<li>Selection checkboxes for non-essential PIs</li>
+</ul>
+<p>Implementation: p5.js with prime implicant finding algorithm</p>
+</details>
+<h2 id="implicant-cover-finding-the-complete-solution">Implicant Cover: Finding the Complete Solution</h2>
+<p>An <strong>implicant cover</strong> is a set of prime implicants that, together, cover all minterms of the function. The goal is to find the <em>minimum cover</em>—the smallest set of prime implicants that covers everything.</p>
+<h3 id="the-covering-algorithm">The Covering Algorithm</h3>
+<ol>
+<li><strong>Start with essential prime implicants</strong>: These must be in every valid cover</li>
+<li><strong>Remove covered minterms</strong>: Mark all minterms covered by essential PIs</li>
+<li><strong>Cover remaining minterms</strong>: Select additional prime implicants to cover any uncovered minterms</li>
+<li><strong>Minimize</strong>: If multiple choices exist, prefer larger PIs (fewer literals) and fewer PIs (fewer terms)</li>
+</ol>
+<h3 id="when-multiple-covers-exist">When Multiple Covers Exist</h3>
+<p>Sometimes there are multiple minimal covers with the same cost. For example, if you have two remaining minterms and two different PIs could each cover one, you might have choices:</p>
+<ul>
+<li>Cover minterm A with PI-1, minterm B with PI-2</li>
+<li>Or use a different combination</li>
+</ul>
+<p>Both might give the same number of literals. In such cases, any minimal cover is correct.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practical Hint</p>
+<p>When you have options, also consider:</p>
+<ul>
+<li>Gate fan-in limits (wider gates may not be available)</li>
+<li>Signal timing (some paths may be more critical)</li>
+<li>Physical layout (some groupings may route better)</li>
+</ul>
+<p>In practice, synthesis tools evaluate many factors beyond just literal count.</p>
+</div>
+<h2 id="minimal-sop-the-simplest-and-or-form">Minimal SOP: The Simplest AND-OR Form</h2>
+<p>The <strong>minimal SOP</strong> (Sum of Products) is the SOP expression with the fewest literals. This is what all our K-map work has been building toward.</p>
+<p>To find the minimal SOP:</p>
+<ol>
+<li>Draw the K-map for the function</li>
+<li>Mark all 1s (and don't cares if available)</li>
+<li>Find all prime implicants</li>
+<li>Identify essential prime implicants</li>
+<li>Select a minimum cover</li>
+<li>Write the SOP expression from the selected implicants</li>
+</ol>
+<p>Each selected prime implicant becomes one product term. The OR of all these terms is your minimal SOP.</p>
+<h3 id="reading-terms-from-the-k-map">Reading Terms from the K-Map</h3>
+<p>Remember from Chapter 4: for each group, identify which variables are constant:</p>
+<ul>
+<li>Variable always 1 in group → include as-is</li>
+<li>Variable always 0 in group → include complemented</li>
+<li>Variable varies within group → omit (it's been simplified out)</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Minimal SOP Example</p>
+<p>For <span class="arithmatex">\(F(A,B,C,D) = \sum m(0, 2, 5, 7, 8, 10, 13, 15)\)</span>:</p>
+<p>The K-map reveals groups:</p>
+<ul>
+<li>Cells 0, 2, 8, 10 form a 4-cell group: <span class="arithmatex">\(\overline{B}\overline{D}\)</span></li>
+<li>Cells 5, 7, 13, 15 form a 4-cell group: <span class="arithmatex">\(BD\)</span></li>
+</ul>
+<p>Both are essential (each covers cells not covered by the other).</p>
+<p>Minimal SOP: <span class="arithmatex">\(F = \overline{B}\overline{D} + BD\)</span></p>
+<p>This is beautifully symmetric—and much simpler than the 8-term canonical form!</p>
+</div>
+<h2 id="minimal-pos-the-simplest-or-and-form">Minimal POS: The Simplest OR-AND Form</h2>
+<p>The <strong>minimal POS</strong> (Product of Sums) is the dual approach—an AND of OR terms with the fewest literals.</p>
+<p>To find the minimal POS using K-maps:</p>
+<ol>
+<li>Draw the K-map</li>
+<li>Mark all the <strong>0s</strong> (instead of 1s)</li>
+<li>Group the 0s using the same rules</li>
+<li>Each group of 0s becomes a sum term (maxterm-style)</li>
+<li>AND the sum terms together</li>
+</ol>
+<p>Alternatively, you can find the minimal SOP for <span class="arithmatex">\(\overline{F}\)</span> (the complement), then apply De Morgan's theorem to convert to POS form for <span class="arithmatex">\(F\)</span>.</p>
+<h3 id="when-to-use-pos-vs-sop">When to Use POS vs. SOP</h3>
+<p>Use the form that's simpler for your function:</p>
+<ul>
+<li>If the function has more 1s than 0s → POS might be simpler (fewer 0s to group)</li>
+<li>If the function has more 0s than 1s → SOP might be simpler (fewer 1s to group)</li>
+<li>If they're equal → compute both and compare</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>SOP Groups</th>
+<th>POS Groups</th>
+<th>Choose...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F with 12 ones, 4 zeros</td>
+<td>Groups of 1s (12)</td>
+<td>Groups of 0s (4)</td>
+<td>POS likely simpler</td>
+</tr>
+<tr>
+<td>F with 4 ones, 12 zeros</td>
+<td>Groups of 1s (4)</td>
+<td>Groups of 0s (12)</td>
+<td>SOP likely simpler</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-sop-vs-pos-comparison">Diagram: SOP vs POS Comparison</h4>
+<iframe src="../../sims/sop-vs-pos/main.html" width="100%" height="500" scrolling="no"></iframe>
+
+<details>
+<summary>Minimal SOP vs Minimal POS Comparison</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Evaluate (L5)
+Bloom Verb: Compare</p>
+<p>Learning Objective: Students will be able to compare minimal SOP and minimal POS forms and evaluate which is more efficient for a given function.</p>
+<p>Instructional Rationale: Side-by-side visualization of both minimization approaches helps students understand when each form is preferable.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Center: Shared K-map showing the function</li>
+<li>Left panel: SOP minimization (grouping 1s)</li>
+<li>Right panel: POS minimization (grouping 0s)</li>
+<li>Bottom: Comparison metrics</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Toggle cells to define function</li>
+<li>Automatic grouping for both SOP and POS</li>
+<li>Highlight which form is more efficient</li>
+<li>Show gate-level implementation for both</li>
+<li>Switch between "Show 1s" and "Show 0s" views</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Both expressions displayed</li>
+<li>Literal count for each</li>
+<li>Gate count for each</li>
+<li>Winner indicator</li>
+<li>Implementation cost comparison</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>SOP groups in warm colors (orange, red)</li>
+<li>POS groups in cool colors (blue, green)</li>
+<li>More efficient form highlighted with gold border</li>
+<li>Gate diagrams sized proportionally to complexity</li>
+</ul>
+<p>Implementation: p5.js with dual minimization and comparison engine</p>
+</details>
+<h2 id="the-quine-mccluskey-method-when-maps-arent-enough">The Quine-McCluskey Method: When Maps Aren't Enough</h2>
+<p>K-maps work great for 4 variables. With 5 variables, you can use a stacked pair of 4-variable maps. With 6 variables, you need four stacked maps. Beyond that? It gets unwieldy.</p>
+<p>Enter the <strong>Quine-McCluskey method</strong> (also called the tabular method)—an algorithmic approach to logic minimization that works for any number of variables. It's systematic, deterministic, and can be programmed into a computer.</p>
+<p>The Quine-McCluskey method was developed in the 1950s by Willard Van Orman Quine and extended by Edward McCluskey. It's essentially doing what K-maps do, but using tables instead of visual patterns.</p>
+<h3 id="the-basic-algorithm">The Basic Algorithm</h3>
+<p><strong>Step 1: List all minterms in binary</strong></p>
+<p>Group minterms by the number of 1s in their binary representation.</p>
+<p><strong>Step 2: Compare and combine</strong></p>
+<p>Compare minterms that differ by exactly one bit. When two minterms combine:</p>
+<ul>
+<li>Replace the differing bit with a dash (–)</li>
+<li>Mark both original minterms as "used"</li>
+</ul>
+<p><strong>Step 3: Repeat</strong></p>
+<p>Continue combining terms with dashes. Two terms can combine if they have dashes in the same positions and differ in exactly one other bit.</p>
+<p><strong>Step 4: Identify prime implicants</strong></p>
+<p>Terms that cannot be combined further are prime implicants.</p>
+<p><strong>Step 5: Build the coverage table</strong></p>
+<p>Create a table showing which prime implicants cover which minterms.</p>
+<p><strong>Step 6: Select minimum cover</strong></p>
+<p>Find essential prime implicants, then select additional PIs to cover remaining minterms.</p>
+<h3 id="example-walkthrough">Example Walkthrough</h3>
+<p>For <span class="arithmatex">\(F = \sum m(0, 1, 2, 5, 6, 7)\)</span> with 3 variables:</p>
+<p><strong>Step 1</strong>: Group by number of 1s:</p>
+<table>
+<thead>
+<tr>
+<th>Group 0 (zero 1s)</th>
+<th>Group 1 (one 1)</th>
+<th>Group 2 (two 1s)</th>
+<th>Group 3 (three 1s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0: 000</td>
+<td>1: 001, 2: 010</td>
+<td>5: 101, 6: 110</td>
+<td>7: 111</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 2</strong>: Combine adjacent groups:</p>
+<ul>
+<li>0,1: 00– (differ in bit 0)</li>
+<li>0,2: 0–0 (differ in bit 1)</li>
+<li>1,5: –01 (differ in bit 2)</li>
+<li>2,6: –10 (differ in bit 2)</li>
+<li>5,7: 1–1 (differ in bit 1)</li>
+<li>6,7: 11– (differ in bit 0)</li>
+</ul>
+<p><strong>Step 3</strong>: Combine again:</p>
+<ul>
+<li>0,1,2,?: Cannot extend 00– or 0–0 further with remaining terms</li>
+<li>Looking for patterns...</li>
+</ul>
+<p><strong>Step 4</strong>: Prime implicants are the terms that can't combine further.</p>
+<p>This systematic process guarantees finding all prime implicants, which is why it's used in computer-aided design tools.</p>
+<h4 id="diagram-quine-mccluskey-visualizer">Diagram: Quine-McCluskey Visualizer</h4>
+<iframe src="../../sims/quine-mccluskey/main.html" width="100%" height="600" scrolling="no"></iframe>
+
+<details>
+<summary>Quine-McCluskey Method Step-by-Step</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Execute</p>
+<p>Learning Objective: Students will be able to execute the Quine-McCluskey algorithm step by step to find prime implicants and minimal cover.</p>
+<p>Instructional Rationale: Step-by-step visualization demystifies the tabular method and shows how it parallels K-map grouping conceptually.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Top: Minterm input (enter list or select from K-map)</li>
+<li>Center: Tabular display showing groups and combinations</li>
+<li>Left: Current step indicator</li>
+<li>Right: Prime implicant list (builds as algorithm progresses)</li>
+<li>Bottom: Coverage table and minimum cover selection</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Enter minterms as comma-separated list</li>
+<li>"Next Step" button advances algorithm</li>
+<li>"Auto Run" to see full execution</li>
+<li>Highlight active comparisons during combination step</li>
+<li>Click to see why two terms can/cannot combine</li>
+<li>Interactive coverage table for minimum cover selection</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>All minterms grouped by 1s count</li>
+<li>Combination history with checkmarks for used terms</li>
+<li>Dash notation clearly shown</li>
+<li>Prime implicants accumulated</li>
+<li>Coverage matrix</li>
+<li>Final minimal expression</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Table-based layout matching textbook presentation</li>
+<li>Color coding: combined terms in green, prime implicants in blue</li>
+<li>Arrows showing which terms combined</li>
+<li>Coverage table with X marks</li>
+<li>Essential PIs highlighted</li>
+</ul>
+<p>Implementation: p5.js with Quine-McCluskey algorithm engine</p>
+</details>
+<h2 id="hazards-when-logic-lies-briefly">Hazards: When Logic Lies (Briefly)</h2>
+<p>Everything we've discussed assumes ideal gates that switch instantly. In reality, gates have propagation delay. This can cause temporary incorrect outputs called <strong>hazards</strong>.</p>
+<p>A <strong>hazard</strong> is a momentary wrong output that occurs when inputs change, even though the steady-state output should remain unchanged.</p>
+<h3 id="why-hazards-occur">Why Hazards Occur</h3>
+<p>Consider the function <span class="arithmatex">\(F = A\overline{B} + AB\)</span>, which simplifies to <span class="arithmatex">\(F = A\)</span>. When B changes from 0 to 1 (with A=1):</p>
+<ul>
+<li>Before: <span class="arithmatex">\(A\overline{B} = 1 \cdot 1 = 1\)</span>, <span class="arithmatex">\(AB = 1 \cdot 0 = 0\)</span>, so <span class="arithmatex">\(F = 1\)</span></li>
+<li>After: <span class="arithmatex">\(A\overline{B} = 1 \cdot 0 = 0\)</span>, <span class="arithmatex">\(AB = 1 \cdot 1 = 1\)</span>, so <span class="arithmatex">\(F = 1\)</span></li>
+</ul>
+<p>The output should stay at 1. But here's the problem:</p>
+<p>Due to gate delays, the <span class="arithmatex">\(\overline{B}\)</span> signal might propagate faster than the B signal through the different paths. There could be a tiny moment when:</p>
+<ul>
+<li><span class="arithmatex">\(A\overline{B}\)</span> has already become 0 (the inverter is fast)</li>
+<li><span class="arithmatex">\(AB\)</span> hasn't yet become 1 (the AND gate is still switching)</li>
+<li>Result: F momentarily becomes 0!</li>
+</ul>
+<p>This "glitch" is a hazard.</p>
+<h2 id="static-hazards-the-1-0-1-and-0-1-0-glitches">Static Hazards: The 1-0-1 and 0-1-0 Glitches</h2>
+<p>A <strong>static hazard</strong> occurs when an output that should remain constant briefly flips to the opposite value.</p>
+<ul>
+<li><strong>Static-1 hazard</strong>: Output should stay 1, but momentarily goes to 0</li>
+<li><strong>Static-0 hazard</strong>: Output should stay 0, but momentarily goes to 1</li>
+</ul>
+<p>Static hazards occur in SOP circuits when two adjacent minterms are covered by different product terms (with no overlap). The gap between the groups in the K-map is where the hazard lurks.</p>
+<h3 id="detecting-static-hazards">Detecting Static Hazards</h3>
+<p>In a K-map, a static-1 hazard exists if:</p>
+<ol>
+<li>Two adjacent 1-cells are in different groups</li>
+<li>No group covers both cells</li>
+</ol>
+<p>The hazard occurs when the input changes from one cell to the adjacent cell.</p>
+<h3 id="example-of-static-1-hazard">Example of Static-1 Hazard</h3>
+<p>For <span class="arithmatex">\(F = \overline{A}C + AB\)</span>:</p>
+<p>On a K-map, cells <span class="arithmatex">\(m_3\)</span> (<span class="arithmatex">\(\overline{A}BC\)</span>) and <span class="arithmatex">\(m_7\)</span> (<span class="arithmatex">\(ABC\)</span>) are adjacent. If:</p>
+<ul>
+<li><span class="arithmatex">\(m_3\)</span> is covered by <span class="arithmatex">\(\overline{A}C\)</span></li>
+<li><span class="arithmatex">\(m_7\)</span> is covered by <span class="arithmatex">\(AB\)</span></li>
+</ul>
+<p>Then changing from <span class="arithmatex">\(\overline{A}BC\)</span> (cell 3) to <span class="arithmatex">\(ABC\)</span> (cell 7)—i.e., A going from 0 to 1—can cause a glitch.</p>
+<p>When A changes from 0 to 1 (with B=1, C=1):</p>
+<ul>
+<li><span class="arithmatex">\(\overline{A}C\)</span> goes from 1 to 0</li>
+<li><span class="arithmatex">\(AB\)</span> goes from 0 to 1</li>
+<li>If <span class="arithmatex">\(\overline{A}C\)</span> falls before <span class="arithmatex">\(AB\)</span> rises: F glitches to 0!</li>
+</ul>
+<h4 id="diagram-static-hazard-visualizer">Diagram: Static Hazard Visualizer</h4>
+<iframe src="../../sims/static-hazard/main.html" width="100%" height="500" scrolling="no"></iframe>
+
+<details>
+<summary>Static Hazard Detection and Visualization</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Examine</p>
+<p>Learning Objective: Students will be able to examine a K-map grouping to identify where static hazards can occur and understand the timing conditions that cause them.</p>
+<p>Instructional Rationale: Animated timing diagrams showing the glitch as it would appear on an oscilloscope connects the abstract K-map concept to real circuit behavior.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Top left: K-map with current grouping</li>
+<li>Top right: Gate-level circuit diagram</li>
+<li>Bottom: Timing diagram showing input transitions and output response</li>
+<li>Side: Hazard indicator and explanation</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Toggle cells to define function</li>
+<li>Draw groups (deliberately creating or avoiding hazards)</li>
+<li>"Find Hazards" button highlights hazard-prone transitions</li>
+<li>Click on hazard location to see timing animation</li>
+<li>Adjustable gate delay to show how timing affects glitch width</li>
+<li>Play/pause timing simulation</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>K-map with groups highlighted</li>
+<li>Adjacent cells in different groups marked as hazard points</li>
+<li>Timing diagram with glitch visible</li>
+<li>Gate delays labeled on circuit</li>
+<li>Explanation of which transition causes hazard</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Hazard points shown with warning icon</li>
+<li>Timing diagram with classic oscilloscope look</li>
+<li>Glitch shown as brief dip (for static-1) or spike (for static-0)</li>
+<li>Circuit paths color-coded to show timing differences</li>
+</ul>
+<p>Implementation: p5.js with timing simulation engine</p>
+</details>
+<h2 id="dynamic-hazards-multiple-glitches">Dynamic Hazards: Multiple Glitches</h2>
+<p>A <strong>dynamic hazard</strong> occurs when an output that should change once (0→1 or 1→0) instead oscillates multiple times before settling.</p>
+<p>For example, instead of a clean 0→1 transition, you might see: 0→1→0→1</p>
+<p>Dynamic hazards are more complex than static hazards and occur in multi-level circuits where signals can arrive at different times via multiple paths.</p>
+<h3 id="when-dynamic-hazards-occur">When Dynamic Hazards Occur</h3>
+<p>Dynamic hazards require:</p>
+<ol>
+<li>A multi-level circuit (more than two levels of logic)</li>
+<li>Multiple paths from an input to the output</li>
+<li>Paths with different delays</li>
+</ol>
+<p>They're less common than static hazards but can occur in complex circuits, especially those with XOR gates or complementary paths.</p>
+<div class="admonition warning">
+<p class="admonition-title">Dynamic Hazards Are Tricky</p>
+<p>Dynamic hazards can be hard to predict and debug. If you see oscillating outputs during transitions, suspect a dynamic hazard. The solution often involves redesigning the circuit to reduce path differences or adding synchronization.</p>
+</div>
+<h2 id="hazard-free-design-eliminating-the-glitches">Hazard-Free Design: Eliminating the Glitches</h2>
+<p>So how do we prevent hazards? The key insight is in the K-map.</p>
+<h3 id="eliminating-static-1-hazards">Eliminating Static-1 Hazards</h3>
+<p>To make a circuit free of static-1 hazards:</p>
+<ol>
+<li>Find all pairs of adjacent 1-cells that are in different groups</li>
+<li>Add redundant groups to cover these "gap" transitions</li>
+<li>Include these redundant terms in the final expression</li>
+</ol>
+<p>Yes, this means the expression won't be minimal—but it will be glitch-free.</p>
+<h3 id="the-redundant-term">The Redundant Term</h3>
+<p>In the earlier example with <span class="arithmatex">\(F = \overline{A}C + AB\)</span>, the hazard occurred between cells 3 and 7. To fix it:</p>
+<ol>
+<li>Add a group covering both cells 3 and 7: this is <span class="arithmatex">\(BC\)</span></li>
+<li>New expression: <span class="arithmatex">\(F = \overline{A}C + AB + BC\)</span></li>
+</ol>
+<p>The term <span class="arithmatex">\(BC\)</span> is logically redundant (it doesn't add any new minterms), but it bridges the timing gap:</p>
+<ul>
+<li>When A changes, <span class="arithmatex">\(BC\)</span> stays 1 throughout the transition</li>
+<li>No glitch occurs because <span class="arithmatex">\(BC\)</span> "holds" the output high</li>
+</ul>
+<p>This is called a <strong>consensus term</strong> or <strong>redundant cover</strong>.</p>
+<h3 id="eliminating-static-0-hazards">Eliminating Static-0 Hazards</h3>
+<p>For POS circuits, static-0 hazards can occur. The solution is similar:</p>
+<ol>
+<li>Find adjacent 0-cells in different groups</li>
+<li>Add redundant sum terms to cover the gaps</li>
+</ol>
+<h3 id="when-hazards-matter">When Hazards Matter</h3>
+<p>Not all circuits need hazard-free design:</p>
+<ul>
+<li><strong>Clocked synchronous circuits</strong>: The clock samples outputs after they've settled. Glitches between clock edges don't matter.</li>
+<li><strong>Asynchronous circuits</strong>: Glitches can cause serious problems—hazard-free design is essential.</li>
+<li><strong>Level-sensitive latches</strong>: Glitches during enable can cause wrong values to be stored.</li>
+</ul>
+<h4 id="diagram-hazard-free-design-tool">Diagram: Hazard-Free Design Tool</h4>
+<iframe src="../../sims/hazard-free/main.html" width="100%" height="550" scrolling="no"></iframe>
+
+<details>
+<summary>Hazard-Free Design Interactive Tool</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Create (L6)
+Bloom Verb: Design</p>
+<p>Learning Objective: Students will be able to design hazard-free circuits by identifying and adding redundant terms to eliminate static hazards.</p>
+<p>Instructional Rationale: Interactive before/after comparison with timing simulation shows how redundant terms eliminate glitches, even though they increase gate count.</p>
+<p>Canvas Layout:</p>
+<ul>
+<li>Left: K-map with grouping controls</li>
+<li>Top right: Minimal (potentially hazardous) circuit</li>
+<li>Bottom right: Hazard-free circuit with redundant terms</li>
+<li>Bottom: Timing comparison of both circuits</li>
+</ul>
+<p>Interactive Elements:</p>
+<ul>
+<li>Set up function by clicking cells</li>
+<li>Initial grouping shows minimal solution</li>
+<li>"Find Hazards" marks gap transitions</li>
+<li>"Add Redundant Terms" automatically adds consensus groups</li>
+<li>Compare timing diagrams for both versions</li>
+<li>Toggle between minimal and hazard-free views</li>
+</ul>
+<p>Data Visibility:</p>
+<ul>
+<li>Minimal expression and gate count</li>
+<li>Hazard-free expression and gate count</li>
+<li>Overhead cost (extra terms/gates)</li>
+<li>Hazardous transitions highlighted on K-map</li>
+<li>Timing diagrams showing glitch vs. clean transition</li>
+</ul>
+<p>Visual Style:</p>
+<ul>
+<li>Redundant groups shown in dotted outline</li>
+<li>Original groups in solid outline</li>
+<li>Timing diagram: hazardous version with visible glitch</li>
+<li>Hazard-free version with clean transition</li>
+<li>Cost comparison as bar chart</li>
+</ul>
+<p>Implementation: p5.js with hazard detection and redundant term generation</p>
+</details>
+<h2 id="putting-it-all-together-the-complete-optimization-workflow">Putting It All Together: The Complete Optimization Workflow</h2>
+<p>Let's consolidate everything into a comprehensive optimization workflow:</p>
+<ol>
+<li><strong>Specify the function</strong> (truth table, minterms, or Boolean expression)</li>
+<li><strong>Draw the K-map</strong> (4 variables = 4×4 grid)</li>
+<li><strong>Mark 1s, 0s, and don't cares</strong></li>
+<li><strong>Find all prime implicants</strong> (maximal groups)</li>
+<li><strong>Identify essential prime implicants</strong> (cover unique minterms)</li>
+<li><strong>Select minimum cover</strong> (essential PIs + minimum additional PIs)</li>
+<li><strong>Check for hazards</strong> (adjacent cells in different groups)</li>
+<li><strong>Add redundant terms if needed</strong> (for hazard-free design)</li>
+<li><strong>Write the final expression</strong> (SOP or POS)</li>
+<li><strong>Verify</strong> (check against truth table)</li>
+</ol>
+<p>For larger functions (5+ variables), use the Quine-McCluskey method or let CAD tools handle it.</p>
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<p>As you practice advanced optimization, watch out for these pitfalls:</p>
+<ol>
+<li>
+<p><strong>Forgetting wrap-around in 4-variable maps</strong>: All four edges connect. The corners are all mutually adjacent. Don't miss groups that span the edges!</p>
+</li>
+<li>
+<p><strong>Not using don't cares</strong>: If you have don't cares, USE them. They're free optimization.</p>
+</li>
+<li>
+<p><strong>Confusing prime implicants with essential prime implicants</strong>: All essentials are prime, but not all primes are essential. Essentials cover unique minterms.</p>
+</li>
+<li>
+<p><strong>Stopping at the first valid cover</strong>: There might be multiple minimum covers. Compare them before choosing.</p>
+</li>
+<li>
+<p><strong>Ignoring hazards in asynchronous designs</strong>: For clocked circuits, minimal is fine. For async circuits, add redundant terms.</p>
+</li>
+<li>
+<p><strong>Wrong Gray code order</strong>: Rows are 00, 01, 11, 10. Columns are 00, 01, 11, 10. Not 00, 01, 10, 11!</p>
+</li>
+<li>
+<p><strong>Making non-rectangular groups</strong>: Groups must be rectangles. No L-shapes, no diagonals, no creative geometry.</p>
+</li>
+</ol>
+<h2 id="summary-and-key-takeaways">Summary and Key Takeaways</h2>
+<p>Congratulations! You've mastered the advanced art of logic minimization. Here's what you've learned:</p>
+<p><strong>K-Map Mastery:</strong></p>
+<ul>
+<li><strong>4-variable K-maps</strong> have 16 cells in a 4×4 grid with Gray code ordering</li>
+<li><strong>Wrap-around</strong> applies in all directions—edges and corners connect</li>
+<li><strong>Grouping rules</strong>: powers of 2, rectangular, maximal size, minimum number</li>
+</ul>
+<p><strong>Formal Terminology:</strong></p>
+<ul>
+<li><strong>Prime implicant</strong>: A maximal group that can't be expanded</li>
+<li><strong>Essential prime implicant</strong>: A PI that covers a minterm no other PI covers</li>
+<li><strong>Implicant cover</strong>: Set of PIs that cover all minterms</li>
+</ul>
+<p><strong>Optimization Techniques:</strong></p>
+<ul>
+<li><strong>Don't care conditions</strong> are free optimization—use them strategically</li>
+<li><strong>Minimal SOP</strong>: Group 1s for the simplest AND-OR expression</li>
+<li><strong>Minimal POS</strong>: Group 0s for the simplest OR-AND expression</li>
+<li><strong>Quine-McCluskey</strong>: Algorithmic method for 5+ variable functions</li>
+</ul>
+<p><strong>Hazard-Free Design:</strong></p>
+<ul>
+<li><strong>Static hazards</strong>: Momentary glitches when output should stay constant</li>
+<li><strong>Dynamic hazards</strong>: Multiple transitions when only one should occur</li>
+<li><strong>Fix hazards</strong> by adding redundant terms to cover gap transitions</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Key Insight</p>
+<p>Logic minimization is about finding the sweet spot between simplicity and correctness. The minimal expression uses the fewest gates, but sometimes you need redundant logic for reliable operation. Understanding both goals—and when each applies—makes you a complete digital designer.</p>
+</div>
+<details>
+<summary>Graphic Novel Suggestion</summary>
+<p>A graphic novel could follow the parallel stories of Willard Van Orman Quine (a philosopher at Harvard) and Edward McCluskey (an engineer at Bell Labs) as they independently work toward systematic logic minimization in the 1950s. The visual narrative could contrast Quine's abstract philosophical approach with McCluskey's practical engineering focus, showing how their collaboration created an algorithm that still powers modern CAD tools. Dramatic tension could come from the race to publish and the challenge of convincing the engineering community that a philosopher's method had practical value.</p>
+</details>
+<h2 id="practice-problems">Practice Problems</h2>
+<p>Test your mastery with these challenges:</p>
+<details class="question">
+<summary>Problem 1: 4-Variable K-Map</summary>
+<p>Minimize <span class="arithmatex">\(F(A,B,C,D) = \sum m(0, 2, 4, 5, 6, 7, 8, 10, 13, 15)\)</span> using a 4-variable K-map.</p>
+<p><strong>Solution:</strong></p>
+<p>Drawing the K-map and grouping:</p>
+<ul>
+<li>Cells 0, 2, 4, 6 form a 4-cell group (column with C=0, D=0): <span class="arithmatex">\(\overline{D}\overline{B}\)</span> wait, let me recalculate...</li>
+<li>Cells 0, 2, 8, 10 (wrap-around corners, D=0): <span class="arithmatex">\(\overline{C}\overline{D}\)</span></li>
+<li>Cells 4, 5, 6, 7 (row AB=01): <span class="arithmatex">\(\overline{A}B\)</span></li>
+<li>Cells 5, 7, 13, 15 (column CD=01 and CD=11 with B=1): <span class="arithmatex">\(BD\)</span></li>
+</ul>
+<p>Minimal SOP: <span class="arithmatex">\(F = \overline{C}\overline{D} + \overline{A}B + BD\)</span></p>
+</details>
+<details class="question">
+<summary>Problem 2: Using Don't Cares</summary>
+<p>Given <span class="arithmatex">\(F = \sum m(1, 3, 5, 7) + d(0, 2, 6)\)</span>, find the minimal SOP.</p>
+<p><strong>Solution:</strong></p>
+<p>The 1s are at cells 1, 3, 5, 7 (these all have D=1 in a 3-variable map).</p>
+<p>With don't cares at 0, 2, 6:</p>
+<ul>
+<li>Include don't care 0 with cells 1, 3, 5, 7? No, cell 0 is not adjacent to all.</li>
+<li>Group 1, 3, 5, 7: These form a vertical stripe with D=1</li>
+</ul>
+<p>Actually, cells 1, 3, 5, 7 all have the last bit D=1. This is just <span class="arithmatex">\(D\)</span>!</p>
+<p>Minimal SOP: <span class="arithmatex">\(F = D\)</span></p>
+</details>
+<details class="question">
+<summary>Problem 3: Essential Prime Implicants</summary>
+<p>For <span class="arithmatex">\(F = \sum m(0, 4, 5, 7, 8, 9, 13, 15)\)</span>, identify all prime implicants and which are essential.</p>
+<p><strong>Solution:</strong></p>
+<p>Drawing the 4-variable K-map:</p>
+<p>Prime implicants:</p>
+<ul>
+<li><span class="arithmatex">\(m_0, m_4\)</span>: <span class="arithmatex">\(\overline{B}\overline{C}\overline{D}\)</span></li>
+<li><span class="arithmatex">\(m_4, m_5\)</span>: <span class="arithmatex">\(\overline{A}B\overline{C}\)</span></li>
+<li><span class="arithmatex">\(m_5, m_7, m_13, m_15\)</span>: <span class="arithmatex">\(BD\)</span></li>
+<li><span class="arithmatex">\(m_8, m_9\)</span>: <span class="arithmatex">\(A\overline{B}\overline{C}\)</span></li>
+</ul>
+<p>Essential analysis:</p>
+<ul>
+<li><span class="arithmatex">\(m_0\)</span> only covered by <span class="arithmatex">\(\overline{B}\overline{C}\overline{D}\)</span> → Essential</li>
+<li><span class="arithmatex">\(m_7\)</span> only covered by <span class="arithmatex">\(BD\)</span> → Essential</li>
+<li>etc.</li>
+</ul>
+</details>
+<details class="question">
+<summary>Problem 4: Hazard Detection</summary>
+<p>For <span class="arithmatex">\(F = \overline{A}B + AC\)</span>, identify any static-1 hazards and add terms to eliminate them.</p>
+<p><strong>Solution:</strong></p>
+<p>The two groups (<span class="arithmatex">\(\overline{A}B\)</span> and <span class="arithmatex">\(AC\)</span>) cover adjacent cells but have a gap where A changes while B=C=1.</p>
+<p>When A goes from 0 to 1 with B=1, C=1:</p>
+<ul>
+<li><span class="arithmatex">\(\overline{A}B\)</span> goes from 1 to 0</li>
+<li><span class="arithmatex">\(AC\)</span> goes from 0 to 1</li>
+<li>Hazard possible!</li>
+</ul>
+<p>To fix: Add the consensus term <span class="arithmatex">\(BC\)</span>.</p>
+<p>Hazard-free expression: <span class="arithmatex">\(F = \overline{A}B + AC + BC\)</span></p>
+</details>
+<details class="question">
+<summary>Problem 5: Quine-McCluskey</summary>
+<p>Use the Quine-McCluskey method to find prime implicants for <span class="arithmatex">\(F = \sum m(0, 1, 2, 8, 10, 11)\)</span> with 4 variables.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Group by 1s count:</strong></p>
+<ul>
+<li>Group 0: 0 (0000)</li>
+<li>Group 1: 1 (0001), 2 (0010), 8 (1000)</li>
+<li>Group 2: 10 (1010)</li>
+<li>Group 3: 11 (1011)</li>
+</ul>
+<p><strong>Combine adjacent groups:</strong></p>
+<ul>
+<li>0,1: 000– (differ in D)</li>
+<li>0,2: 00–0 (differ in C)</li>
+<li>0,8: –000 (differ in A)</li>
+<li>8,10: 10–0 (differ in C)</li>
+<li>10,11: 101– (differ in D)</li>
+</ul>
+<p><strong>Combine again:</strong></p>
+<ul>
+<li>0,2,8,10: –0–0 (combining 00–0 and 10–0)</li>
+</ul>
+<p><strong>Prime implicants:</strong></p>
+<ul>
+<li>–0–0: <span class="arithmatex">\(\overline{B}\overline{D}\)</span></li>
+<li>000–: <span class="arithmatex">\(\overline{A}\overline{B}\overline{C}\)</span></li>
+<li>101–: <span class="arithmatex">\(A\overline{B}C\)</span></li>
+</ul>
+<p>Coverage analysis would determine which are essential.</p>
+</details>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1155,7 +3154,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../04-combinational-logic-design/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4. Combinational Design">
+          <a href="../04-combinational-logic-design/quiz/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quiz">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1165,20 +3164,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                4. Combinational Design
+                Quiz
               </div>
             </div>
           </a>
         
         
           
-          <a href="../06-combinational-building-blocks/" class="md-footer__link md-footer__link--next" aria-label="Next: 6. Building Blocks">
+          <a href="quiz/" class="md-footer__link md-footer__link--next" aria-label="Next: Quiz">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                6. Building Blocks
+                Quiz
               </div>
             </div>
             <div class="md-footer__button md-icon">
