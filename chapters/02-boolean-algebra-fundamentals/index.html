@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Website content for a college course in digital electronics with MicroSims. All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+        <meta name="description" content="Transform logical reasoning into the mathematical framework underlying all digital circuits">
       
       
         <meta name="author" content="Dan McCreary">
@@ -22,15 +22,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>2. Boolean Algebra - Digital Electronics</title>
+        <title>Boolean Algebra Fundamentals - Digital Electronics</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -51,6 +51,10 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -112,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. Boolean Algebra
+              Boolean Algebra Fundamentals
             
           </span>
         </div>
@@ -124,13 +128,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -162,14 +164,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/digital-electronics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -215,7 +216,7 @@
       <a href="https://github.com/dmccreary/digital-electronics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -235,10 +236,8 @@
       <a href="../.." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -257,10 +256,8 @@
       <a href="../../about/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -285,36 +282,65 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -327,14 +353,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -366,10 +391,8 @@
       <a href="../01-number-systems-binary-arithmetic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     1. Number Systems
-    
   </span>
   
 
@@ -398,10 +421,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     2. Boolean Algebra
-    
   </span>
   
 
@@ -411,10 +432,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     2. Boolean Algebra
-    
   </span>
   
 
@@ -462,6 +481,408 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-welcome-to-the-world-of-true-and-false" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Welcome to the World of True and False
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-variables-and-constants-the-building-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Variables and Constants: The Building Blocks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boolean Variables and Constants: The Building Blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Constants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-fundamental-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Fundamental Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Fundamental Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#not-operation-inversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOT Operation (Inversion)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-operation-conjunction" class="md-nav__link">
+    <span class="md-ellipsis">
+      AND Operation (Conjunction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-operation-disjunction" class="md-nav__link">
+    <span class="md-ellipsis">
+      OR Operation (Disjunction)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OR Operation (Disjunction)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-fundamental-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three Fundamental Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-expressions-building-more-complex-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Expressions: Building More Complex Logic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boolean Expressions: Building More Complex Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order-of-operations-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Operations (Precedence)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-functions-expressions-with-a-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Functions: Expressions with a Name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#truth-tables-the-complete-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truth Tables: The Complete Picture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Truth Tables: The Complete Picture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#truth-tables-as-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truth Tables as Specifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Truth Tables as Specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-truth-table-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Truth Table Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-boolean-algebra-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Boolean Algebra Laws
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identity Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null-law-annulment-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Null Law (Annulment Law)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idempotent-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idempotent Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complement-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complement Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commutative-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commutative Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associative-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associative Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distributive-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distributive Law
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distributive Law">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-boolean-algebra-laws-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Boolean Algebra Laws Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#absorption-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Absorption Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#de-morgans-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      De Morgan's Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="De Morgan's Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-de-morgans-theorem-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: De Morgan's Theorem Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dual-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dual Expression
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-proof-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Proof Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boolean Proof Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-truth-table-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: Truth Table Verification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-algebraic-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2: Algebraic Manipulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-3-reducing-to-canonical-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 3: Reducing to Canonical Forms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 3: Reducing to Canonical Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-boolean-simplification-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Boolean Simplification Stepper
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-and-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary and Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -481,10 +902,8 @@
       <a href="../03-logic-gates-digital-signals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Logic Gates
-    
   </span>
   
 
@@ -504,10 +923,8 @@
       <a href="../04-combinational-logic-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Combinational Design
-    
   </span>
   
 
@@ -527,10 +944,8 @@
       <a href="../05-logic-minimization-kmaps/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. K-Maps
-    
   </span>
   
 
@@ -550,10 +965,8 @@
       <a href="../06-combinational-building-blocks/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Building Blocks
-    
   </span>
   
 
@@ -573,10 +986,8 @@
       <a href="../07-intro-sequential-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Sequential Logic
-    
   </span>
   
 
@@ -596,10 +1007,8 @@
       <a href="../08-flip-flops-timing/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Flip-Flops
-    
   </span>
   
 
@@ -619,10 +1028,8 @@
       <a href="../09-fsm-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. FSM Fundamentals
-    
   </span>
   
 
@@ -642,10 +1049,8 @@
       <a href="../10-fsm-design-applications/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. FSM Applications
-    
   </span>
   
 
@@ -665,10 +1070,8 @@
       <a href="../11-registers-counters-datapath/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Registers & Counters
-    
   </span>
   
 
@@ -688,10 +1091,8 @@
       <a href="../12-verilog-hdl-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Verilog Basics
-    
   </span>
   
 
@@ -711,10 +1112,8 @@
       <a href="../13-verilog-modeling/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Verilog Modeling
-    
   </span>
   
 
@@ -734,10 +1133,8 @@
       <a href="../14-testbenches-simulation/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Testbenches
-    
   </span>
   
 
@@ -757,10 +1154,8 @@
       <a href="../15-fpga-lab-skills/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. FPGA & Lab
-    
   </span>
   
 
@@ -797,7 +1192,6 @@
     
     
     
-    
       
         
         
@@ -806,16 +1200,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../lessons/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Lessons
-    
   </span>
   
 
@@ -844,14 +1235,27 @@
         
       
         
+          
+        
       
+        
+          
+        
+      
+        
+          
         
       
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
     
     
     
@@ -863,16 +1267,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Sims
-    
   </span>
   
 
@@ -913,7 +1314,6 @@
     
     
     
-    
       
         
         
@@ -924,14 +1324,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -956,10 +1353,8 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -978,10 +1373,8 @@
       <a href="../../license/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1000,10 +1393,8 @@
       <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     How we built this site
-    
   </span>
   
 
@@ -1022,10 +1413,8 @@
       <a href="../../contact/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1087,6 +1476,408 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-welcome-to-the-world-of-true-and-false" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Welcome to the World of True and False
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-variables-and-constants-the-building-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Variables and Constants: The Building Blocks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boolean Variables and Constants: The Building Blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Constants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Variables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-fundamental-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Fundamental Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Fundamental Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#not-operation-inversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOT Operation (Inversion)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-operation-conjunction" class="md-nav__link">
+    <span class="md-ellipsis">
+      AND Operation (Conjunction)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-operation-disjunction" class="md-nav__link">
+    <span class="md-ellipsis">
+      OR Operation (Disjunction)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OR Operation (Disjunction)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-fundamental-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three Fundamental Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-expressions-building-more-complex-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Expressions: Building More Complex Logic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boolean Expressions: Building More Complex Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order-of-operations-precedence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Order of Operations (Precedence)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-functions-expressions-with-a-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Functions: Expressions with a Name
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#truth-tables-the-complete-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truth Tables: The Complete Picture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Truth Tables: The Complete Picture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#truth-tables-as-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truth Tables as Specifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Truth Tables as Specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-truth-table-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Truth Table Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-boolean-algebra-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Boolean Algebra Laws
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identity-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identity Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null-law-annulment-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Null Law (Annulment Law)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idempotent-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Idempotent Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complement-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complement Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commutative-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commutative Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#associative-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Associative Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distributive-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distributive Law
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distributive Law">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-boolean-algebra-laws-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Boolean Algebra Laws Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#absorption-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Absorption Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#de-morgans-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      De Morgan's Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="De Morgan's Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-de-morgans-theorem-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: De Morgan's Theorem Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dual-expression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dual Expression
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-proof-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Proof Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Boolean Proof Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method-1-truth-table-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: Truth Table Verification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-2-algebraic-manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2: Algebraic Manipulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-3-reducing-to-canonical-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 3: Reducing to Canonical Forms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Method 3: Reducing to Canonical Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-boolean-simplification-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Boolean Simplification Stepper
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-and-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary and Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1100,7 +1891,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
   
@@ -1140,13 +1930,923 @@
 <li><a href="../01-number-systems-binary-arithmetic/">Chapter 1: Number Systems and Binary Arithmetic</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-welcome-to-the-world-of-true-and-false">Introduction: Welcome to the World of True and False</h2>
+<p>Have you ever had an argument that was so simple it could only end with a "yes" or "no"? Welcome to Boolean algebra, where <em>every</em> argument ends that way. Named after mathematician George Boole (who presumably never had to answer "maybe" to dinner plans), Boolean algebra is a mathematical system where there are only two possible values: <strong>true</strong> and <strong>false</strong>, or as we electrical engineers prefer to call them, <strong>1</strong> and <strong>0</strong>.</p>
+<p>Here's the thing that makes Boolean algebra so powerful: those same rules that govern simple true/false logic are <em>exactly</em> the rules that govern how billions of transistors in your computer make decisions every nanosecond. When you type a key, scroll a page, or run a program, you're ultimately relying on circuits that evaluate Boolean expressions. Digital circuits are, quite literally, Boolean functions made physical.</p>
+<p>Think of Boolean algebra as the "grammar" of digital logic. Just as you need to understand English grammar before writing a novel, you need to understand Boolean algebra before designing digital circuits. The good news? This grammar has far fewer exceptions than English. (No "i before e except after c" nonsense here!)</p>
+<p>By the end of this chapter, you'll be able to manipulate logical expressions with the same confidence that you manipulate algebraic equations—and you'll understand why a law discovered in 1847 by a self-taught mathematician became the foundation for the digital revolution.</p>
+<h2 id="boolean-variables-and-constants-the-building-blocks">Boolean Variables and Constants: The Building Blocks</h2>
+<h3 id="boolean-constants">Boolean Constants</h3>
+<p>Let's start with the simplest possible idea: in the Boolean world, there are exactly two constants:</p>
+<ul>
+<li><strong>0</strong> (false, low, off)</li>
+<li><strong>1</strong> (true, high, on)</li>
+</ul>
+<p>That's it. No decimals, no fractions, no irrational numbers lurking about. Zero and one. Off and on. False and true. If regular algebra is an all-you-can-eat buffet of numbers, Boolean algebra is a very exclusive restaurant with exactly two items on the menu.</p>
+<p>These constants correspond directly to physical voltage levels in digital circuits. Typically, 0 represents a low voltage (near ground) and 1 represents a high voltage (near the power supply). But we'll worry about those physical details later—for now, just remember: two values, and two values only.</p>
+<h3 id="boolean-variables">Boolean Variables</h3>
+<p>A <strong>Boolean variable</strong> is a symbol that can hold one of the two Boolean constants. We typically use uppercase letters like A, B, C, X, Y, or Z to represent Boolean variables. Sometimes you'll see lowercase letters or descriptive names like <code>enable</code>, <code>reset</code>, or <code>clock</code>—especially in hardware description languages.</p>
+<p>Here's the key insight: a Boolean variable is like a light switch. At any given moment, it's either ON (1) or OFF (0). It can't be "kind of on" or "mostly off." This binary nature is what makes digital systems so reliable—there's no ambiguity about what state a signal is in.</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Possible Values</th>
+<th>Physical Analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>0 or 1</td>
+<td>Light switch</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0 or 1</td>
+<td>Door (open/closed)</td>
+</tr>
+<tr>
+<td>X</td>
+<td>0 or 1</td>
+<td>Valve (open/closed)</td>
+</tr>
+<tr>
+<td>enable</td>
+<td>0 or 1</td>
+<td>Permission granted</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Why Binary?</p>
+<p>Binary isn't just simpler—it's more robust. When you only need to distinguish between two states (high vs. low voltage), you can tolerate a lot of electrical noise. Trying to distinguish between 10 different voltage levels? That's much harder to get right reliably.</p>
+</div>
+<h2 id="the-three-fundamental-operations">The Three Fundamental Operations</h2>
+<p>With only two values to work with, you might think Boolean algebra would be boring. But here's where it gets interesting: we can combine Boolean values using <strong>operations</strong> (also called operators or gates). There are three fundamental operations that form the basis of all Boolean logic.</p>
+<h3 id="not-operation-inversion">NOT Operation (Inversion)</h3>
+<p>The <strong>NOT operation</strong> is the simplest: it flips the value. Give it a 0, it returns 1. Give it a 1, it returns 0. In mathematical notation, we write the NOT of A as:</p>
+<ul>
+<li><span class="arithmatex">\(\overline{A}\)</span> (A with a bar over it)</li>
+<li><span class="arithmatex">\(A'\)</span> (A prime)</li>
+<li><span class="arithmatex">\(\neg A\)</span> (logical negation symbol)</li>
+</ul>
+<p>Think of NOT as a contrarian friend who always disagrees with you. You say "yes," they say "no." You say "no," they say "yes."</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th><span class="arithmatex">\(\overline{A}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>In circuit terms, NOT is implemented by an <strong>inverter</strong>—a simple gate that inverts its input.</p>
+<h3 id="and-operation-conjunction">AND Operation (Conjunction)</h3>
+<p>The <strong>AND operation</strong> takes two inputs and produces an output of 1 <em>only</em> if both inputs are 1. If either input (or both) is 0, the output is 0. We write A AND B as:</p>
+<ul>
+<li><span class="arithmatex">\(A \cdot B\)</span> (A dot B)</li>
+<li><span class="arithmatex">\(AB\)</span> (just written together, like multiplication)</li>
+<li><span class="arithmatex">\(A \land B\)</span> (logical AND symbol)</li>
+</ul>
+<p>Here's a great way to think about AND: imagine two switches in <strong>series</strong> controlling a light. The light only turns on if <em>both</em> Switch A AND Switch B are closed. Open either one, and the light goes off.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th><span class="arithmatex">\(A \cdot B\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Memory trick</strong>: AND is like multiplication in regular algebra. In fact, if you treat 0 and 1 as regular numbers, <span class="arithmatex">\(A \cdot B\)</span> works exactly like multiplication: <span class="arithmatex">\(0 \times 0 = 0\)</span>, <span class="arithmatex">\(0 \times 1 = 0\)</span>, <span class="arithmatex">\(1 \times 0 = 0\)</span>, <span class="arithmatex">\(1 \times 1 = 1\)</span>. This isn't a coincidence!</p>
+<h3 id="or-operation-disjunction">OR Operation (Disjunction)</h3>
+<p>The <strong>OR operation</strong> produces an output of 1 if <em>at least one</em> input is 1. Only when both inputs are 0 does the output become 0. We write A OR B as:</p>
+<ul>
+<li><span class="arithmatex">\(A + B\)</span> (A plus B)</li>
+<li><span class="arithmatex">\(A \lor B\)</span> (logical OR symbol)</li>
+</ul>
+<p>Think of OR as two switches in <strong>parallel</strong> controlling a light. The light turns on if Switch A OR Switch B (or both!) are closed. The light only goes off if both switches are open.</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th><span class="arithmatex">\(A + B\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Wait, 1 + 1 = 1?</strong> Yes! This is Boolean addition, not regular arithmetic. In Boolean algebra, <span class="arithmatex">\(1 + 1 = 1\)</span>, not 2. Remember, there are only two values allowed. If the output is "true," it stays true—it doesn't become "extra true."</p>
+<h4 id="diagram-three-fundamental-operations">Diagram: Three Fundamental Operations</h4>
+<iframe src="../../sims/fundamental-operations/main.html" width="100%" height="450" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Three Fundamental Operations Interactive</summary>
+Type: microsim
+
+Bloom Level: Understand (L2)
+Bloom Verb: Demonstrate
+
+Learning Objective: Demonstrate how the three fundamental Boolean operations (AND, OR, NOT) transform input values into output values through interactive exploration.
+
+Instructional Rationale: Interactive toggle switches allow students to immediately see the cause-and-effect relationship between inputs and outputs, reinforcing the truth table patterns through hands-on experimentation.
+
+Canvas Layout:
+
+- Three panels side by side showing NOT, AND, and OR operations
+- Each panel has clickable input toggles (squares that show 0 or 1)
+- NOT panel: one input, one output
+- AND/OR panels: two inputs, one output
+- Operation symbol and name displayed in each panel
+- Output displays prominently with color coding (0=gray, 1=green)
+
+Interactive Elements:
+
+- Click on input squares to toggle between 0 and 1
+- Outputs update immediately when inputs change
+- Visual connection lines from inputs through operation symbol to output
+
+Visual Style:
+
+- Clean, modern design with rounded rectangles for inputs/outputs
+- Color scheme: inputs in blue tones, outputs green when 1, gray when 0
+- Operation symbols clearly labeled (NOT: inverter triangle, AND: D-shape, OR: curved shape)
+
+Data Visibility:
+
+- Current input values always visible
+- Current output value always visible
+- Expression shown below each operation (e.g., "A AND B = 1")
+
+Implementation: p5.js with canvas-based toggle buttons
+</details>
+
+<h2 id="boolean-expressions-building-more-complex-logic">Boolean Expressions: Building More Complex Logic</h2>
+<p>Now that we have our three fundamental operations, we can combine them to create <strong>Boolean expressions</strong>—formulas that describe more complex logical relationships.</p>
+<p>A <strong>Boolean expression</strong> is any valid combination of:</p>
+<ul>
+<li>Boolean constants (0, 1)</li>
+<li>Boolean variables (A, B, C, ...)</li>
+<li>Boolean operators (AND, OR, NOT)</li>
+<li>Parentheses (for grouping)</li>
+</ul>
+<p>Here are some examples of Boolean expressions:</p>
+<ul>
+<li><span class="arithmatex">\(\overline{A}\)</span> — "NOT A"</li>
+<li><span class="arithmatex">\(A \cdot B\)</span> — "A AND B"</li>
+<li><span class="arithmatex">\(A + B\)</span> — "A OR B"</li>
+<li><span class="arithmatex">\(\overline{A} + B\)</span> — "NOT A OR B"</li>
+<li><span class="arithmatex">\(A \cdot (B + C)\)</span> — "A AND (B OR C)"</li>
+<li><span class="arithmatex">\(\overline{A \cdot B}\)</span> — "NOT (A AND B)"</li>
+</ul>
+<h3 id="order-of-operations-precedence">Order of Operations (Precedence)</h3>
+<p>Just like in regular algebra where multiplication happens before addition, Boolean algebra has its own precedence rules:</p>
+<ol>
+<li><strong>Parentheses</strong> — highest priority, evaluated first</li>
+<li><strong>NOT</strong> — evaluated next</li>
+<li><strong>AND</strong> — evaluated before OR</li>
+<li><strong>OR</strong> — evaluated last</li>
+</ol>
+<p>So the expression <span class="arithmatex">\(A + B \cdot C\)</span> means <span class="arithmatex">\(A + (B \cdot C)\)</span>, not <span class="arithmatex">\((A + B) \cdot C\)</span>. The AND happens first, just like multiplication happens before addition in regular algebra.</p>
+<div class="admonition example">
+<p class="admonition-title">Precedence Example</p>
+<p>Evaluate <span class="arithmatex">\(\overline{A} + B \cdot C\)</span> when <span class="arithmatex">\(A=1\)</span>, <span class="arithmatex">\(B=1\)</span>, <span class="arithmatex">\(C=0\)</span>:</p>
+<ol>
+<li>First, NOT: <span class="arithmatex">\(\overline{A} = \overline{1} = 0\)</span></li>
+<li>Next, AND: <span class="arithmatex">\(B \cdot C = 1 \cdot 0 = 0\)</span></li>
+<li>Finally, OR: <span class="arithmatex">\(0 + 0 = 0\)</span></li>
+</ol>
+<p>Result: 0</p>
+</div>
+<h2 id="boolean-functions-expressions-with-a-name">Boolean Functions: Expressions with a Name</h2>
+<p>A <strong>Boolean function</strong> is simply a Boolean expression that has been given a name and explicitly shows its input variables. We write it as:</p>
+<div class="arithmatex">\[F(A, B, C) = A \cdot B + \overline{C}\]</div>
+<p>This function, named <span class="arithmatex">\(F\)</span>, takes three inputs (<span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(B\)</span>, <span class="arithmatex">\(C\)</span>) and produces one output based on the expression <span class="arithmatex">\(A \cdot B + \overline{C}\)</span>.</p>
+<p>The distinction between expressions and functions is subtle but useful:</p>
+<ul>
+<li>An <strong>expression</strong> is the formula itself: <span class="arithmatex">\(A \cdot B + \overline{C}\)</span></li>
+<li>A <strong>function</strong> wraps that expression with a name and declares its inputs: <span class="arithmatex">\(F(A, B, C) = A \cdot B + \overline{C}\)</span></li>
+</ul>
+<p>Think of it this way: the expression is the recipe, and the function is the recipe with a title and ingredient list at the top.</p>
+<p>Every Boolean function with <span class="arithmatex">\(n\)</span> input variables can be thought of as a mapping from <span class="arithmatex">\(2^n\)</span> possible input combinations to output values. A function of 3 variables has <span class="arithmatex">\(2^3 = 8\)</span> possible input combinations. A function of 4 variables has <span class="arithmatex">\(2^4 = 16\)</span> combinations. This exponential growth is why simplifying Boolean functions becomes increasingly important as the number of variables grows.</p>
+<h2 id="truth-tables-the-complete-picture">Truth Tables: The Complete Picture</h2>
+<p>A <strong>truth table</strong> is a systematic way to show all possible input combinations for a Boolean function and its corresponding output for each combination. It's like a lookup table for your function—give me any inputs, and I'll tell you the output.</p>
+<p>For a function with <span class="arithmatex">\(n\)</span> variables, the truth table has <span class="arithmatex">\(2^n\)</span> rows. Let's build a truth table for <span class="arithmatex">\(F(A, B) = A \cdot B + \overline{B}\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th>Row</th>
+<th>A</th>
+<th>B</th>
+<th><span class="arithmatex">\(\overline{B}\)</span></th>
+<th><span class="arithmatex">\(A \cdot B\)</span></th>
+<th><span class="arithmatex">\(A \cdot B + \overline{B}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that we included intermediate columns to show our work. This makes it easier to verify the calculation and catch errors. The rightmost column gives us our final answer: the function outputs 1 for inputs (0,0), (1,0), and (1,1), and outputs 0 only for input (0,1).</p>
+<h3 id="truth-tables-as-specifications">Truth Tables as Specifications</h3>
+<p>Here's a powerful idea: truth tables can serve as <strong>specifications</strong> for digital circuits. If someone gives you a truth table, you have a complete, unambiguous definition of what the circuit should do. There's no interpretation needed—every possible input has a defined output.</p>
+<p>This is why truth tables are so important in digital design:</p>
+<ul>
+<li><strong>Designers</strong> use them to specify what a circuit should do</li>
+<li><strong>Verifiers</strong> use them to check if a circuit works correctly</li>
+<li><strong>Optimizers</strong> use them to find simpler implementations</li>
+</ul>
+<h4 id="diagram-truth-table-builder">Diagram: Truth Table Builder</h4>
+<iframe src="../../sims/truth-table-builder/main.html" width="100%" height="500" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Truth Table Builder MicroSim</summary>
+Type: microsim
+
+Bloom Level: Apply (L3)
+Bloom Verb: Execute
+
+Learning Objective: Enable students to build truth tables for Boolean expressions by entering expressions and seeing the complete truth table generated automatically.
+
+Instructional Rationale: Active construction of truth tables reinforces understanding of how Boolean expressions map inputs to outputs. The immediate feedback helps students verify their mental model.
+
+Canvas Layout:
+
+- Top section: Expression input area with example expressions shown
+- Variable selector: Choose 2, 3, or 4 variables
+- Main area: Generated truth table with all rows
+- Highlight feature: Click any row to highlight input-output path
+
+Interactive Elements:
+
+- Text input field for Boolean expression using notation: AND (*), OR (+), NOT (!)
+- Dropdown to select number of variables (2-4)
+- "Generate" button to create truth table
+- Clickable rows to highlight and explain the evaluation
+- Example expressions as clickable chips to auto-populate
+
+Visual Style:
+
+- Table with alternating row colors for readability
+- Output column color-coded: green for 1, gray for 0
+- Expression parsing feedback (valid/invalid indicator)
+- Current row highlighted when clicked
+
+Error Handling:
+
+- Display helpful message for invalid expressions
+- Suggest corrections for common syntax errors
+
+Implementation: p5.js with string parsing for expression evaluation
+</details>
+
+<h2 id="introduction-to-boolean-algebra-laws">Introduction to Boolean Algebra Laws</h2>
+<p>Now we arrive at the heart of this chapter: the <strong>laws of Boolean algebra</strong>. These laws are your toolkit for manipulating and simplifying Boolean expressions. Learn them well, and you'll be able to transform complex, gate-hungry expressions into elegant, minimal circuits.</p>
+<p>Why do we care about simplification? Because simpler expressions mean:</p>
+<ul>
+<li><strong>Fewer gates</strong> — less hardware, lower cost</li>
+<li><strong>Lower power consumption</strong> — fewer transistors switching</li>
+<li><strong>Faster circuits</strong> — fewer gate delays in the path</li>
+<li><strong>Easier debugging</strong> — simpler designs are easier to understand</li>
+</ul>
+<p>The laws we're about to explore are theorems that have been proven to always hold true for Boolean algebra. Unlike regular algebra where <span class="arithmatex">\(x \cdot x = x^2\)</span>, in Boolean algebra <span class="arithmatex">\(A \cdot A = A\)</span>. Different system, different rules!</p>
+<h2 id="identity-law">Identity Law</h2>
+<p>The <strong>Identity Law</strong> tells us what happens when you combine a variable with the "identity elements" 0 and 1:</p>
+<p>[A + 0 = A]
+[A \cdot 1 = A]</p>
+<p>In words:</p>
+<ul>
+<li>OR-ing anything with 0 leaves it unchanged</li>
+<li>AND-ing anything with 1 leaves it unchanged</li>
+</ul>
+<p>This makes intuitive sense: adding false to something doesn't change its truth value, and multiplying by true doesn't change anything either.</p>
+<p><strong>Analogy</strong>: Think of 0 as "adding zero" in regular math (<span class="arithmatex">\(x + 0 = x\)</span>) and 1 as "multiplying by one" (<span class="arithmatex">\(x \times 1 = x\)</span>).</p>
+<h2 id="null-law-annulment-law">Null Law (Annulment Law)</h2>
+<p>The <strong>Null Law</strong> (also called the Annulment Law) describes the "dominating" elements:</p>
+<p>[A + 1 = 1]
+[A \cdot 0 = 0]</p>
+<p>In words:</p>
+<ul>
+<li>OR-ing anything with 1 always gives 1</li>
+<li>AND-ing anything with 0 always gives 0</li>
+</ul>
+<p>These are the "override" cases. If one input is already at the dominating value, the other input doesn't matter.</p>
+<p><strong>Analogy</strong>: It's like multiplying by zero in regular math—no matter what else is there, the result is zero. Similarly, if you already know something is definitely true (1), OR-ing it with anything else keeps it true.</p>
+<h2 id="idempotent-law">Idempotent Law</h2>
+<p>The <strong>Idempotent Law</strong> tells us what happens when we combine a variable with itself:</p>
+<p>[A + A = A]
+[A \cdot A = A]</p>
+<p>"Idempotent" comes from Latin meaning "same power"—applying the operation multiple times has the same effect as applying it once.</p>
+<p>This is one of those laws that makes Boolean algebra different from regular algebra. In regular algebra, <span class="arithmatex">\(x + x = 2x\)</span> and <span class="arithmatex">\(x \cdot x = x^2\)</span>. But in Boolean algebra, there are no 2's or squares—only 0 and 1. Combining something with itself doesn't make it "more true" or "more false."</p>
+<h2 id="complement-law">Complement Law</h2>
+<p>The <strong>Complement Law</strong> describes what happens when you combine a variable with its own complement (NOT):</p>
+<p>[A + \overline{A} = 1]
+[A \cdot \overline{A} = 0]</p>
+<p>In words:</p>
+<ul>
+<li>A variable OR its complement is always 1</li>
+<li>A variable AND its complement is always 0</li>
+</ul>
+<p>This should feel right: something is either true or not true (always true as a disjunction), but it can't be both true and not true at the same time (always false as a conjunction).</p>
+<p><strong>Analogy</strong>: It's like asking "Is the light on OR off?" The answer is always yes. But "Is the light on AND off simultaneously?" The answer is always no.</p>
+<p>Also, applying NOT twice returns you to the original value:</p>
+<div class="arithmatex">\[\overline{\overline{A}} = A\]</div>
+<p>Double negation cancels out, just like in regular logic: "I'm not not going to the party" means you're going.</p>
+<h2 id="commutative-law">Commutative Law</h2>
+<p>The <strong>Commutative Law</strong> says that the order of operands doesn't matter for AND and OR:</p>
+<p>[A + B = B + A]
+[A \cdot B = B \cdot A]</p>
+<p>You can swap the inputs around freely. Just like in regular algebra where <span class="arithmatex">\(3 + 5 = 5 + 3\)</span>.</p>
+<h2 id="associative-law">Associative Law</h2>
+<p>The <strong>Associative Law</strong> says that grouping doesn't matter when you have multiple AND or multiple OR operations:</p>
+<p>[A + (B + C) = (A + B) + C]
+[A \cdot (B \cdot C) = (A \cdot B) \cdot C]</p>
+<p>This means you can remove parentheses when you have a chain of the same operation: <span class="arithmatex">\(A + B + C\)</span> is unambiguous, as is <span class="arithmatex">\(A \cdot B \cdot C\)</span>.</p>
+<h2 id="distributive-law">Distributive Law</h2>
+<p>The <strong>Distributive Law</strong> is where things get interesting. Like regular algebra, AND distributes over OR:</p>
+<div class="arithmatex">\[A \cdot (B + C) = A \cdot B + A \cdot C\]</div>
+<p>But here's a twist—in Boolean algebra, OR <em>also</em> distributes over AND!</p>
+<div class="arithmatex">\[A + (B \cdot C) = (A + B) \cdot (A + C)\]</div>
+<p>This second form has no counterpart in regular algebra. In ordinary algebra, <span class="arithmatex">\(a + (b \times c) \neq (a + b) \times (a + c)\)</span>. But in Boolean algebra, it works! This is one of the surprising and powerful features of Boolean algebra.</p>
+<h4 id="diagram-boolean-algebra-laws-explorer">Diagram: Boolean Algebra Laws Explorer</h4>
+<iframe src="../../sims/boolean-laws-explorer/main.html" width="100%" height="550" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Boolean Algebra Laws Interactive Explorer</summary>
+Type: microsim
+
+Bloom Level: Understand (L2)
+Bloom Verb: Explain
+
+Learning Objective: Students will be able to explain how each Boolean algebra law transforms expressions by stepping through concrete examples with specific values.
+
+Instructional Rationale: Seeing the same law applied with different variable values helps students generalize the pattern. Step-through interaction ensures they can't skip ahead without seeing the transformation.
+
+Canvas Layout:
+
+- Law selector at top (dropdown or tabs): Identity, Null, Idempotent, Complement, Commutative, Associative, Distributive
+- Left side: Original expression with variable value toggles
+- Center: Transformation arrow with law name
+- Right side: Equivalent simplified expression
+- Bottom: Evaluation showing both sides equal the same result
+
+Interactive Elements:
+
+- Dropdown/tabs to select which law to explore
+- Toggle buttons for variable values (A=0/1, B=0/1, C=0/1)
+- "Step" button to show transformation step by step
+- Visual highlighting of which part of expression is being transformed
+
+Data Visibility:
+
+- Original expression: A + 0 = A (with current value of A shown)
+- After applying law: Result shown
+- Verification: Both sides evaluated to show equality
+
+Visual Style:
+
+- Clean mathematical notation
+- Transformation arrows between equivalent forms
+- Color coding: variables in blue, constants in gray, result in green
+- Law name and formula shown prominently
+
+Implementation: p5.js with canvas-based controls
+</details>
+
+<h2 id="absorption-law">Absorption Law</h2>
+<p>The <strong>Absorption Law</strong> lets you simplify expressions where a term "absorbs" a more complex term:</p>
+<p>[A + A \cdot B = A]
+[A \cdot (A + B) = A]</p>
+<p>At first glance, this might seem strange. Let's think through the first one: <span class="arithmatex">\(A + A \cdot B = A\)</span>.</p>
+<ul>
+<li>If <span class="arithmatex">\(A = 0\)</span>: <span class="arithmatex">\(0 + 0 \cdot B = 0 + 0 = 0 = A\)</span> ✓</li>
+<li>If <span class="arithmatex">\(A = 1\)</span>: <span class="arithmatex">\(1 + 1 \cdot B = 1 + B = 1 = A\)</span> ✓ (by the null law)</li>
+</ul>
+<p>The term <span class="arithmatex">\(A\)</span> "absorbs" the <span class="arithmatex">\(A \cdot B\)</span> term because if <span class="arithmatex">\(A\)</span> is already true, who cares about <span class="arithmatex">\(A \cdot B\)</span>? And if <span class="arithmatex">\(A\)</span> is false, then <span class="arithmatex">\(A \cdot B\)</span> is also false.</p>
+<p><strong>Analogy</strong>: Imagine you're at a buffet. You take item A. Then someone offers you "A along with B." If you already have A, taking "A with B" doesn't add anything useful—you still just have A (you already took it!).</p>
+<h2 id="de-morgans-theorem">De Morgan's Theorem</h2>
+<p><strong>De Morgan's Theorem</strong> is arguably the most important theorem in Boolean algebra for practical circuit design. It provides a way to convert between AND and OR operations:</p>
+<p>[\overline{A \cdot B} = \overline{A} + \overline{B}]
+[\overline{A + B} = \overline{A} \cdot \overline{B}]</p>
+<p>In words:</p>
+<ul>
+<li>The complement of an AND is the OR of the complements</li>
+<li>The complement of an OR is the AND of the complements</li>
+</ul>
+<p>These theorems are incredibly useful because they let you:</p>
+<ol>
+<li><strong>Convert between gate types</strong> — Transform an AND expression into an OR expression (with inversions)</li>
+<li><strong>Push inversions inward</strong> — Move NOT operations closer to the variables</li>
+<li><strong>Implement logic with different gate types</strong> — Crucial when you only have certain gates available</li>
+</ol>
+<p><strong>Memory trick</strong>: "Break the bar, change the sign." When you "break" the NOT bar over an expression, you change AND to OR (or OR to AND) and apply NOT to each individual term.</p>
+<p>Let's verify the first form with a truth table:</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th><span class="arithmatex">\(A \cdot B\)</span></th>
+<th><span class="arithmatex">\(\overline{A \cdot B}\)</span></th>
+<th><span class="arithmatex">\(\overline{A}\)</span></th>
+<th><span class="arithmatex">\(\overline{B}\)</span></th>
+<th><span class="arithmatex">\(\overline{A} + \overline{B}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The columns <span class="arithmatex">\(\overline{A \cdot B}\)</span> and <span class="arithmatex">\(\overline{A} + \overline{B}\)</span> are identical—the theorem holds!</p>
+<h4 id="diagram-de-morgans-theorem-visualizer">Diagram: De Morgan's Theorem Visualizer</h4>
+<iframe src="../../sims/de-morgans-visualizer/main.html" width="100%" height="500" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>De Morgan's Theorem Interactive Visualizer</summary>
+Type: microsim
+
+Bloom Level: Understand (L2)
+Bloom Verb: Interpret
+
+Learning Objective: Students will be able to interpret De Morgan's theorem by seeing how expressions with the bar broken and unbroken produce identical outputs for all input combinations.
+
+Instructional Rationale: Visualizing both forms of an expression side-by-side with the same inputs creates a strong mental link between the equivalent forms. The "break the bar" animation reinforces the transformation rule.
+
+Canvas Layout:
+
+- Two-column display showing both forms of De Morgan's theorem
+- Left column: Original form (e.g., \(\overline{A \cdot B}\))
+- Right column: Transformed form (e.g., \(\overline{A} + \overline{B}\))
+- Shared input toggles at top for A and B values
+- Gate diagram below each expression showing equivalent circuits
+- Animation showing "break the bar" transformation
+
+Interactive Elements:
+
+- Toggle buttons for A and B inputs
+- "Break the Bar" button triggers animation showing transformation
+- Tab selector for: \(\overline{A \cdot B}\) form vs \(\overline{A + B}\) form
+- Both sides update simultaneously when inputs change
+
+Visual Style:
+
+- Expression notation with proper overlines
+- Circuit symbols shown below expressions
+- Color-coded: inputs blue, intermediate values yellow, outputs green
+- Animation shows bar "breaking" and operation symbol changing
+
+Data Visibility:
+
+- Input values prominently displayed
+- Intermediate computation steps shown
+- Final outputs shown with equality check (both should always match)
+
+Implementation: p5.js with animation for bar-breaking effect
+</details>
+
+<h2 id="dual-expression">Dual Expression</h2>
+<p>Every Boolean expression has a <strong>dual expression</strong> obtained by:</p>
+<ol>
+<li>Swapping all AND operators with OR operators</li>
+<li>Swapping all OR operators with AND operators</li>
+<li>Swapping all 0s with 1s</li>
+<li>Swapping all 1s with 0s</li>
+<li><strong>Keeping the variables unchanged</strong></li>
+</ol>
+<p>For example:</p>
+<ul>
+<li>The dual of <span class="arithmatex">\(A + B \cdot C\)</span> is <span class="arithmatex">\(A \cdot (B + C)\)</span></li>
+<li>The dual of <span class="arithmatex">\(A + 0\)</span> is <span class="arithmatex">\(A \cdot 1\)</span></li>
+<li>The dual of <span class="arithmatex">\(A \cdot \overline{B}\)</span> is <span class="arithmatex">\(A + \overline{B}\)</span></li>
+</ul>
+<p><strong>The Principle of Duality</strong>: If a Boolean equation is valid, its dual is also valid. This is why Boolean algebra laws often come in pairs—each law has a dual.</p>
+<p>Look back at our laws:</p>
+<table>
+<thead>
+<tr>
+<th>Law</th>
+<th>One Form</th>
+<th>Dual Form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td><span class="arithmatex">\(A + 0 = A\)</span></td>
+<td><span class="arithmatex">\(A \cdot 1 = A\)</span></td>
+</tr>
+<tr>
+<td>Null</td>
+<td><span class="arithmatex">\(A + 1 = 1\)</span></td>
+<td><span class="arithmatex">\(A \cdot 0 = 0\)</span></td>
+</tr>
+<tr>
+<td>Idempotent</td>
+<td><span class="arithmatex">\(A + A = A\)</span></td>
+<td><span class="arithmatex">\(A \cdot A = A\)</span></td>
+</tr>
+<tr>
+<td>Complement</td>
+<td><span class="arithmatex">\(A + \overline{A} = 1\)</span></td>
+<td><span class="arithmatex">\(A \cdot \overline{A} = 0\)</span></td>
+</tr>
+<tr>
+<td>Absorption</td>
+<td><span class="arithmatex">\(A + A \cdot B = A\)</span></td>
+<td><span class="arithmatex">\(A \cdot (A + B) = A\)</span></td>
+</tr>
+<tr>
+<td>De Morgan</td>
+<td><span class="arithmatex">\(\overline{A + B} = \overline{A} \cdot \overline{B}\)</span></td>
+<td><span class="arithmatex">\(\overline{A \cdot B} = \overline{A} + \overline{B}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Notice how each pair is just the dual of the other! This duality principle means you only need to memorize half the laws—you can derive the other half by taking the dual.</p>
+<h2 id="consensus-theorem">Consensus Theorem</h2>
+<p>The <strong>Consensus Theorem</strong> is a more advanced law that helps eliminate redundant terms:</p>
+<div class="arithmatex">\[A \cdot B + \overline{A} \cdot C + B \cdot C = A \cdot B + \overline{A} \cdot C\]</div>
+<p>The term <span class="arithmatex">\(B \cdot C\)</span> is the "consensus term"—it's redundant because it's implied by the other two terms. Here's the intuition:</p>
+<ul>
+<li>If <span class="arithmatex">\(A = 1\)</span>, then <span class="arithmatex">\(A \cdot B = B\)</span> covers the case where <span class="arithmatex">\(B = 1\)</span></li>
+<li>If <span class="arithmatex">\(A = 0\)</span>, then <span class="arithmatex">\(\overline{A} \cdot C = C\)</span> covers the case where <span class="arithmatex">\(C = 1\)</span></li>
+<li>The term <span class="arithmatex">\(B \cdot C\)</span> only matters when both <span class="arithmatex">\(B = 1\)</span> and <span class="arithmatex">\(C = 1\)</span>, but in that case, either <span class="arithmatex">\(A = 1\)</span> (first term covers it) or <span class="arithmatex">\(A = 0\)</span> (second term covers it)</li>
+</ul>
+<p>The dual form is:</p>
+<div class="arithmatex">\[(A + B) \cdot (\overline{A} + C) \cdot (B + C) = (A + B) \cdot (\overline{A} + C)\]</div>
+<p>The Consensus Theorem is particularly useful in Karnaugh map simplification (covered in a later chapter) and in finding minimal expressions.</p>
+<h2 id="boolean-proof-techniques">Boolean Proof Techniques</h2>
+<p>Now that we have a toolkit of laws, how do we prove that two Boolean expressions are equivalent or simplify a complex expression? There are several approaches.</p>
+<h3 id="method-1-truth-table-verification">Method 1: Truth Table Verification</h3>
+<p>Create truth tables for both expressions. If the output columns are identical for all input combinations, the expressions are equivalent.</p>
+<p><strong>Pros</strong>: Guaranteed to work, very systematic
+<strong>Cons</strong>: Gets tedious for many variables (<span class="arithmatex">\(2^n\)</span> rows), doesn't show <em>why</em> they're equivalent</p>
+<h3 id="method-2-algebraic-manipulation">Method 2: Algebraic Manipulation</h3>
+<p>Start with one expression and apply Boolean laws step-by-step until you reach the other expression (or a simpler form).</p>
+<p><strong>Example</strong>: Prove that <span class="arithmatex">\(\overline{A} \cdot B + A \cdot B = B\)</span></p>
+<p>[\overline{A} \cdot B + A \cdot B]
+[= B \cdot (\overline{A} + A) \text{ ... Distributive Law (factoring)}]
+[= B \cdot 1 \text{ ... Complement Law}]
+[= B \text{ ... Identity Law}]</p>
+<p>This method requires practice and familiarity with the laws, but it's faster than truth tables for complex expressions.</p>
+<h3 id="method-3-reducing-to-canonical-forms">Method 3: Reducing to Canonical Forms</h3>
+<p>Convert both expressions to the same canonical form (like Sum-of-Products or Product-of-Sums—covered in the next chapter). If the canonical forms match, the expressions are equivalent.</p>
+<p>Let's work through a more complex example.</p>
+<p><strong>Example</strong>: Simplify <span class="arithmatex">\(F = A \cdot B + A \cdot \overline{B} + \overline{A} \cdot B\)</span></p>
+<p>[F = A \cdot B + A \cdot \overline{B} + \overline{A} \cdot B]
+[= A \cdot (B + \overline{B}) + \overline{A} \cdot B \text{ ... Distributive (factor A)}]
+[= A \cdot 1 + \overline{A} \cdot B \text{ ... Complement Law}]
+[= A + \overline{A} \cdot B \text{ ... Identity Law}]
+[= (A + \overline{A}) \cdot (A + B) \text{ ... Distributive Law (OR over AND)}]
+[= 1 \cdot (A + B) \text{ ... Complement Law}]
+[= A + B \text{ ... Identity Law}]</p>
+<p>We simplified a three-term expression down to just <span class="arithmatex">\(A + B\)</span>!</p>
+<h4 id="diagram-boolean-simplification-stepper">Diagram: Boolean Simplification Stepper</h4>
+<iframe src="../../sims/boolean-simplification-stepper/main.html" width="100%" height="550" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Boolean Simplification Stepper MicroSim</summary>
+Type: microsim
+
+Bloom Level: Apply (L3)
+Bloom Verb: Apply
+
+Learning Objective: Students will be able to apply Boolean algebra laws to simplify expressions step-by-step, with immediate feedback on which laws are applicable at each stage.
+
+Instructional Rationale: Guided step-through with law identification helps students internalize the simplification process. Seeing which laws apply at each step builds pattern recognition skills.
+
+Canvas Layout:
+
+- Expression display area at top showing current state
+- List of applicable laws (clickable buttons)
+- History panel showing steps taken
+- Final simplified result with gate count comparison
+- Reset and example expression buttons
+
+Interactive Elements:
+
+- Current expression displayed prominently
+- Buttons for each Boolean law that can be applied
+- Clicking a law shows preview of transformation
+- "Apply" button to confirm and advance
+- "Undo" button to step back
+- "Hint" button suggests next good step
+
+Data Visibility:
+
+- Starting expression
+- Current expression after each step
+- Law applied at each step
+- Running count of gates/terms
+
+Example Problems:
+
+- \(\overline{A} \cdot B + A \cdot B\) (simplifies to \(B\))
+- \(A + A \cdot B\) (simplifies to \(A\))
+- \(A \cdot B + A \cdot \overline{B} + \overline{A} \cdot B\) (simplifies to \(A + B\))
+
+Visual Style:
+
+- Laws color-coded by type (identity=blue, complement=green, De Morgan=orange)
+- Transformation preview in lighter color before applying
+- History shows crossed-out terms and applied law names
+
+Implementation: p5.js with expression parsing and law matching
+</details>
+
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's walk through a complete example that uses multiple concepts from this chapter.</p>
+<p><strong>Problem</strong>: A digital lock should open when:</p>
+<ul>
+<li>The correct 2-bit code is entered (both bits A and B must be 1), OR</li>
+<li>The master override switch M is activated</li>
+</ul>
+<p>Express this as a Boolean function, create its truth table, and simplify if possible.</p>
+<p><strong>Step 1: Define the function</strong></p>
+<div class="arithmatex">\[F(A, B, M) = (A \cdot B) + M\]</div>
+<p><strong>Step 2: Create the truth table</strong></p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>M</th>
+<th><span class="arithmatex">\(A \cdot B\)</span></th>
+<th><span class="arithmatex">\((A \cdot B) + M\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 3: Analysis</strong></p>
+<p>The function is already in a simple form. The lock opens in 4 out of 8 cases:</p>
+<ul>
+<li>Rows 1, 3, 5: M=1 (master override)</li>
+<li>Row 6: A=1, B=1 (correct code)</li>
+<li>Row 7: Both conditions satisfied</li>
+</ul>
+<p>The expression <span class="arithmatex">\(F = A \cdot B + M\)</span> is already minimal for this specification.</p>
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<p>As you practice Boolean algebra, watch out for these common pitfalls:</p>
+<ol>
+<li>
+<p><strong>Forgetting that <span class="arithmatex">\(1 + 1 = 1\)</span></strong>: This isn't regular arithmetic!</p>
+</li>
+<li>
+<p><strong>Mixing up De Morgan's</strong>: Remember, you change the operation AND swap complements. Don't do just one or the other.</p>
+</li>
+<li>
+<p><strong>Forgetting precedence</strong>: <span class="arithmatex">\(A + B \cdot C\)</span> is <span class="arithmatex">\(A + (B \cdot C)\)</span>, not <span class="arithmatex">\((A + B) \cdot C\)</span>.</p>
+</li>
+<li>
+<p><strong>Applying regular algebra rules</strong>: <span class="arithmatex">\(A + A \neq 2A\)</span> and <span class="arithmatex">\(A \cdot A \neq A^2\)</span>.</p>
+</li>
+<li>
+<p><strong>Skipping verification</strong>: After simplifying, check your work with a truth table. It catches errors!</p>
+</li>
+</ol>
+<h2 id="summary-and-key-takeaways">Summary and Key Takeaways</h2>
+<p>Congratulations! You've completed your first deep dive into Boolean algebra. Here's what you've learned:</p>
+<ul>
+<li><strong>Boolean variables</strong> can only be 0 or 1, true or false</li>
+<li><strong>Three fundamental operations</strong>: NOT (inverts), AND (both true), OR (at least one true)</li>
+<li><strong>Boolean expressions</strong> combine variables and operators</li>
+<li><strong>Truth tables</strong> completely specify a Boolean function's behavior</li>
+<li><strong>Boolean laws</strong> let you simplify expressions:</li>
+<li>Identity, Null, Idempotent, Complement</li>
+<li>Commutative, Associative, Distributive</li>
+<li>Absorption</li>
+<li>De Morgan's Theorem</li>
+<li>Consensus Theorem</li>
+<li><strong>Duality</strong> means laws come in pairs—swap AND/OR and 0/1</li>
+<li><strong>Proof techniques</strong> include truth tables and algebraic manipulation</li>
+</ul>
+<p>These concepts form the mathematical foundation for everything else in digital electronics. In the next chapter, we'll see how these Boolean expressions map directly to logic gates—the physical building blocks of digital circuits.</p>
+<div class="admonition success">
+<p class="admonition-title">Key Insight</p>
+<p>Boolean algebra bridges the gap between logical thinking and electronic circuits. Every Boolean expression can be implemented in hardware, and every digital circuit implements a Boolean function. Master these fundamentals, and you've mastered the language of digital design.</p>
+</div>
+<h2 id="practice-problems">Practice Problems</h2>
+<p>Test your understanding with these exercises:</p>
+<details class="question">
+<summary>Problem 1: Simplify using Boolean laws</summary>
+<p>Simplify <span class="arithmatex">\(F = A \cdot \overline{A} + B\)</span></p>
+<p><strong>Solution</strong>:
+<span class="arithmatex">\(F = A \cdot \overline{A} + B\)</span>
+<span class="arithmatex">\(= 0 + B\)</span> (Complement Law)
+<span class="arithmatex">\(= B\)</span> (Identity Law)</p>
+</details>
+<details class="question">
+<summary>Problem 2: Apply De Morgan's Theorem</summary>
+<p>Express <span class="arithmatex">\(\overline{A + B + C}\)</span> using only AND operations and individual complements.</p>
+<p><strong>Solution</strong>:
+<span class="arithmatex">\(\overline{A + B + C} = \overline{A} \cdot \overline{B} \cdot \overline{C}\)</span>
+(De Morgan's extended to three variables)</p>
+</details>
+<details class="question">
+<summary>Problem 3: Verify with truth table</summary>
+<p>Prove that <span class="arithmatex">\(A + \overline{A} \cdot B = A + B\)</span></p>
+<p><strong>Solution</strong>:
+| A | B | <span class="arithmatex">\(\overline{A}\)</span> | <span class="arithmatex">\(\overline{A} \cdot B\)</span> | <span class="arithmatex">\(A + \overline{A} \cdot B\)</span> | <span class="arithmatex">\(A + B\)</span> |
+|---|---|----------------|------------------------|---------------------------|---------|
+| 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 1 | 1 |</p>
+<p>The last two columns match ✓</p>
+</details>
+<details class="question">
+<summary>Problem 4: Find the dual</summary>
+<p>What is the dual of <span class="arithmatex">\(A \cdot (B + C) = A \cdot B + A \cdot C\)</span>?</p>
+<p><strong>Solution</strong>:
+Swap AND↔OR and 0↔1 (no constants here):
+<span class="arithmatex">\(A + (B \cdot C) = (A + B) \cdot (A + C)\)</span>
+(This is the OR-over-AND distributive law!)</p>
+</details>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1233,12 +2933,18 @@
     </div>
     
     
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

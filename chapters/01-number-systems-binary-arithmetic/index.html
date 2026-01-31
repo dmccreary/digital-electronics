@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -51,6 +51,10 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -124,13 +128,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -162,14 +164,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/digital-electronics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -215,7 +216,7 @@
       <a href="https://github.com/dmccreary/digital-electronics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -235,10 +236,8 @@
       <a href="../.." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -257,10 +256,8 @@
       <a href="../../about/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -285,36 +282,65 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -327,14 +353,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -375,10 +400,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     1. Number Systems
-    
   </span>
   
 
@@ -388,10 +411,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     1. Number Systems
-    
   </span>
   
 
@@ -560,7 +581,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Hexadecimal: Binary&#39;s Best Friend">
+    <nav class="md-nav" aria-label="Hexadecimal: Binary's Best Friend">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -656,7 +677,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Binary Subtraction and Two&#39;s Complement">
+    <nav class="md-nav" aria-label="Binary Subtraction and Two's Complement">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -675,7 +696,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="The Magic of Two&#39;s Complement">
+    <nav class="md-nav" aria-label="The Magic of Two's Complement">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -986,10 +1007,8 @@
       <a href="../02-boolean-algebra-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     2. Boolean Algebra
-    
   </span>
   
 
@@ -1009,10 +1028,8 @@
       <a href="../03-logic-gates-digital-signals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     3. Logic Gates
-    
   </span>
   
 
@@ -1032,10 +1049,8 @@
       <a href="../04-combinational-logic-design/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     4. Combinational Design
-    
   </span>
   
 
@@ -1055,10 +1070,8 @@
       <a href="../05-logic-minimization-kmaps/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     5. K-Maps
-    
   </span>
   
 
@@ -1078,10 +1091,8 @@
       <a href="../06-combinational-building-blocks/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     6. Building Blocks
-    
   </span>
   
 
@@ -1101,10 +1112,8 @@
       <a href="../07-intro-sequential-logic/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     7. Sequential Logic
-    
   </span>
   
 
@@ -1124,10 +1133,8 @@
       <a href="../08-flip-flops-timing/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     8. Flip-Flops
-    
   </span>
   
 
@@ -1147,10 +1154,8 @@
       <a href="../09-fsm-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     9. FSM Fundamentals
-    
   </span>
   
 
@@ -1170,10 +1175,8 @@
       <a href="../10-fsm-design-applications/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     10. FSM Applications
-    
   </span>
   
 
@@ -1193,10 +1196,8 @@
       <a href="../11-registers-counters-datapath/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     11. Registers & Counters
-    
   </span>
   
 
@@ -1216,10 +1217,8 @@
       <a href="../12-verilog-hdl-fundamentals/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     12. Verilog Basics
-    
   </span>
   
 
@@ -1239,10 +1238,8 @@
       <a href="../13-verilog-modeling/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     13. Verilog Modeling
-    
   </span>
   
 
@@ -1262,10 +1259,8 @@
       <a href="../14-testbenches-simulation/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     14. Testbenches
-    
   </span>
   
 
@@ -1285,10 +1280,8 @@
       <a href="../15-fpga-lab-skills/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     15. FPGA & Lab
-    
   </span>
   
 
@@ -1325,7 +1318,6 @@
     
     
     
-    
       
         
         
@@ -1334,16 +1326,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../lessons/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Lessons
-    
   </span>
   
 
@@ -1372,14 +1361,27 @@
         
       
         
+          
+        
       
+        
+          
+        
+      
+        
+          
         
       
         
       
         
+          
+        
       
-    
+        
+          
+        
+      
     
     
     
@@ -1391,16 +1393,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Sims
-    
   </span>
   
 
@@ -1441,7 +1440,6 @@
     
     
     
-    
       
         
         
@@ -1452,14 +1450,11 @@
         
   
   
-  
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1484,10 +1479,8 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1506,10 +1499,8 @@
       <a href="../../license/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1528,10 +1519,8 @@
       <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     How we built this site
-    
   </span>
   
 
@@ -1550,10 +1539,8 @@
       <a href="../../contact/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1736,7 +1723,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Hexadecimal: Binary&#39;s Best Friend">
+    <nav class="md-nav" aria-label="Hexadecimal: Binary's Best Friend">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1832,7 +1819,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Binary Subtraction and Two&#39;s Complement">
+    <nav class="md-nav" aria-label="Binary Subtraction and Two's Complement">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1851,7 +1838,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="The Magic of Two&#39;s Complement">
+    <nav class="md-nav" aria-label="The Magic of Two's Complement">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2157,7 +2144,6 @@
                 
                   
 
-
   
   
 
@@ -2185,7 +2171,6 @@
 </ol>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>. Students should have a basic understanding of arithmetic and number representation from prior mathematics courses.</p>
-<hr />
 <h2 id="introduction-why-computers-dont-count-like-we-do">Introduction: Why Computers Don't Count Like We Do</h2>
 <p>Here's a fun fact to start your journey into digital electronics: computers are terrible at counting to ten. It's not that they're lazy or didn't pay attention in kindergarten—it's that they physically <em>can't</em>. Deep inside every processor, every memory chip, and every digital circuit, there are billions of tiny switches that can only be in one of two states: on or off. That's it. No "sort of on" or "mostly off." Just on and off.</p>
 <p>This fundamental limitation (which, as you'll discover, is actually a superpower) means that computers think in <strong>binary</strong>—a number system with only two digits. If you've ever wondered why computer scientists seem obsessed with powers of 2, or why your hard drive has weird capacities like 256 GB instead of a nice round 250 GB, this chapter will give you the answers.</p>
@@ -2194,11 +2179,11 @@
 <h3 id="understanding-positional-notation">Understanding Positional Notation</h3>
 <p>Before diving into binary, let's remind ourselves how our familiar decimal system works. When you write the number 347, each digit's position tells you what it's worth:</p>
 <ul>
-<li>The 3 is in the "hundreds" place: $3 \times 100 = 300$</li>
-<li>The 4 is in the "tens" place: $4 \times 10 = 40$</li>
-<li>The 7 is in the "ones" place: $7 \times 1 = 7$</li>
+<li>The 3 is in the "hundreds" place: <span class="arithmatex">\(3 \times 100 = 300\)</span></li>
+<li>The 4 is in the "tens" place: <span class="arithmatex">\(4 \times 10 = 40\)</span></li>
+<li>The 7 is in the "ones" place: <span class="arithmatex">\(7 \times 1 = 7\)</span></li>
 </ul>
-<p>Add them up: $300 + 40 + 7 = 347$. Simple enough, right?</p>
+<p>Add them up: <span class="arithmatex">\(300 + 40 + 7 = 347\)</span>. Simple enough, right?</p>
 <p>Notice that each position is a power of 10:</p>
 <table>
 <thead>
@@ -2213,10 +2198,10 @@
 <tbody>
 <tr>
 <td>Power</td>
-<td>$10^3$</td>
-<td>$10^2$</td>
-<td>$10^1$</td>
-<td>$10^0$</td>
+<td><span class="arithmatex">\(10^3\)</span></td>
+<td><span class="arithmatex">\(10^2\)</span></td>
+<td><span class="arithmatex">\(10^1\)</span></td>
+<td><span class="arithmatex">\(10^0\)</span></td>
 </tr>
 <tr>
 <td>Value</td>
@@ -2252,14 +2237,14 @@
 <tbody>
 <tr>
 <td>Power</td>
-<td>$2^7$</td>
-<td>$2^6$</td>
-<td>$2^5$</td>
-<td>$2^4$</td>
-<td>$2^3$</td>
-<td>$2^2$</td>
-<td>$2^1$</td>
-<td>$2^0$</td>
+<td><span class="arithmatex">\(2^7\)</span></td>
+<td><span class="arithmatex">\(2^6\)</span></td>
+<td><span class="arithmatex">\(2^5\)</span></td>
+<td><span class="arithmatex">\(2^4\)</span></td>
+<td><span class="arithmatex">\(2^3\)</span></td>
+<td><span class="arithmatex">\(2^2\)</span></td>
+<td><span class="arithmatex">\(2^1\)</span></td>
+<td><span class="arithmatex">\(2^0\)</span></td>
 </tr>
 <tr>
 <td>Value</td>
@@ -2279,7 +2264,7 @@
 <p>Knowing the first 8-10 powers of 2 by heart will make your life in digital electronics <em>much</em> easier:
 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024...</p>
 </div>
-<p>Let's decode the binary number $10110101_2$ (the subscript 2 tells us it's binary):</p>
+<p>Let's decode the binary number <span class="arithmatex">\(10110101_2\)</span> (the subscript 2 tells us it's binary):</p>
 <table>
 <thead>
 <tr>
@@ -2319,7 +2304,7 @@
 </tr>
 </tbody>
 </table>
-<p>Sum: $128 + 32 + 16 + 4 + 1 = 181_{10}$</p>
+<p>Sum: <span class="arithmatex">\(128 + 32 + 16 + 4 + 1 = 181_{10}\)</span></p>
 <p>That's <strong>binary to decimal conversion</strong> in a nutshell—just add up the position values wherever there's a 1.</p>
 <h4 id="diagram-binary-place-value-visualizer">Diagram: Binary Place Value Visualizer</h4>
 <iframe src="../../sims/binary-place-value/main.html" width="100%" height="450px" scrolling="no"></iframe>
@@ -2381,7 +2366,7 @@ Implementation: p5.js with responsive canvas
 <li>Multiply each bit by its position value</li>
 <li>Sum the results</li>
 </ol>
-<p><strong>Example</strong>: Convert $1101011_2$ to decimal.</p>
+<p><strong>Example</strong>: Convert <span class="arithmatex">\(1101011_2\)</span> to decimal.</p>
 <table>
 <thead>
 <tr>
@@ -2428,7 +2413,7 @@ Implementation: p5.js with responsive canvas
 </tr>
 </tbody>
 </table>
-<p>Result: $64 + 32 + 8 + 2 + 1 = 107_{10}$</p>
+<p>Result: <span class="arithmatex">\(64 + 32 + 8 + 2 + 1 = 107_{10}\)</span></p>
 <h3 id="decimal-to-binary-the-repeated-division-method">Decimal to Binary: The Repeated Division Method</h3>
 <p>Going the other direction requires a different approach. The most reliable method is <strong>repeated division by 2</strong>:</p>
 <ol>
@@ -2438,7 +2423,7 @@ Implementation: p5.js with responsive canvas
 <li>Repeat until the quotient is 0</li>
 <li>Read the remainders from bottom to top</li>
 </ol>
-<p><strong>Example</strong>: Convert $107_{10}$ to binary.</p>
+<p><strong>Example</strong>: Convert <span class="arithmatex">\(107_{10}\)</span> to binary.</p>
 <table>
 <thead>
 <tr>
@@ -2485,10 +2470,10 @@ Implementation: p5.js with responsive canvas
 </tr>
 </tbody>
 </table>
-<p>Reading remainders from bottom to top: $1101011_2$ ✓</p>
+<p>Reading remainders from bottom to top: <span class="arithmatex">\(1101011_2\)</span> ✓</p>
 <div class="admonition note">
 <p class="admonition-title">The Remainder Trick</p>
-<p>Why does this work? Each remainder tells you whether that power of 2 "fits" into the remaining value. The first remainder tells you if the number is odd (needs a $2^0 = 1$), the second tells you about $2^1$, and so on.</p>
+<p>Why does this work? Each remainder tells you whether that power of 2 "fits" into the remaining value. The first remainder tells you if the number is odd (needs a <span class="arithmatex">\(2^0 = 1\)</span>), the second tells you about <span class="arithmatex">\(2^1\)</span>, and so on.</p>
 </div>
 <h4 id="diagram-decimal-to-binary-conversion-stepper">Diagram: Decimal to Binary Conversion Stepper</h4>
 <iframe src="../../sims/decimal-to-binary-stepper/main.html" width="100%" height="500px" scrolling="no"></iframe>
@@ -2540,7 +2525,7 @@ Implementation: p5.js
 </details>
 
 <h2 id="hexadecimal-binarys-best-friend">Hexadecimal: Binary's Best Friend</h2>
-<p>Typing out long strings of 1s and 0s gets tedious fast. Imagine debugging a 32-bit value: $11010110111010001001010011110000_2$. Your eyes are already glazing over, aren't they?</p>
+<p>Typing out long strings of 1s and 0s gets tedious fast. Imagine debugging a 32-bit value: <span class="arithmatex">\(11010110111010001001010011110000_2\)</span>. Your eyes are already glazing over, aren't they?</p>
 <p>Enter <strong>hexadecimal</strong> (hex for short): base 16. Hex uses digits 0-9 plus letters A-F to represent values 0-15:</p>
 <table>
 <thead>
@@ -2634,14 +2619,14 @@ Implementation: p5.js
 </tbody>
 </table>
 <h3 id="why-hex-works-so-well">Why Hex Works So Well</h3>
-<p>Here's the clever bit: $16 = 2^4$. This means every hex digit corresponds <em>exactly</em> to four binary digits. That messy 32-bit number from earlier? In hex, it's just:</p>
-<p>$11010110111010001001010011110000_2 = \text{D6E894F0}_{16}$</p>
+<p>Here's the clever bit: <span class="arithmatex">\(16 = 2^4\)</span>. This means every hex digit corresponds <em>exactly</em> to four binary digits. That messy 32-bit number from earlier? In hex, it's just:</p>
+<p><span class="arithmatex">\(11010110111010001001010011110000_2 = \text{D6E894F0}_{16}\)</span></p>
 <p>Much more manageable! Here's how the conversion works:</p>
 <ol>
 <li>Group binary digits into sets of 4 (from the right)</li>
 <li>Convert each group to its hex equivalent</li>
 </ol>
-<p><strong>Example</strong>: Convert $10110111_2$ to hex.</p>
+<p><strong>Example</strong>: Convert <span class="arithmatex">\(10110111_2\)</span> to hex.</p>
 <table>
 <thead>
 <tr>
@@ -2658,13 +2643,13 @@ Implementation: p5.js
 </tr>
 </tbody>
 </table>
-<p>Result: $\text{B7}_{16}$</p>
+<p>Result: <span class="arithmatex">\(\text{B7}_{16}\)</span></p>
 <p>To go back to binary, just reverse the process—each hex digit becomes four binary digits.</p>
 <div class="admonition tip">
 <p class="admonition-title">Hex Notation Conventions</p>
 <p>You'll see hex numbers written in several ways:</p>
 <ul>
-<li>With subscript: $\text{B7}_{16}$</li>
+<li>With subscript: <span class="arithmatex">\(\text{B7}_{16}\)</span></li>
 <li>With 0x prefix: 0xB7 (common in programming)</li>
 <li>With h suffix: B7h (common in assembly language)</li>
 </ul>
@@ -2710,7 +2695,7 @@ Implementation: p5.js with responsive layout
 </details>
 
 <h2 id="octal-the-retro-alternative">Octal: The Retro Alternative</h2>
-<p>While we're on alternative bases, let's briefly cover <strong>octal</strong> (base 8). Octal uses digits 0-7, and since $8 = 2^3$, each octal digit represents exactly three binary digits.</p>
+<p>While we're on alternative bases, let's briefly cover <strong>octal</strong> (base 8). Octal uses digits 0-7, and since <span class="arithmatex">\(8 = 2^3\)</span>, each octal digit represents exactly three binary digits.</p>
 <table>
 <thead>
 <tr>
@@ -2762,7 +2747,7 @@ Implementation: p5.js with responsive layout
 </tr>
 </tbody>
 </table>
-<p><strong>Example</strong>: Convert $10110111_2$ to octal.</p>
+<p><strong>Example</strong>: Convert <span class="arithmatex">\(10110111_2\)</span> to octal.</p>
 <p>First, group into threes from the right (adding a leading zero if needed):</p>
 <table>
 <thead>
@@ -2782,7 +2767,7 @@ Implementation: p5.js with responsive layout
 </tr>
 </tbody>
 </table>
-<p>Result: $267_8$</p>
+<p>Result: <span class="arithmatex">\(267_8\)</span></p>
 <p>Octal was popular in early computing when machines used 12-bit, 24-bit, or 36-bit words (all divisible by 3). Today, hex dominates because 8-bit bytes (divisible by 4) are universal. However, you'll still encounter octal in Unix file permissions (chmod 755, anyone?) and some programming contexts.</p>
 <h2 id="binary-addition-the-foundation-of-arithmetic">Binary Addition: The Foundation of Arithmetic</h2>
 <p>Now that we can represent numbers in binary, let's learn to do math with them. Binary addition follows the same principles as decimal addition, but with simpler rules because there are only two digits.</p>
@@ -2824,9 +2809,9 @@ Implementation: p5.js with responsive layout
 </tr>
 </tbody>
 </table>
-<p>The last row is the interesting one: $1 + 1 = 10_2$ (which is 2 in decimal). We write down 0 and carry the 1, just like in decimal when $5 + 5 = 10$.</p>
+<p>The last row is the interesting one: <span class="arithmatex">\(1 + 1 = 10_2\)</span> (which is 2 in decimal). We write down 0 and carry the 1, just like in decimal when <span class="arithmatex">\(5 + 5 = 10\)</span>.</p>
 <h3 id="multi-bit-addition">Multi-Bit Addition</h3>
-<p>Let's add $1011_2 + 1101_2$ step by step:</p>
+<p>Let's add <span class="arithmatex">\(1011_2 + 1101_2\)</span> step by step:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -2839,13 +2824,13 @@ Implementation: p5.js with responsive layout
 </code></pre></div></td></tr></table></div>
 <p>Working from right to left:</p>
 <ol>
-<li>Position 0: $1 + 1 = 10_2$, write 0, carry 1</li>
-<li>Position 1: $1 + 0 + 1 = 10_2$, write 0, carry 1</li>
-<li>Position 2: $1 + 1 + 1 = 11_2$, write 1, carry 1</li>
-<li>Position 3: $1 + 1 + 1 = 11_2$, write 1, carry 1</li>
+<li>Position 0: <span class="arithmatex">\(1 + 1 = 10_2\)</span>, write 0, carry 1</li>
+<li>Position 1: <span class="arithmatex">\(1 + 0 + 1 = 10_2\)</span>, write 0, carry 1</li>
+<li>Position 2: <span class="arithmatex">\(1 + 1 + 1 = 11_2\)</span>, write 1, carry 1</li>
+<li>Position 3: <span class="arithmatex">\(1 + 1 + 1 = 11_2\)</span>, write 1, carry 1</li>
 <li>Carry out becomes the 5th bit</li>
 </ol>
-<p>Verification: $11_{10} + 13_{10} = 24_{10}$, and $11000_2 = 24_{10}$ ✓</p>
+<p>Verification: <span class="arithmatex">\(11_{10} + 13_{10} = 24_{10}\)</span>, and <span class="arithmatex">\(11000_2 = 24_{10}\)</span> ✓</p>
 <h4 id="diagram-binary-addition-practice-tool">Diagram: Binary Addition Practice Tool</h4>
 <iframe src="../../sims/binary-addition-practice/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
@@ -2898,25 +2883,25 @@ Implementation: p5.js
 <h2 id="binary-subtraction-and-twos-complement">Binary Subtraction and Two's Complement</h2>
 <p>Subtraction in binary is where things get interesting. While you <em>can</em> do it with borrowing (just like decimal subtraction), computers use a clever trick that lets them subtract using the same addition circuits. This trick is called <strong>two's complement</strong>.</p>
 <h3 id="the-concept-of-complements">The Concept of Complements</h3>
-<p>A complement is basically the "opposite" of a number within a given range. For example, if we're working with single decimal digits (0-9), the complement of 3 is 7, because $3 + 7 = 10$.</p>
+<p>A complement is basically the "opposite" of a number within a given range. For example, if we're working with single decimal digits (0-9), the complement of 3 is 7, because <span class="arithmatex">\(3 + 7 = 10\)</span>.</p>
 <p>In binary, we have two useful complements:</p>
 <ul>
 <li><strong>One's complement</strong>: Flip all the bits (0 becomes 1, 1 becomes 0)</li>
 <li><strong>Two's complement</strong>: One's complement plus 1</li>
 </ul>
-<p><strong>Example</strong>: Find the two's complement of $01011001_2$</p>
+<p><strong>Example</strong>: Find the two's complement of <span class="arithmatex">\(01011001_2\)</span></p>
 <ol>
-<li>Original: $01011001$</li>
-<li>One's complement (flip bits): $10100110$</li>
-<li>Two's complement (add 1): $10100111$</li>
+<li>Original: <span class="arithmatex">\(01011001\)</span></li>
+<li>One's complement (flip bits): <span class="arithmatex">\(10100110\)</span></li>
+<li>Two's complement (add 1): <span class="arithmatex">\(10100111\)</span></li>
 </ol>
 <h3 id="the-magic-of-twos-complement">The Magic of Two's Complement</h3>
-<p>Here's the beautiful trick: if you want to calculate $A - B$, you can instead calculate $A + (\text{two's complement of } B)$. The hardware that does addition can also do subtraction!</p>
-<p><strong>Example</strong>: Calculate $10010110_2 - 01011001_2$</p>
-<p>Instead of subtracting, we'll add the two's complement of $01011001_2$:</p>
+<p>Here's the beautiful trick: if you want to calculate <span class="arithmatex">\(A - B\)</span>, you can instead calculate <span class="arithmatex">\(A + (\text{two's complement of } B)\)</span>. The hardware that does addition can also do subtraction!</p>
+<p><strong>Example</strong>: Calculate <span class="arithmatex">\(10010110_2 - 01011001_2\)</span></p>
+<p>Instead of subtracting, we'll add the two's complement of <span class="arithmatex">\(01011001_2\)</span>:</p>
 <ol>
-<li>Two's complement of $01011001_2 = 10100111_2$ (from above)</li>
-<li>Add: $10010110_2 + 10100111_2$</li>
+<li>Two's complement of <span class="arithmatex">\(01011001_2 = 10100111_2\)</span> (from above)</li>
+<li>Add: <span class="arithmatex">\(10010110_2 + 10100111_2\)</span></li>
 </ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -2929,8 +2914,8 @@ Implementation: p5.js
            1 0 0 1 1 1 1 0 1
 </code></pre></div></td></tr></table></div>
 <ol>
-<li>Discard the carry-out (overflow bit): $00111101_2$</li>
-<li>Check: $150_{10} - 89_{10} = 61_{10}$, and $00111101_2 = 61_{10}$ ✓</li>
+<li>Discard the carry-out (overflow bit): <span class="arithmatex">\(00111101_2\)</span></li>
+<li>Check: <span class="arithmatex">\(150_{10} - 89_{10} = 61_{10}\)</span>, and <span class="arithmatex">\(00111101_2 = 61_{10}\)</span> ✓</li>
 </ol>
 <h4 id="diagram-twos-complement-visualizer">Diagram: Two's Complement Visualizer</h4>
 <iframe src="../../sims/twos-complement-visualizer/main.html" width="100%" height="480px" scrolling="no"></iframe>
@@ -2983,8 +2968,8 @@ Implementation: p5.js
 <p>So far, we've only represented positive numbers (unsigned values). But real-world computation needs negative numbers too. How do we represent -42 in binary?</p>
 <h3 id="the-sign-magnitude-approach-not-used-much">The Sign-Magnitude Approach (Not Used Much)</h3>
 <p>The obvious approach: reserve one bit for the sign (0 = positive, 1 = negative) and use the rest for magnitude.</p>
-<p>$+5 = 0000 0101$
-$-5 = 1000 0101$</p>
+<p><span class="arithmatex">\(+5 = 0000 0101\)</span>
+<span class="arithmatex">\(-5 = 1000 0101\)</span></p>
 <p>This seems intuitive, but it causes problems:</p>
 <ul>
 <li>We have two representations of zero (+0 and -0)</li>
@@ -2995,7 +2980,7 @@ $-5 = 1000 0101$</p>
 <p>Modern computers use <strong>two's complement for signed integers</strong>. The most significant bit (MSB) indicates sign:</p>
 <ul>
 <li>MSB = 0: positive number (interpret normally)</li>
-<li>MSB = 1: negative number (value is $-2^{n-1} + \text{remaining bits}$)</li>
+<li>MSB = 1: negative number (value is <span class="arithmatex">\(-2^{n-1} + \text{remaining bits}\)</span>)</li>
 </ul>
 <p>For 8-bit two's complement:</p>
 <table>
@@ -3038,15 +3023,15 @@ $-5 = 1000 0101$</p>
 <p class="admonition-title">The Asymmetry</p>
 <p>Notice something odd? With 8 bits, we can represent -128 through +127. There's one more negative number than positive! This is because we "use up" the all-zeros pattern for zero itself. In n-bit two's complement:</p>
 <ul>
-<li>Minimum value: $-2^{n-1}$</li>
-<li>Maximum value: $2^{n-1} - 1$</li>
+<li>Minimum value: <span class="arithmatex">\(-2^{n-1}\)</span></li>
+<li>Maximum value: <span class="arithmatex">\(2^{n-1} - 1\)</span></li>
 </ul>
 </div>
 <h3 id="why-twos-complement-is-brilliant">Why Two's Complement Is Brilliant</h3>
 <p>The beauty of two's complement is that <strong>addition works the same whether numbers are signed or unsigned</strong>. The hardware doesn't need to know which interpretation you're using! This is why it became the universal standard for integer arithmetic.</p>
-<p><strong>Example</strong>: $(-3) + 5$ in 8-bit two's complement</p>
-<p>$-3_{10} = 11111101_2$ (two's complement of 3)
-$+5_{10} = 00000101_2$</p>
+<p><strong>Example</strong>: <span class="arithmatex">\((-3) + 5\)</span> in 8-bit two's complement</p>
+<p><span class="arithmatex">\(-3_{10} = 11111101_2\)</span> (two's complement of 3)
+<span class="arithmatex">\(+5_{10} = 00000101_2\)</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -3055,11 +3040,11 @@ $+5_{10} = 00000101_2$</p>
   ----------
   1 00000010
 </code></pre></div></td></tr></table></div>
-<p>Discarding the carry-out: $00000010_2 = 2_{10}$ ✓</p>
+<p>Discarding the carry-out: <span class="arithmatex">\(00000010_2 = 2_{10}\)</span> ✓</p>
 <h2 id="overflow-detection">Overflow Detection</h2>
 <p>When arithmetic results exceed the range a given number of bits can represent, we get <strong>overflow</strong>. This is one of the sneakiest bugs in digital systems—everything <em>looks</em> normal, but the answer is completely wrong.</p>
 <h3 id="unsigned-overflow">Unsigned Overflow</h3>
-<p>For unsigned numbers, overflow occurs when a carry-out propagates beyond the most significant bit. Adding $11111111_2 + 00000001_2$ (255 + 1) gives $100000000_2$, which needs 9 bits. If we only have 8, the result wraps around to 0.</p>
+<p>For unsigned numbers, overflow occurs when a carry-out propagates beyond the most significant bit. Adding <span class="arithmatex">\(11111111_2 + 00000001_2\)</span> (255 + 1) gives <span class="arithmatex">\(100000000_2\)</span>, which needs 9 bits. If we only have 8, the result wraps around to 0.</p>
 <h3 id="signed-overflow">Signed Overflow</h3>
 <p>For signed numbers, overflow is trickier. It occurs when:</p>
 <ul>
@@ -3067,7 +3052,7 @@ $+5_{10} = 00000101_2$</p>
 <li>Adding two negative numbers gives a positive result</li>
 </ul>
 <p>The key insight: <strong>signed overflow occurs when the carry into the MSB differs from the carry out of the MSB</strong>.</p>
-<p><strong>Example of signed overflow</strong>: $01111111_2 + 00000001_2$ (+127 + 1)</p>
+<p><strong>Example of signed overflow</strong>: <span class="arithmatex">\(01111111_2 + 00000001_2\)</span> (+127 + 1)</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -3078,7 +3063,7 @@ $+5_{10} = 00000101_2$</p>
            -----------------
              1 0 0 0 0 0 0 0   (-128 ???)
 </code></pre></div></td></tr></table></div>
-<p>The result $10000000_2$ is interpreted as -128 in signed representation. That's clearly wrong! The carry into the MSB was 1, but the carry out was 0—they differ, signaling overflow.</p>
+<p>The result <span class="arithmatex">\(10000000_2\)</span> is interpreted as -128 in signed representation. That's clearly wrong! The carry into the MSB was 1, but the carry out was 0—they differ, signaling overflow.</p>
 <h4 id="diagram-overflow-detection-simulator">Diagram: Overflow Detection Simulator</h4>
 <iframe src="../../sims/overflow-detection/main.html" width="100%" height="500px" scrolling="no"></iframe>
 
@@ -3130,13 +3115,13 @@ Implementation: p5.js
 
 <h2 id="bcd-encoding-when-decimal-display-matters">BCD Encoding: When Decimal Display Matters</h2>
 <p><strong>Binary-Coded Decimal (BCD)</strong> represents each decimal digit separately in 4 bits. Instead of converting the whole number to binary, we convert each digit independently.</p>
-<p><strong>Example</strong>: Encode $47_{10}$ in BCD</p>
+<p><strong>Example</strong>: Encode <span class="arithmatex">\(47_{10}\)</span> in BCD</p>
 <ul>
 <li>4 in binary: 0100</li>
 <li>7 in binary: 0111</li>
 <li>BCD result: 0100 0111</li>
 </ul>
-<p>Compare to pure binary: $47_{10} = 00101111_2$</p>
+<p>Compare to pure binary: <span class="arithmatex">\(47_{10} = 00101111_2\)</span></p>
 <h3 id="why-bcd-exists">Why BCD Exists</h3>
 <p>BCD seems wasteful (we're using 8 bits to store a number that fits in 6), so why use it? Several practical reasons:</p>
 <ol>
@@ -3145,7 +3130,7 @@ Implementation: p5.js
 <li><strong>Legacy hardware</strong>: Seven-segment displays, calculators, and some industrial equipment expect BCD</li>
 </ol>
 <p>BCD addition requires special handling when a group exceeds 9. If adding two BCD digits produces a result from 10-15, we add 6 to "fix" it:</p>
-<p><strong>Example</strong>: $27_{BCD} + 35_{BCD}$</p>
+<p><strong>Example</strong>: <span class="arithmatex">\(27_{BCD} + 35_{BCD}\)</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -3154,7 +3139,7 @@ Implementation: p5.js
   -----------
     0101 1100
 </code></pre></div></td></tr></table></div>
-<p>The second group is $1100_2 = 12_{10}$, which is invalid BCD. Add 6:</p>
+<p>The second group is <span class="arithmatex">\(1100_2 = 12_{10}\)</span>, which is invalid BCD. Add 6:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -3163,7 +3148,7 @@ Implementation: p5.js
   -----------
     0110 0010
 </code></pre></div></td></tr></table></div>
-<p>Result: $0110 0010_{BCD} = 62_{10}$ ✓</p>
+<p>Result: <span class="arithmatex">\(0110 0010_{BCD} = 62_{10}\)</span> ✓</p>
 <h2 id="gray-code-when-only-one-bit-should-change">Gray Code: When Only One Bit Should Change</h2>
 <p>Here's a puzzle: what happens if you're reading a binary counter right at the moment it transitions from 0111 to 1000? All four bits change simultaneously—but in real hardware, they don't change at <em>exactly</em> the same instant. For a brief moment, you might read garbage like 0000 or 1111.</p>
 <p><strong>Gray code</strong> solves this by ensuring only one bit changes between consecutive values:</p>
@@ -3227,16 +3212,16 @@ Implementation: p5.js
 </ul>
 <h3 id="converting-binary-to-gray-code">Converting Binary to Gray Code</h3>
 <p>The conversion is surprisingly simple using XOR:</p>
-<p>$G_n = B_n$ (copy the MSB)
-$G_i = B_{i+1} \oplus B_i$ (XOR each bit with the one above it)</p>
-<p><strong>Example</strong>: Convert $1011_2$ to Gray code</p>
+<p><span class="arithmatex">\(G_n = B_n\)</span> (copy the MSB)
+<span class="arithmatex">\(G_i = B_{i+1} \oplus B_i\)</span> (XOR each bit with the one above it)</p>
+<p><strong>Example</strong>: Convert <span class="arithmatex">\(1011_2\)</span> to Gray code</p>
 <ul>
-<li>$G_3 = B_3 = 1$</li>
-<li>$G_2 = B_3 \oplus B_2 = 1 \oplus 0 = 1$</li>
-<li>$G_1 = B_2 \oplus B_1 = 0 \oplus 1 = 1$</li>
-<li>$G_0 = B_1 \oplus B_0 = 1 \oplus 1 = 0$</li>
+<li><span class="arithmatex">\(G_3 = B_3 = 1\)</span></li>
+<li><span class="arithmatex">\(G_2 = B_3 \oplus B_2 = 1 \oplus 0 = 1\)</span></li>
+<li><span class="arithmatex">\(G_1 = B_2 \oplus B_1 = 0 \oplus 1 = 1\)</span></li>
+<li><span class="arithmatex">\(G_0 = B_1 \oplus B_0 = 1 \oplus 1 = 0\)</span></li>
 </ul>
-<p>Gray code: $1110$</p>
+<p>Gray code: <span class="arithmatex">\(1110\)</span></p>
 <h4 id="diagram-gray-code-vs-binary-counter-animation">Diagram: Gray Code vs Binary Counter Animation</h4>
 <iframe src="../../sims/gray-code-counter/main.html" width="100%" height="450px" scrolling="no"></iframe>
 
@@ -3341,7 +3326,7 @@ Implementation: p5.js
 </tr>
 </tbody>
 </table>
-<p>To find the 9's complement of 3 (which is 6): flip $0011 \rightarrow 1100$ ✓</p>
+<p>To find the 9's complement of 3 (which is 6): flip <span class="arithmatex">\(0011 \rightarrow 1100\)</span> ✓</p>
 <h3 id="excess-3-code">Excess-3 Code</h3>
 <p>Excess-3 is BCD with 3 added to each value. It's also self-complementing and was popular in early computers.</p>
 <table>
@@ -3446,9 +3431,9 @@ Implementation: HTML/CSS table with JavaScript interactivity
 <h2 id="practical-applications">Practical Applications</h2>
 <p>Let's tie these concepts together with real-world examples you'll encounter in digital design.</p>
 <h3 id="memory-addressing">Memory Addressing</h3>
-<p>Computer memory is addressed using binary numbers. A 16-bit address bus can access $2^{16} = 65,536$ memory locations. This is why you see memory sizes like 64K, 256K, or 4G—they're all powers of 2.</p>
+<p>Computer memory is addressed using binary numbers. A 16-bit address bus can access <span class="arithmatex">\(2^{16} = 65,536\)</span> memory locations. This is why you see memory sizes like 64K, 256K, or 4G—they're all powers of 2.</p>
 <h3 id="color-representation">Color Representation</h3>
-<p>RGB colors use 8 bits per channel (red, green, blue), giving 24-bit color with over 16 million possibilities. That's $2^{24} = 16,777,216$ colors. Web colors like #FF5733 are just three hex values packed together.</p>
+<p>RGB colors use 8 bits per channel (red, green, blue), giving 24-bit color with over 16 million possibilities. That's <span class="arithmatex">\(2^{24} = 16,777,216\)</span> colors. Web colors like #FF5733 are just three hex values packed together.</p>
 <h3 id="digital-signal-processing">Digital Signal Processing</h3>
 <p>Audio samples are typically 16-bit signed integers, ranging from -32,768 to +32,767. This gives enough precision for high-quality sound while fitting nicely into 2 bytes.</p>
 <h3 id="error-detection">Error Detection</h3>
@@ -3467,22 +3452,22 @@ Implementation: HTML/CSS table with JavaScript interactivity
 <p>These fundamentals will appear constantly throughout your digital electronics journey. When you're debugging a circuit and see 0xDEADBEEF in memory, you'll know exactly what you're looking at (and appreciate the programmer's sense of humor).</p>
 <details class="question">
 <summary>Self-Check: Can you convert 200 to binary using repeated division?</summary>
-<p>$200 \div 2 = 100$ remainder 0
-$100 \div 2 = 50$ remainder 0
-$50 \div 2 = 25$ remainder 0
-$25 \div 2 = 12$ remainder 1
-$12 \div 2 = 6$ remainder 0
-$6 \div 2 = 3$ remainder 0
-$3 \div 2 = 1$ remainder 1
-$1 \div 2 = 0$ remainder 1</p>
-<p>Reading bottom to top: $11001000_2$</p>
+<p><span class="arithmatex">\(200 \div 2 = 100\)</span> remainder 0
+<span class="arithmatex">\(100 \div 2 = 50\)</span> remainder 0
+<span class="arithmatex">\(50 \div 2 = 25\)</span> remainder 0
+<span class="arithmatex">\(25 \div 2 = 12\)</span> remainder 1
+<span class="arithmatex">\(12 \div 2 = 6\)</span> remainder 0
+<span class="arithmatex">\(6 \div 2 = 3\)</span> remainder 0
+<span class="arithmatex">\(3 \div 2 = 1\)</span> remainder 1
+<span class="arithmatex">\(1 \div 2 = 0\)</span> remainder 1</p>
+<p>Reading bottom to top: <span class="arithmatex">\(11001000_2\)</span></p>
 </details>
 <details class="question">
 <summary>Self-Check: What is the 8-bit two's complement of 100?</summary>
-<p>Original: $01100100_2$
-One's complement: $10011011_2$
-Two's complement (add 1): $10011100_2$</p>
-<p>Interpretation: This represents $-100$ in signed 8-bit format.</p>
+<p>Original: <span class="arithmatex">\(01100100_2\)</span>
+One's complement: <span class="arithmatex">\(10011011_2\)</span>
+Two's complement (add 1): <span class="arithmatex">\(10011100_2\)</span></p>
+<p>Interpretation: This represents <span class="arithmatex">\(-100\)</span> in signed 8-bit format.</p>
 </details>
 <p>In the next chapter, we'll put these number systems to work as we explore Boolean algebra—the mathematical framework that governs all digital logic.</p>
 
@@ -3580,12 +3565,18 @@ Two's complement (add 1): $10011100_2$</p>
     </div>
     
     
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
       
     
   </body>
