@@ -1,0 +1,13 @@
+{
+  "NUMSYS": "Number Systems",
+  "BOOL": "Boolean Algebra",
+  "GATES": "Logic Gates",
+  "COMB": "Combinational Logic",
+  "BLOCKS": "Building Blocks",
+  "SEQ": "Sequential Basics",
+  "FLIPFLOP": "Flip-Flops",
+  "FSM": "Finite State Machines",
+  "REG": "Registers & Counters",
+  "HDL": "Verilog HDL",
+  "VERIFY": "Verification & Lab"
+}

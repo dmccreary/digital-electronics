@@ -1,0 +1,14 @@
+{
+  "NUMSYS": "MistyRose",
+  "BOOL": "PeachPuff",
+  "GATES": "LightYellow",
+  "COMB": "Honeydew",
+  "BLOCKS": "PaleTurquoise",
+  "SEQ": "LightSteelBlue",
+  "FLIPFLOP": "Lavender",
+  "FSM": "LavenderBlush",
+  "REG": "Thistle",
+  "HDL": "PaleGreen",
+  "VERIFY": "Aquamarine",
+  "FOUND": "LightCoral"
+}
