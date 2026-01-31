@@ -77,6 +77,20 @@ Use iframes without style attributes:
 <iframe src="URL" width="400" height="370" scrolling="no"></iframe>
 ```
 
+### LaTeX Equations
+
+Use `\(` and `\)` for inline equations, and `\[` and `\]` for display (block) equations. Do NOT use `$...$` or `$$...$$` notation.
+
+**Inline example:**
+```markdown
+The identity law states that \(A + 0 = A\).
+```
+
+**Display example:**
+```markdown
+\[F(A, B, C) = A \cdot B + \overline{C}\]
+```
+
 ## Course Content Areas
 
 Topics covered (in teaching order):

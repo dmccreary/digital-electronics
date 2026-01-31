@@ -31,6 +31,8 @@ nav:
     - Logic Gates: lessons/logic-gates.md
   - Sims:
     - Introduction: sims/index.md
+    - Binary Place Value: sims/binary-place-value/index.md
+    - Decimal to Binary Stepper: sims/decimal-to-binary-stepper/index.md
     - Logic Gates: sims/logic-gates/index.md
     - Drawing Gates: sims/logic-gates/01-drawing-gates.md
     - Flip-flop: sims/flip-flop/index.md
@@ -73,12 +75,26 @@ plugins:
   - search
 #  - social
 markdown_extensions:
+  - meta
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
   - pymdownx.highlight:
       linenums: true
+  # enable LaTeX extensions with KaTeX
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - css/extra.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
+
+extra_javascript:
+  - js/extra.js
+  - js/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
 #extra:
 #  analytics:
 #    provider: google

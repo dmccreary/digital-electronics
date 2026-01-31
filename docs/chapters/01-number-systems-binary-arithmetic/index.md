@@ -35,8 +35,6 @@ This chapter covers the following 14 concepts from the learning graph:
 
 This chapter assumes only the prerequisites listed in the [course description](../../course-description.md). Students should have a basic understanding of arithmetic and number representation from prior mathematics courses.
 
----
-
 ## Introduction: Why Computers Don't Count Like We Do
 
 Here's a fun fact to start your journey into digital electronics: computers are terrible at counting to ten. It's not that they're lazy or didn't pay attention in kindergarten—it's that they physically *can't*. Deep inside every processor, every memory chip, and every digital circuit, there are billions of tiny switches that can only be in one of two states: on or off. That's it. No "sort of on" or "mostly off." Just on and off.
@@ -51,17 +49,17 @@ Think of it this way: if you only had two fingers, you'd probably count differen
 
 Before diving into binary, let's remind ourselves how our familiar decimal system works. When you write the number 347, each digit's position tells you what it's worth:
 
-- The 3 is in the "hundreds" place: $3 \times 100 = 300$
-- The 4 is in the "tens" place: $4 \times 10 = 40$
-- The 7 is in the "ones" place: $7 \times 1 = 7$
+- The 3 is in the "hundreds" place: \(3 \times 100 = 300\)
+- The 4 is in the "tens" place: \(4 \times 10 = 40\)
+- The 7 is in the "ones" place: \(7 \times 1 = 7\)
 
-Add them up: $300 + 40 + 7 = 347$. Simple enough, right?
+Add them up: \(300 + 40 + 7 = 347\). Simple enough, right?
 
 Notice that each position is a power of 10:
 
 | Position | 3rd | 2nd | 1st | 0th |
 |----------|-----|-----|-----|-----|
-| Power | $10^3$ | $10^2$ | $10^1$ | $10^0$ |
+| Power | \(10^3\) | \(10^2\) | \(10^1\) | \(10^0\) |
 | Value | 1000 | 100 | 10 | 1 |
 
 This is called **positional notation** with base 10 (or radix 10). The magic insight is that we can use *any* base we want—we just happened to evolve with 10 fingers.
@@ -77,21 +75,21 @@ Here's the binary equivalent of our position table:
 
 | Position | 7th | 6th | 5th | 4th | 3rd | 2nd | 1st | 0th |
 |----------|-----|-----|-----|-----|-----|-----|-----|-----|
-| Power | $2^7$ | $2^6$ | $2^5$ | $2^4$ | $2^3$ | $2^2$ | $2^1$ | $2^0$ |
+| Power | \(2^7\) | \(2^6\) | \(2^5\) | \(2^4\) | \(2^3\) | \(2^2\) | \(2^1\) | \(2^0\) |
 | Value | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 
 !!! tip "Memorize These Powers of 2"
     Knowing the first 8-10 powers of 2 by heart will make your life in digital electronics *much* easier:
     1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024...
 
-Let's decode the binary number $10110101_2$ (the subscript 2 tells us it's binary):
+Let's decode the binary number \(10110101_2\) (the subscript 2 tells us it's binary):
 
 | Bit | 1 | 0 | 1 | 1 | 0 | 1 | 0 | 1 |
 |-----|---|---|---|---|---|---|---|---|
 | Position value | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 | Contribution | 128 | 0 | 32 | 16 | 0 | 4 | 0 | 1 |
 
-Sum: $128 + 32 + 16 + 4 + 1 = 181_{10}$
+Sum: \(128 + 32 + 16 + 4 + 1 = 181_{10}\)
 
 That's **binary to decimal conversion** in a nutshell—just add up the position values wherever there's a 1.
 
@@ -160,7 +158,7 @@ We already saw this method in action. Here's the systematic process:
 3. Multiply each bit by its position value
 4. Sum the results
 
-**Example**: Convert $1101011_2$ to decimal.
+**Example**: Convert \(1101011_2\) to decimal.
 
 | Bit position | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--------------|---|---|---|---|---|---|---|
@@ -168,7 +166,7 @@ We already saw this method in action. Here's the systematic process:
 | Binary digit | 1 | 1 | 0 | 1 | 0 | 1 | 1 |
 | Contribution | 64 | 32 | 0 | 8 | 0 | 2 | 1 |
 
-Result: $64 + 32 + 8 + 2 + 1 = 107_{10}$
+Result: \(64 + 32 + 8 + 2 + 1 = 107_{10}\)
 
 ### Decimal to Binary: The Repeated Division Method
 
@@ -180,7 +178,7 @@ Going the other direction requires a different approach. The most reliable metho
 4. Repeat until the quotient is 0
 5. Read the remainders from bottom to top
 
-**Example**: Convert $107_{10}$ to binary.
+**Example**: Convert \(107_{10}\) to binary.
 
 | Division | Quotient | Remainder |
 |----------|----------|-----------|
@@ -192,10 +190,10 @@ Going the other direction requires a different approach. The most reliable metho
 | 3 ÷ 2 | 1 | 1 |
 | 1 ÷ 2 | 0 | 1 |
 
-Reading remainders from bottom to top: $1101011_2$ ✓
+Reading remainders from bottom to top: \(1101011_2\) ✓
 
 !!! note "The Remainder Trick"
-    Why does this work? Each remainder tells you whether that power of 2 "fits" into the remaining value. The first remainder tells you if the number is odd (needs a $2^0 = 1$), the second tells you about $2^1$, and so on.
+    Why does this work? Each remainder tells you whether that power of 2 "fits" into the remaining value. The first remainder tells you if the number is odd (needs a \(2^0 = 1\)), the second tells you about \(2^1\), and so on.
 
 #### Diagram: Decimal to Binary Conversion Stepper
 
@@ -274,29 +272,29 @@ Enter **hexadecimal** (hex for short): base 16. Hex uses digits 0-9 plus letters
 
 ### Why Hex Works So Well
 
-Here's the clever bit: $16 = 2^4$. This means every hex digit corresponds *exactly* to four binary digits. That messy 32-bit number from earlier? In hex, it's just:
+Here's the clever bit: \(16 = 2^4\). This means every hex digit corresponds *exactly* to four binary digits. That messy 32-bit number from earlier? In hex, it's just:
 
-$11010110111010001001010011110000_2 = \text{D6E894F0}_{16}$
+\(11010110111010001001010011110000_2 = \text{D6E894F0}_{16}\)
 
 Much more manageable! Here's how the conversion works:
 
 1. Group binary digits into sets of 4 (from the right)
 2. Convert each group to its hex equivalent
 
-**Example**: Convert $10110111_2$ to hex.
+**Example**: Convert \(10110111_2\) to hex.
 
 | Group | 1011 | 0111 |
 |-------|------|------|
 | Hex digit | B | 7 |
 
-Result: $\text{B7}_{16}$
+Result: \(\text{B7}_{16}\)
 
 To go back to binary, just reverse the process—each hex digit becomes four binary digits.
 
 !!! tip "Hex Notation Conventions"
     You'll see hex numbers written in several ways:
 
-    - With subscript: $\text{B7}_{16}$
+    - With subscript: \(\text{B7}_{16}\)
     - With 0x prefix: 0xB7 (common in programming)
     - With h suffix: B7h (common in assembly language)
 
@@ -343,7 +341,7 @@ Implementation: p5.js with responsive layout
 
 ## Octal: The Retro Alternative
 
-While we're on alternative bases, let's briefly cover **octal** (base 8). Octal uses digits 0-7, and since $8 = 2^3$, each octal digit represents exactly three binary digits.
+While we're on alternative bases, let's briefly cover **octal** (base 8). Octal uses digits 0-7, and since \(8 = 2^3\), each octal digit represents exactly three binary digits.
 
 | Decimal | Binary | Octal |
 |---------|--------|-------|
@@ -356,7 +354,7 @@ While we're on alternative bases, let's briefly cover **octal** (base 8). Octal 
 | 6 | 110 | 6 |
 | 7 | 111 | 7 |
 
-**Example**: Convert $10110111_2$ to octal.
+**Example**: Convert \(10110111_2\) to octal.
 
 First, group into threes from the right (adding a leading zero if needed):
 
@@ -364,7 +362,7 @@ First, group into threes from the right (adding a leading zero if needed):
 |-------|-----|-----|-----|
 | Octal digit | 2 | 6 | 7 |
 
-Result: $267_8$
+Result: \(267_8\)
 
 Octal was popular in early computing when machines used 12-bit, 24-bit, or 36-bit words (all divisible by 3). Today, hex dominates because 8-bit bytes (divisible by 4) are universal. However, you'll still encounter octal in Unix file permissions (chmod 755, anyone?) and some programming contexts.
 
@@ -383,11 +381,11 @@ Here's everything you need to know about adding two binary digits:
 | 1 | 0 | 1 | 0 |
 | 1 | 1 | 0 | 1 |
 
-The last row is the interesting one: $1 + 1 = 10_2$ (which is 2 in decimal). We write down 0 and carry the 1, just like in decimal when $5 + 5 = 10$.
+The last row is the interesting one: \(1 + 1 = 10_2\) (which is 2 in decimal). We write down 0 and carry the 1, just like in decimal when \(5 + 5 = 10\).
 
 ### Multi-Bit Addition
 
-Let's add $1011_2 + 1101_2$ step by step:
+Let's add \(1011_2 + 1101_2\) step by step:
 
 ```
   Carries:  1 1 1
@@ -399,13 +397,13 @@ Let's add $1011_2 + 1101_2$ step by step:
 
 Working from right to left:
 
-1. Position 0: $1 + 1 = 10_2$, write 0, carry 1
-2. Position 1: $1 + 0 + 1 = 10_2$, write 0, carry 1
-3. Position 2: $1 + 1 + 1 = 11_2$, write 1, carry 1
-4. Position 3: $1 + 1 + 1 = 11_2$, write 1, carry 1
+1. Position 0: \(1 + 1 = 10_2\), write 0, carry 1
+2. Position 1: \(1 + 0 + 1 = 10_2\), write 0, carry 1
+3. Position 2: \(1 + 1 + 1 = 11_2\), write 1, carry 1
+4. Position 3: \(1 + 1 + 1 = 11_2\), write 1, carry 1
 5. Carry out becomes the 5th bit
 
-Verification: $11_{10} + 13_{10} = 24_{10}$, and $11000_2 = 24_{10}$ ✓
+Verification: \(11_{10} + 13_{10} = 24_{10}\), and \(11000_2 = 24_{10}\) ✓
 
 #### Diagram: Binary Addition Practice Tool
 
@@ -470,7 +468,7 @@ In binary, we have two useful complements:
 - **One's complement**: Flip all the bits (0 becomes 1, 1 becomes 0)
 - **Two's complement**: One's complement plus 1
 
-**Example**: Find the two's complement of $01011001_2$
+**Example**: Find the two's complement of \(01011001_2\)
 
 1. Original: $01011001$
 2. One's complement (flip bits): $10100110$
@@ -478,14 +476,14 @@ In binary, we have two useful complements:
 
 ### The Magic of Two's Complement
 
-Here's the beautiful trick: if you want to calculate $A - B$, you can instead calculate $A + (\text{two's complement of } B)$. The hardware that does addition can also do subtraction!
+Here's the beautiful trick: if you want to calculate \(A - B\), you can instead calculate \(A + (\text{two's complement of } B)\). The hardware that does addition can also do subtraction!
 
-**Example**: Calculate $10010110_2 - 01011001_2$
+**Example**: Calculate \(10010110_2 - 01011001_2\)
 
-Instead of subtracting, we'll add the two's complement of $01011001_2$:
+Instead of subtracting, we'll add the two's complement of \(01011001_2\):
 
-1. Two's complement of $01011001_2 = 10100111_2$ (from above)
-2. Add: $10010110_2 + 10100111_2$
+1. Two's complement of \(01011001_2 = 10100111_2\) (from above)
+2. Add: \(10010110_2 + 10100111_2\)
 
 ```
     Carries: 1 1 1 1 1 1 1
@@ -495,8 +493,8 @@ Instead of subtracting, we'll add the two's complement of $01011001_2$:
            1 0 0 1 1 1 1 0 1
 ```
 
-3. Discard the carry-out (overflow bit): $00111101_2$
-4. Check: $150_{10} - 89_{10} = 61_{10}$, and $00111101_2 = 61_{10}$ ✓
+3. Discard the carry-out (overflow bit): \(00111101_2\)
+4. Check: \(150_{10} - 89_{10} = 61_{10}\), and \(00111101_2 = 61_{10}\) ✓
 
 #### Diagram: Two's Complement Visualizer
 
@@ -568,7 +566,7 @@ This seems intuitive, but it causes problems:
 Modern computers use **two's complement for signed integers**. The most significant bit (MSB) indicates sign:
 
 - MSB = 0: positive number (interpret normally)
-- MSB = 1: negative number (value is $-2^{n-1} + \text{remaining bits}$)
+- MSB = 1: negative number (value is \(-2^{n-1} + \text{remaining bits}\))
 
 For 8-bit two's complement:
 
@@ -583,17 +581,17 @@ For 8-bit two's complement:
 !!! note "The Asymmetry"
     Notice something odd? With 8 bits, we can represent -128 through +127. There's one more negative number than positive! This is because we "use up" the all-zeros pattern for zero itself. In n-bit two's complement:
 
-    - Minimum value: $-2^{n-1}$
-    - Maximum value: $2^{n-1} - 1$
+    - Minimum value: \(-2^{n-1}\)
+    - Maximum value: \(2^{n-1} - 1\)
 
 ### Why Two's Complement Is Brilliant
 
 The beauty of two's complement is that **addition works the same whether numbers are signed or unsigned**. The hardware doesn't need to know which interpretation you're using! This is why it became the universal standard for integer arithmetic.
 
-**Example**: $(-3) + 5$ in 8-bit two's complement
+**Example**: \((-3) + 5\) in 8-bit two's complement
 
-$-3_{10} = 11111101_2$ (two's complement of 3)
-$+5_{10} = 00000101_2$
+\(-3_{10} = 11111101_2\) (two's complement of 3)
+\(+5_{10} = 00000101_2\)
 
 ```
     11111101
@@ -602,7 +600,7 @@ $+5_{10} = 00000101_2$
   1 00000010
 ```
 
-Discarding the carry-out: $00000010_2 = 2_{10}$ ✓
+Discarding the carry-out: \(00000010_2 = 2_{10}\) ✓
 
 ## Overflow Detection
 
@@ -610,7 +608,7 @@ When arithmetic results exceed the range a given number of bits can represent, w
 
 ### Unsigned Overflow
 
-For unsigned numbers, overflow occurs when a carry-out propagates beyond the most significant bit. Adding $11111111_2 + 00000001_2$ (255 + 1) gives $100000000_2$, which needs 9 bits. If we only have 8, the result wraps around to 0.
+For unsigned numbers, overflow occurs when a carry-out propagates beyond the most significant bit. Adding \(11111111_2 + 00000001_2\) (255 + 1) gives \(100000000_2\), which needs 9 bits. If we only have 8, the result wraps around to 0.
 
 ### Signed Overflow
 
@@ -621,7 +619,7 @@ For signed numbers, overflow is trickier. It occurs when:
 
 The key insight: **signed overflow occurs when the carry into the MSB differs from the carry out of the MSB**.
 
-**Example of signed overflow**: $01111111_2 + 00000001_2$ (+127 + 1)
+**Example of signed overflow**: \(01111111_2 + 00000001_2\) (+127 + 1)
 
 ```
     Carries: 1 1 1 1 1 1 1 0
@@ -631,7 +629,7 @@ The key insight: **signed overflow occurs when the carry into the MSB differs fr
              1 0 0 0 0 0 0 0   (-128 ???)
 ```
 
-The result $10000000_2$ is interpreted as -128 in signed representation. That's clearly wrong! The carry into the MSB was 1, but the carry out was 0—they differ, signaling overflow.
+The result \(10000000_2\) is interpreted as -128 in signed representation. That's clearly wrong! The carry into the MSB was 1, but the carry out was 0—they differ, signaling overflow.
 
 #### Diagram: Overflow Detection Simulator
 
@@ -687,13 +685,13 @@ Implementation: p5.js
 
 **Binary-Coded Decimal (BCD)** represents each decimal digit separately in 4 bits. Instead of converting the whole number to binary, we convert each digit independently.
 
-**Example**: Encode $47_{10}$ in BCD
+**Example**: Encode \(47_{10}\) in BCD
 
 - 4 in binary: 0100
 - 7 in binary: 0111
 - BCD result: 0100 0111
 
-Compare to pure binary: $47_{10} = 00101111_2$
+Compare to pure binary: \(47_{10} = 00101111_2\)
 
 ### Why BCD Exists
 
@@ -705,7 +703,7 @@ BCD seems wasteful (we're using 8 bits to store a number that fits in 6), so why
 
 BCD addition requires special handling when a group exceeds 9. If adding two BCD digits produces a result from 10-15, we add 6 to "fix" it:
 
-**Example**: $27_{BCD} + 35_{BCD}$
+**Example**: \(27_{BCD} + 35_{BCD}\)
 
 ```
     0010 0111
@@ -714,7 +712,7 @@ BCD addition requires special handling when a group exceeds 9. If adding two BCD
     0101 1100
 ```
 
-The second group is $1100_2 = 12_{10}$, which is invalid BCD. Add 6:
+The second group is \(1100_2 = 12_{10}\), which is invalid BCD. Add 6:
 
 ```
     0101 1100
@@ -723,7 +721,7 @@ The second group is $1100_2 = 12_{10}$, which is invalid BCD. Add 6:
     0110 0010
 ```
 
-Result: $0110 0010_{BCD} = 62_{10}$ ✓
+Result: \(0110 0010_{BCD} = 62_{10}\) ✓
 
 ## Gray Code: When Only One Bit Should Change
 
@@ -753,17 +751,17 @@ Notice how each step changes exactly one bit. This makes Gray code perfect for:
 
 The conversion is surprisingly simple using XOR:
 
-$G_n = B_n$ (copy the MSB)
-$G_i = B_{i+1} \oplus B_i$ (XOR each bit with the one above it)
+\(G_n = B_n\) (copy the MSB)
+\(G_i = B_{i+1} \oplus B_i\) (XOR each bit with the one above it)
 
-**Example**: Convert $1011_2$ to Gray code
+**Example**: Convert \(1011_2\) to Gray code
 
-- $G_3 = B_3 = 1$
-- $G_2 = B_3 \oplus B_2 = 1 \oplus 0 = 1$
-- $G_1 = B_2 \oplus B_1 = 0 \oplus 1 = 1$
-- $G_0 = B_1 \oplus B_0 = 1 \oplus 1 = 0$
+- \(G_3 = B_3 = 1\)
+- \(G_2 = B_3 \oplus B_2 = 1 \oplus 0 = 1\)
+- \(G_1 = B_2 \oplus B_1 = 0 \oplus 1 = 1\)
+- \(G_0 = B_1 \oplus B_0 = 1 \oplus 1 = 0\)
 
-Gray code: $1110$
+Gray code: \(1110\)
 
 #### Diagram: Gray Code vs Binary Counter Animation
 
@@ -839,7 +837,7 @@ This code uses weights 2, 4, 2, 1 (notice the repeated weights). It's useful bec
 | 8 | 1110 |
 | 9 | 1111 |
 
-To find the 9's complement of 3 (which is 6): flip $0011 \rightarrow 1100$ ✓
+To find the 9's complement of 3 (which is 6): flip \(0011 \rightarrow 1100\) ✓
 
 ### Excess-3 Code
 
@@ -903,11 +901,11 @@ Let's tie these concepts together with real-world examples you'll encounter in d
 
 ### Memory Addressing
 
-Computer memory is addressed using binary numbers. A 16-bit address bus can access $2^{16} = 65,536$ memory locations. This is why you see memory sizes like 64K, 256K, or 4G—they're all powers of 2.
+Computer memory is addressed using binary numbers. A 16-bit address bus can access \(2^{16} = 65,536\) memory locations. This is why you see memory sizes like 64K, 256K, or 4G—they're all powers of 2.
 
 ### Color Representation
 
-RGB colors use 8 bits per channel (red, green, blue), giving 24-bit color with over 16 million possibilities. That's $2^{24} = 16,777,216$ colors. Web colors like #FF5733 are just three hex values packed together.
+RGB colors use 8 bits per channel (red, green, blue), giving 24-bit color with over 16 million possibilities. That's \(2^{24} = 16,777,216\) colors. Web colors like #FF5733 are just three hex values packed together.
 
 ### Digital Signal Processing
 
@@ -941,13 +939,13 @@ These fundamentals will appear constantly throughout your digital electronics jo
     $3 \div 2 = 1$ remainder 1
     $1 \div 2 = 0$ remainder 1
 
-    Reading bottom to top: $11001000_2$
+    Reading bottom to top: \(11001000_2\)
 
 ??? question "Self-Check: What is the 8-bit two's complement of 100?"
-    Original: $01100100_2$
-    One's complement: $10011011_2$
-    Two's complement (add 1): $10011100_2$
+    Original: \(01100100_2\)
+    One's complement: \(10011011_2\)
+    Two's complement (add 1): \(10011100_2\)
 
-    Interpretation: This represents $-100$ in signed 8-bit format.
+    Interpretation: This represents \(-100\) in signed 8-bit format.
 
 In the next chapter, we'll put these number systems to work as we explore Boolean algebra—the mathematical framework that governs all digital logic.
