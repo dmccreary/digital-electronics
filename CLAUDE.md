@@ -6,6 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is an intelligent textbook for a sophomore-level digital electronics course (ABET-aligned EE curricula). The site uses MkDocs with Material theme and includes interactive MicroSims built with p5.js for visualizing logic gates, flip-flops, and sequential circuits.
 
+## Content Generation Guidelines
+
+When generating any content, the tone of this book is light-hearted and positive.
+Feel free to throw in a joke or pun to keep the reading interesting.
+Use metaphors and stories when it would make the reading interesting.
+Our goal is to make this a fun book that also promotes critical thinking and helps students spot misinformation in social media.  The ability to find patterns in the world is key.
+Feel free to use the <details markdown="1"><summary>Graphic Novel Suggestion</summary></details> block to suggest a graphic novel about the history of digital electronics to accompany the text.
+Use the metaphors that understanding digital electronics is a superpower that will help you understand the world around you.
+We look for ways to not just memorize facts but to promote higher order thinking (Bloom Levels 4,5 and 6, Analyze, Evaluate and Create).
+
 ## Build Commands
 
 ```bash
