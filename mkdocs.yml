@@ -4,6 +4,7 @@ site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
 site_url: 'https://dmccreary.github.io/digital-electronics'
 repo_url: 'https://github.com/dmccreary/digital-electronics'
+edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
@@ -82,6 +83,10 @@ nav:
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Glossary Quality Report: learning-graph/glossary-quality-report.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - Book Metrics: learning-graph/book-metrics.md
+    - Chapter Metrics: learning-graph/chapter-metrics.md
+    - Diagram Details: learning-graph/diagram-details.md
+    - Diagram Table: learning-graph/diagram-table.md
   
   - Prompts:
     - prompts/equation-standards.md
@@ -95,17 +100,17 @@ nav:
   - How we built this site: how-we-built-this-site.md
   - Contact: contact.md
  
-# CoderDojo Microsite Standards from here down
+# Dan McCreary's Microsite Standards from here down
 edit_uri: 'blob/master/docs'
 theme:
   name: material
   extra_css:
     - styles/custom.css
-  # logo: img/my-icon.png
-  # favicon: img/my-icon.png
+  logo: img/logo.jpg
+  favicon: img/favicon.ico
   palette:
-    primary: 'blue'
-    accent: 'orange'
+    primary: 'maroon'
+    accent: 'gold'
   include_sidebar: true
   features:
     - content.code.copy
