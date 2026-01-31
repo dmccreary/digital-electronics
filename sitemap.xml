@@ -2,66 +2,170 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/about/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/contact/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/course-description/</loc>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/glossary/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/how-we-built-this-site/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/license/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/references/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/01-number-systems-binary-arithmetic/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/02-boolean-algebra-fundamentals/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/03-logic-gates-digital-signals/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/04-combinational-logic-design/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/05-logic-minimization-kmaps/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/06-combinational-building-blocks/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/07-intro-sequential-logic/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/08-flip-flops-timing/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/09-fsm-fundamentals/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/10-fsm-design-applications/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/11-registers-counters-datapath/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/12-verilog-hdl-fundamentals/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/13-verilog-modeling/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/14-testbenches-simulation/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/chapters/15-fpga-lab-skills/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/learning-graph/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/learning-graph/concept-list/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/learning-graph/concept-taxonomy/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/learning-graph/course-description-assessment/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/learning-graph/quality-metrics/</loc>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/learning-graph/taxonomy-distribution/</loc>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/lessons/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/lessons/boolean-algebra/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/lessons/logic-gates/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/prompts/generate-chapter-content/</loc>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/flip-flop/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/sims/graph-viewer/</loc>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/logic-gates/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/logic-gates/01-drawing-gates/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/shift-register/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/digital-electronics/sims/template/</loc>
-         <lastmod>2025-12-04</lastmod>
+         <lastmod>2026-01-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/digital-electronics/sims/template/TODO/</loc>
+         <lastmod>2026-01-31</lastmod>
     </url>
 </urlset>
