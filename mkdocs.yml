@@ -10,21 +10,51 @@ nav:
   - About: about.md
   - Chapters:
     - List of Chapters: chapters/index.md
-    - 1. Number Systems: chapters/01-number-systems-binary-arithmetic/index.md
-    - 2. Boolean Algebra: chapters/02-boolean-algebra-fundamentals/index.md
-    - 3. Logic Gates: chapters/03-logic-gates-digital-signals/index.md
-    - 4. Combinational Design: chapters/04-combinational-logic-design/index.md
-    - 5. K-Maps: chapters/05-logic-minimization-kmaps/index.md
-    - 6. Building Blocks: chapters/06-combinational-building-blocks/index.md
-    - 7. Sequential Logic: chapters/07-intro-sequential-logic/index.md
-    - 8. Flip-Flops: chapters/08-flip-flops-timing/index.md
-    - 9. FSM Fundamentals: chapters/09-fsm-fundamentals/index.md
-    - 10. FSM Applications: chapters/10-fsm-design-applications/index.md
-    - 11. Registers & Counters: chapters/11-registers-counters-datapath/index.md
-    - 12. Verilog Basics: chapters/12-verilog-hdl-fundamentals/index.md
-    - 13. Verilog Modeling: chapters/13-verilog-modeling/index.md
-    - 14. Testbenches: chapters/14-testbenches-simulation/index.md
-    - 15. FPGA & Lab: chapters/15-fpga-lab-skills/index.md
+    - 1. Number Systems: 
+      - Content: chapters/01-number-systems-binary-arithmetic/index.md
+      - Quiz: chapters/01-number-systems-binary-arithmetic/quiz.md
+    - 2. Boolean Algebra:
+      - Content: chapters/02-boolean-algebra-fundamentals/index.md
+      - Quiz: chapters/02-boolean-algebra-fundamentals/quiz.md
+    - 3. Logic Gates:
+      - Content: chapters/03-logic-gates-digital-signals/index.md
+      - Quiz: chapters/03-logic-gates-digital-signals/quiz.md
+    - 4. Combinational Design:
+      - Content: chapters/04-combinational-logic-design/index.md
+      - Quiz: chapters/04-combinational-logic-design/quiz.md
+    - 5. K-Maps:
+      - Content: chapters/05-logic-minimization-kmaps/index.md
+      - Quiz: chapters/05-logic-minimization-kmaps/quiz.md
+    - 6. Building Blocks:
+      - Content: chapters/06-combinational-building-blocks/index.md
+      - Quiz: chapters/06-combinational-building-blocks/quiz.md
+    - 7. Sequential Logic:
+      - Content: chapters/07-intro-sequential-logic/index.md
+      - Quiz: chapters/07-intro-sequential-logic/quiz.md
+    - 8. Flip-Flops:
+      - Content: chapters/08-flip-flops-timing/index.md
+      - Quiz: chapters/08-flip-flops-timing/quiz.md
+    - 9. FSM Fundamentals:
+      - Content: chapters/09-fsm-fundamentals/index.md
+      - Quiz: chapters/09-fsm-fundamentals/quiz.md
+    - 10. FSM Applications:
+      - Content: chapters/10-fsm-design-applications/index.md
+      - Quiz: chapters/10-fsm-design-applications/quiz.md
+    - 11. Registers & Counters:
+      - Content: chapters/11-registers-counters-datapath/index.md
+      - Quiz: chapters/11-registers-counters-datapath/quiz.md
+    - 12. Verilog Basics:
+      - Content: chapters/12-verilog-hdl-fundamentals/index.md
+      - Quiz: chapters/12-verilog-hdl-fundamentals/quiz.md
+    - 13. Verilog Modeling:
+      - Content: chapters/13-verilog-modeling/index.md
+      - Quiz: chapters/13-verilog-modeling/quiz.md
+    - 14. Testbenches:
+      - Content: chapters/14-testbenches-simulation/index.md
+      - Quiz: chapters/14-testbenches-simulation/quiz.md
+    - 15. FPGA & Lab:
+      - Content: chapters/15-fpga-lab-skills/index.md
+      - Quiz: chapters/15-fpga-lab-skills/quiz.md
   - Lessons:
     - Introduction: lessons/index.md
     - Boolean Algebra: lessons/boolean-algebra.md
@@ -77,14 +107,22 @@ plugins:
   - search
 #  - social
 markdown_extensions:
-  - meta
   - admonition
+  - attr_list
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
-  - attr_list
+  - pymdownx.mark
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.emoji
+  - pymdownx.tilde
+  - pymdownx.tasklist
+  - pymdownx.tabbed
   - pymdownx.highlight:
       linenums: true
-  # enable LaTeX extensions with KaTeX
+  # enable LaTeX equation rendering
   - pymdownx.arithmatex:
       generic: true
 
