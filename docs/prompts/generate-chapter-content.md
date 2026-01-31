@@ -136,8 +136,61 @@ Avoid putting equations within admonitions.
 After you generate the content for the chapter, write the log to logs/ch-10.md
 
 
-11-registers-counters-datapath
-12-verilog-hdl-fundamentals
-13-verilog-modeling
-14-testbenches-simulation
+## Chapter 11
+
+Use the /chapter-content-generator skill on chapter @docs/chapters/11-registers-counters-datapath/index.md
+The reading level is a sophomore in college.
+Keep the tone of the chapter light-hearted and positive.
+Feel free to throw in a joke or pun to keep the reading interesting.
+Use metaphors and stories when it would make the reading interesting.
+Make sure to put an 
+<iframe src="../../{MICROSIM-NAME}/main.html" width="100%" height="500px" scrolling="no"></iframe>
+element that points to the main.html after the #### Diagram and before the <details markdown="1"> when you generate any diagram.
+Please generate equations using the "backslash" delimiters, not the "dollar" delimiters.
+Avoid putting equations within admonitions.
+After you generate the content for the chapter, write the log to logs/ch-11.md
+
+# Chapter 12
+
+Use the /chapter-content-generator skill on chapter @docs/chapters/12-verilog-hdl-fundamentals/index.md
+The reading level is a sophomore in college.
+Keep the tone of the chapter light-hearted and positive.
+Feel free to throw in a joke or pun to keep the reading interesting.
+Use metaphors and stories when it would make the reading interesting.
+Make sure to put an 
+<iframe src="../../{MICROSIM-NAME}/main.html" width="100%" height="500px" scrolling="no"></iframe>
+element that points to the main.html after the #### Diagram and before the <details markdown="1"> when you generate any diagram.
+Please generate equations using the "backslash" delimiters, not the "dollar" delimiters.
+Avoid putting equations within admonitions.
+After you generate the content for the chapter, write the log to logs/ch-12.md
+
+## Chapter 13
+
+Use the /chapter-content-generator skill on chapter @docs/chapters/13-verilog-modeling/index.md
+The reading level is a sophomore in college.
+Keep the tone of the chapter light-hearted and positive.
+Feel free to throw in a joke or pun to keep the reading interesting.
+Use metaphors and stories when it would make the reading interesting.
+Make sure to put an 
+<iframe src="../../{MICROSIM-NAME}/main.html" width="100%" height="500px" scrolling="no"></iframe>
+element that points to the main.html after the #### Diagram and before the <details markdown="1"> when you generate any diagram.
+Please generate equations using the "backslash" delimiters, not the "dollar" delimiters.
+Avoid putting equations within admonitions.
+After you generate the content for the chapter, write the log to logs/ch-13.md
+
+## Chapter 14
+
+Use the /chapter-content-generator skill on chapter @docs/chapters/14-testbenches-simulation/index.md
+The reading level is a sophomore in college.
+Keep the tone of the chapter light-hearted and positive.
+Feel free to throw in a joke or pun to keep the reading interesting.
+Use metaphors and stories when it would make the reading interesting.
+Make sure to put an 
+<iframe src="../../{MICROSIM-NAME}/main.html" width="100%" height="500px" scrolling="no"></iframe>
+element that points to the main.html after the #### Diagram and before the <details markdown="1"> when you generate any diagram.
+Please generate equations using the "backslash" delimiters, not the "dollar" delimiters.
+Avoid putting equations within admonitions.
+After you generate the content for the chapter, write the log to logs/ch-14.md
+
+
 15-fpga-lab-skills
