@@ -8,6 +8,8 @@ repo_url: 'https://github.com/dmccreary/digital-electronics'
 nav:
   - Home: index.md
   - About: about.md
+  - Course Description: course-description.md
+
   - Chapters:
     - List of Chapters: chapters/index.md
     - 1. Number Systems: 
@@ -55,10 +57,12 @@ nav:
     - 15. FPGA & Lab:
       - Content: chapters/15-fpga-lab-skills/index.md
       - Quiz: chapters/15-fpga-lab-skills/quiz.md
+  
   - Lessons:
     - Introduction: lessons/index.md
     - Boolean Algebra: lessons/boolean-algebra.md
     - Logic Gates: lessons/logic-gates.md
+  
   - Sims:
     - Introduction: sims/index.md
     - Binary Place Value: sims/binary-place-value/index.md
@@ -66,7 +70,9 @@ nav:
     - Logic Gates: sims/logic-gates/index.md
     - Drawing Gates: sims/logic-gates/01-drawing-gates.md
     - Flip-flop: sims/flip-flop/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
     - Shift Register: sims/shift-register/index.md
+  
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -74,7 +80,15 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Quality Metrics: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Glossary Quality Report: learning-graph/glossary-quality-report.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
+  
+  - Prompts:
+    - prompts/equation-standards.md
+    - prompts/generate-chapter-content.md
+    - prompts/generate-cover-image.md
+    - prompts/generate-quizzes.md
+  
   - FAQ: faq.md
   - Glossary: glossary.md
   - License: license.md
