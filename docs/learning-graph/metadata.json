@@ -1,0 +1,10 @@
+{
+  "title": "Digital Electronics",
+  "description": "A sophomore-level digital electronics course covering ABET-aligned EE curricula including Boolean algebra, logic gates, combinational and sequential logic, FSMs, and Verilog HDL.",
+  "creator": "Dan McCreary",
+  "date": "2026-01-30",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

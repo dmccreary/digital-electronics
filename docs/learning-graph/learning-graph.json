@@ -1,0 +1,3705 @@
+{
+  "metadata": {
+    "title": "Digital Electronics",
+    "description": "A sophomore-level digital electronics course covering ABET-aligned EE curricula including Boolean algebra, logic gates, combinational and sequential logic, FSMs, and Verilog HDL.",
+    "creator": "Dan McCreary",
+    "date": "2026-01-30",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "NUMSYS": {
+      "classifierName": "Number Systems",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "BOOL": {
+      "classifierName": "Boolean Algebra",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GATES": {
+      "classifierName": "Logic Gates",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "COMB": {
+      "classifierName": "Combinational Logic",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "BLOCKS": {
+      "classifierName": "Building Blocks",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SEQ": {
+      "classifierName": "Sequential Basics",
+      "color": "LightSteelBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FLIPFLOP": {
+      "classifierName": "Flip-Flops",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FSM": {
+      "classifierName": "Finite State Machines",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    },
+    "REG": {
+      "classifierName": "Registers & Counters",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "HDL": {
+      "classifierName": "Verilog HDL",
+      "color": "PaleGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "VERIFY": {
+      "classifierName": "Verification & Lab",
+      "color": "Aquamarine",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Binary Number System",
+      "group": "NUMSYS",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Decimal to Binary Conversion",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 3,
+      "label": "Binary to Decimal Conversion",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 4,
+      "label": "Hexadecimal Numbers",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 5,
+      "label": "Hex to Binary Conversion",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 6,
+      "label": "Octal Numbers",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 7,
+      "label": "Binary Addition",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 8,
+      "label": "Binary Subtraction",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 9,
+      "label": "Two's Complement",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 10,
+      "label": "Signed Binary Numbers",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 11,
+      "label": "Overflow Detection",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 12,
+      "label": "BCD Encoding",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 13,
+      "label": "Gray Code",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 14,
+      "label": "Weighted Codes",
+      "group": "NUMSYS"
+    },
+    {
+      "id": 15,
+      "label": "Boolean Variable",
+      "group": "BOOL",
+      "shape": "box"
+    },
+    {
+      "id": 16,
+      "label": "Boolean Constant",
+      "group": "BOOL"
+    },
+    {
+      "id": 17,
+      "label": "Boolean Expression",
+      "group": "BOOL"
+    },
+    {
+      "id": 18,
+      "label": "Boolean Function",
+      "group": "BOOL"
+    },
+    {
+      "id": 19,
+      "label": "Truth Table",
+      "group": "BOOL"
+    },
+    {
+      "id": 20,
+      "label": "AND Operation",
+      "group": "BOOL"
+    },
+    {
+      "id": 21,
+      "label": "OR Operation",
+      "group": "BOOL"
+    },
+    {
+      "id": 22,
+      "label": "NOT Operation",
+      "group": "BOOL"
+    },
+    {
+      "id": 23,
+      "label": "Boolean Algebra",
+      "group": "BOOL"
+    },
+    {
+      "id": 24,
+      "label": "Identity Law",
+      "group": "BOOL"
+    },
+    {
+      "id": 25,
+      "label": "Null Law",
+      "group": "BOOL"
+    },
+    {
+      "id": 26,
+      "label": "Idempotent Law",
+      "group": "BOOL"
+    },
+    {
+      "id": 27,
+      "label": "Complement Law",
+      "group": "BOOL"
+    },
+    {
+      "id": 28,
+      "label": "Commutative Law",
+      "group": "BOOL"
+    },
+    {
+      "id": 29,
+      "label": "Associative Law",
+      "group": "BOOL"
+    },
+    {
+      "id": 30,
+      "label": "Distributive Law",
+      "group": "BOOL"
+    },
+    {
+      "id": 31,
+      "label": "Absorption Law",
+      "group": "BOOL"
+    },
+    {
+      "id": 32,
+      "label": "De Morgan's Theorem",
+      "group": "BOOL"
+    },
+    {
+      "id": 33,
+      "label": "Dual Expression",
+      "group": "BOOL"
+    },
+    {
+      "id": 34,
+      "label": "Consensus Theorem",
+      "group": "BOOL"
+    },
+    {
+      "id": 35,
+      "label": "Boolean Proof Technique",
+      "group": "BOOL"
+    },
+    {
+      "id": 36,
+      "label": "Logic Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 37,
+      "label": "AND Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 38,
+      "label": "OR Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 39,
+      "label": "NOT Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 40,
+      "label": "Buffer Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 41,
+      "label": "NAND Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 42,
+      "label": "NOR Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 43,
+      "label": "XOR Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 44,
+      "label": "XNOR Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 45,
+      "label": "Gate Symbol",
+      "group": "GATES"
+    },
+    {
+      "id": 46,
+      "label": "IEEE Gate Symbols",
+      "group": "GATES"
+    },
+    {
+      "id": 47,
+      "label": "Functional Completeness",
+      "group": "GATES"
+    },
+    {
+      "id": 48,
+      "label": "Universal Gate",
+      "group": "GATES"
+    },
+    {
+      "id": 49,
+      "label": "NAND-Only Design",
+      "group": "GATES"
+    },
+    {
+      "id": 50,
+      "label": "NOR-Only Design",
+      "group": "GATES"
+    },
+    {
+      "id": 51,
+      "label": "Gate Delay",
+      "group": "GATES"
+    },
+    {
+      "id": 52,
+      "label": "Propagation Delay",
+      "group": "GATES"
+    },
+    {
+      "id": 53,
+      "label": "Rise Time",
+      "group": "GATES"
+    },
+    {
+      "id": 54,
+      "label": "Fall Time",
+      "group": "GATES"
+    },
+    {
+      "id": 55,
+      "label": "Fan-In",
+      "group": "GATES"
+    },
+    {
+      "id": 56,
+      "label": "Fan-Out",
+      "group": "GATES"
+    },
+    {
+      "id": 57,
+      "label": "Logic Levels",
+      "group": "GATES"
+    },
+    {
+      "id": 58,
+      "label": "Noise Margin",
+      "group": "GATES"
+    },
+    {
+      "id": 59,
+      "label": "Voltage Threshold",
+      "group": "GATES"
+    },
+    {
+      "id": 60,
+      "label": "Logic Family",
+      "group": "GATES"
+    },
+    {
+      "id": 61,
+      "label": "TTL Logic",
+      "group": "GATES"
+    },
+    {
+      "id": 62,
+      "label": "CMOS Logic",
+      "group": "GATES"
+    },
+    {
+      "id": 63,
+      "label": "Digital Signal",
+      "group": "GATES"
+    },
+    {
+      "id": 64,
+      "label": "Analog vs Digital",
+      "group": "GATES"
+    },
+    {
+      "id": 65,
+      "label": "Signal Integrity",
+      "group": "GATES"
+    },
+    {
+      "id": 66,
+      "label": "Combinational Logic",
+      "group": "COMB"
+    },
+    {
+      "id": 67,
+      "label": "Sequential Logic",
+      "group": "COMB"
+    },
+    {
+      "id": 68,
+      "label": "Gate-Level Design",
+      "group": "COMB"
+    },
+    {
+      "id": 69,
+      "label": "Boolean to Gates Mapping",
+      "group": "COMB"
+    },
+    {
+      "id": 70,
+      "label": "Multi-Level Logic",
+      "group": "COMB"
+    },
+    {
+      "id": 71,
+      "label": "Two-Level Logic",
+      "group": "COMB"
+    },
+    {
+      "id": 72,
+      "label": "Sum of Products",
+      "group": "COMB"
+    },
+    {
+      "id": 73,
+      "label": "Product of Sums",
+      "group": "COMB"
+    },
+    {
+      "id": 74,
+      "label": "Minterm",
+      "group": "COMB"
+    },
+    {
+      "id": 75,
+      "label": "Maxterm",
+      "group": "COMB"
+    },
+    {
+      "id": 76,
+      "label": "Canonical Form",
+      "group": "COMB"
+    },
+    {
+      "id": 77,
+      "label": "Standard Form",
+      "group": "COMB"
+    },
+    {
+      "id": 78,
+      "label": "Minimal Form",
+      "group": "COMB"
+    },
+    {
+      "id": 79,
+      "label": "Logic Minimization",
+      "group": "COMB"
+    },
+    {
+      "id": 80,
+      "label": "Algebraic Simplification",
+      "group": "COMB"
+    },
+    {
+      "id": 81,
+      "label": "Factoring",
+      "group": "COMB"
+    },
+    {
+      "id": 82,
+      "label": "Common Term Extraction",
+      "group": "COMB"
+    },
+    {
+      "id": 83,
+      "label": "Karnaugh Map",
+      "group": "COMB"
+    },
+    {
+      "id": 84,
+      "label": "K-Map 2 Variable",
+      "group": "COMB"
+    },
+    {
+      "id": 85,
+      "label": "K-Map 3 Variable",
+      "group": "COMB"
+    },
+    {
+      "id": 86,
+      "label": "K-Map 4 Variable",
+      "group": "COMB"
+    },
+    {
+      "id": 87,
+      "label": "K-Map Grouping Rules",
+      "group": "COMB"
+    },
+    {
+      "id": 88,
+      "label": "Adjacent Cells",
+      "group": "COMB"
+    },
+    {
+      "id": 89,
+      "label": "Don't Care Condition",
+      "group": "COMB"
+    },
+    {
+      "id": 90,
+      "label": "Prime Implicant",
+      "group": "COMB"
+    },
+    {
+      "id": 91,
+      "label": "Essential Prime Implicant",
+      "group": "COMB"
+    },
+    {
+      "id": 92,
+      "label": "Implicant Cover",
+      "group": "COMB"
+    },
+    {
+      "id": 93,
+      "label": "Minimal SOP",
+      "group": "COMB"
+    },
+    {
+      "id": 94,
+      "label": "Minimal POS",
+      "group": "COMB"
+    },
+    {
+      "id": 95,
+      "label": "Quine-McCluskey Method",
+      "group": "COMB"
+    },
+    {
+      "id": 96,
+      "label": "Hazard",
+      "group": "COMB"
+    },
+    {
+      "id": 97,
+      "label": "Static Hazard",
+      "group": "COMB"
+    },
+    {
+      "id": 98,
+      "label": "Dynamic Hazard",
+      "group": "COMB"
+    },
+    {
+      "id": 99,
+      "label": "Hazard-Free Design",
+      "group": "COMB"
+    },
+    {
+      "id": 100,
+      "label": "Multiplexer",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 101,
+      "label": "MUX 2-to-1",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 102,
+      "label": "MUX 4-to-1",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 103,
+      "label": "MUX 8-to-1",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 104,
+      "label": "MUX Tree",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 105,
+      "label": "MUX as Logic Function",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 106,
+      "label": "Demultiplexer",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 107,
+      "label": "DEMUX 1-to-4",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 108,
+      "label": "Encoder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 109,
+      "label": "Decoder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 110,
+      "label": "2-to-4 Decoder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 111,
+      "label": "3-to-8 Decoder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 112,
+      "label": "Decoder Enable",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 113,
+      "label": "Priority Encoder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 114,
+      "label": "7-Segment Display",
+      "group": "BLOCKS",
+      "shape": "box"
+    },
+    {
+      "id": 115,
+      "label": "7-Segment Decoder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 116,
+      "label": "Binary Comparator",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 117,
+      "label": "Magnitude Comparator",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 118,
+      "label": "Equality Comparator",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 119,
+      "label": "Half Adder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 120,
+      "label": "Full Adder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 121,
+      "label": "Carry Bit",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 122,
+      "label": "Sum Bit",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 123,
+      "label": "Ripple Carry Adder",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 124,
+      "label": "Carry Propagation Delay",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 125,
+      "label": "Carry Lookahead Concept",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 126,
+      "label": "Adder Subtractor",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 127,
+      "label": "Overflow in Addition",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 128,
+      "label": "ALU Concept",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 129,
+      "label": "Parity Bit",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 130,
+      "label": "Parity Generator",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 131,
+      "label": "Parity Checker",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 132,
+      "label": "Error Detection",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 133,
+      "label": "Tri-State Buffer",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 134,
+      "label": "Bus Architecture",
+      "group": "BLOCKS"
+    },
+    {
+      "id": 135,
+      "label": "Memory Element",
+      "group": "SEQ"
+    },
+    {
+      "id": 136,
+      "label": "State Concept",
+      "group": "SEQ"
+    },
+    {
+      "id": 137,
+      "label": "Feedback Loop",
+      "group": "SEQ"
+    },
+    {
+      "id": 138,
+      "label": "Bistable Element",
+      "group": "SEQ"
+    },
+    {
+      "id": 139,
+      "label": "SR Latch",
+      "group": "SEQ"
+    },
+    {
+      "id": 140,
+      "label": "SR Latch Truth Table",
+      "group": "SEQ"
+    },
+    {
+      "id": 141,
+      "label": "Invalid State Problem",
+      "group": "SEQ"
+    },
+    {
+      "id": 142,
+      "label": "Gated SR Latch",
+      "group": "SEQ"
+    },
+    {
+      "id": 143,
+      "label": "D Latch",
+      "group": "SEQ"
+    },
+    {
+      "id": 144,
+      "label": "Level Sensitive",
+      "group": "SEQ"
+    },
+    {
+      "id": 145,
+      "label": "Transparent Latch",
+      "group": "SEQ"
+    },
+    {
+      "id": 146,
+      "label": "Latch Timing Problem",
+      "group": "SEQ"
+    },
+    {
+      "id": 147,
+      "label": "Race Condition",
+      "group": "SEQ"
+    },
+    {
+      "id": 148,
+      "label": "Clock Signal",
+      "group": "SEQ",
+      "shape": "box"
+    },
+    {
+      "id": 149,
+      "label": "Clock Edge",
+      "group": "SEQ"
+    },
+    {
+      "id": 150,
+      "label": "Rising Edge",
+      "group": "SEQ"
+    },
+    {
+      "id": 151,
+      "label": "Falling Edge",
+      "group": "SEQ"
+    },
+    {
+      "id": 152,
+      "label": "Clock Period",
+      "group": "SEQ"
+    },
+    {
+      "id": 153,
+      "label": "Clock Frequency",
+      "group": "SEQ"
+    },
+    {
+      "id": 154,
+      "label": "Duty Cycle",
+      "group": "SEQ"
+    },
+    {
+      "id": 155,
+      "label": "D Flip-Flop",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 156,
+      "label": "Edge Triggered",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 157,
+      "label": "Positive Edge Triggered",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 158,
+      "label": "Negative Edge Triggered",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 159,
+      "label": "Master-Slave Flip-Flop",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 160,
+      "label": "JK Flip-Flop",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 161,
+      "label": "JK Toggle Mode",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 162,
+      "label": "T Flip-Flop",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 163,
+      "label": "Flip-Flop Symbol",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 164,
+      "label": "Preset Input",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 165,
+      "label": "Clear Input",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 166,
+      "label": "Asynchronous Reset",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 167,
+      "label": "Synchronous Reset",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 168,
+      "label": "Setup Time",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 169,
+      "label": "Hold Time",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 170,
+      "label": "Clock-to-Q Delay",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 171,
+      "label": "Timing Diagram",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 172,
+      "label": "Timing Constraint",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 173,
+      "label": "Timing Violation",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 174,
+      "label": "Metastability",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 175,
+      "label": "MTBF Concept",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 176,
+      "label": "Synchronous System",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 177,
+      "label": "Asynchronous Input",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 178,
+      "label": "Synchronizer Circuit",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 179,
+      "label": "Double Flop Synchronizer",
+      "group": "FLIPFLOP"
+    },
+    {
+      "id": 180,
+      "label": "Finite State Machine",
+      "group": "FSM"
+    },
+    {
+      "id": 181,
+      "label": "FSM State",
+      "group": "FSM"
+    },
+    {
+      "id": 182,
+      "label": "State Transition",
+      "group": "FSM"
+    },
+    {
+      "id": 183,
+      "label": "Current State",
+      "group": "FSM"
+    },
+    {
+      "id": 184,
+      "label": "Next State",
+      "group": "FSM"
+    },
+    {
+      "id": 185,
+      "label": "Next State Logic",
+      "group": "FSM"
+    },
+    {
+      "id": 186,
+      "label": "Output Logic",
+      "group": "FSM"
+    },
+    {
+      "id": 187,
+      "label": "Moore Machine",
+      "group": "FSM"
+    },
+    {
+      "id": 188,
+      "label": "Moore Output",
+      "group": "FSM"
+    },
+    {
+      "id": 189,
+      "label": "Mealy Machine",
+      "group": "FSM"
+    },
+    {
+      "id": 190,
+      "label": "Mealy Output",
+      "group": "FSM"
+    },
+    {
+      "id": 191,
+      "label": "State Diagram",
+      "group": "FSM"
+    },
+    {
+      "id": 192,
+      "label": "State Diagram Notation",
+      "group": "FSM"
+    },
+    {
+      "id": 193,
+      "label": "State Table",
+      "group": "FSM"
+    },
+    {
+      "id": 194,
+      "label": "State Encoding",
+      "group": "FSM"
+    },
+    {
+      "id": 195,
+      "label": "Binary Encoding",
+      "group": "FSM"
+    },
+    {
+      "id": 196,
+      "label": "One-Hot Encoding",
+      "group": "FSM"
+    },
+    {
+      "id": 197,
+      "label": "Gray Code Encoding",
+      "group": "FSM"
+    },
+    {
+      "id": 198,
+      "label": "State Assignment",
+      "group": "FSM"
+    },
+    {
+      "id": 199,
+      "label": "State Minimization",
+      "group": "FSM"
+    },
+    {
+      "id": 200,
+      "label": "Next State Equation",
+      "group": "FSM"
+    },
+    {
+      "id": 201,
+      "label": "Output Equation",
+      "group": "FSM"
+    },
+    {
+      "id": 202,
+      "label": "FSM Design Process",
+      "group": "FSM"
+    },
+    {
+      "id": 203,
+      "label": "FSM Verification",
+      "group": "FSM"
+    },
+    {
+      "id": 204,
+      "label": "Sequence Detector",
+      "group": "FSM"
+    },
+    {
+      "id": 205,
+      "label": "Pattern Recognition FSM",
+      "group": "FSM"
+    },
+    {
+      "id": 206,
+      "label": "Overlapping Detection",
+      "group": "FSM"
+    },
+    {
+      "id": 207,
+      "label": "Non-Overlapping Detection",
+      "group": "FSM"
+    },
+    {
+      "id": 208,
+      "label": "Traffic Light Controller",
+      "group": "FSM"
+    },
+    {
+      "id": 209,
+      "label": "Vending Machine FSM",
+      "group": "FSM"
+    },
+    {
+      "id": 210,
+      "label": "Counter",
+      "group": "REG"
+    },
+    {
+      "id": 211,
+      "label": "Up Counter",
+      "group": "REG"
+    },
+    {
+      "id": 212,
+      "label": "Down Counter",
+      "group": "REG"
+    },
+    {
+      "id": 213,
+      "label": "Up-Down Counter",
+      "group": "REG"
+    },
+    {
+      "id": 214,
+      "label": "Mod-N Counter",
+      "group": "REG"
+    },
+    {
+      "id": 215,
+      "label": "Binary Counter",
+      "group": "REG"
+    },
+    {
+      "id": 216,
+      "label": "BCD Counter",
+      "group": "REG"
+    },
+    {
+      "id": 217,
+      "label": "Decade Counter",
+      "group": "REG"
+    },
+    {
+      "id": 218,
+      "label": "Ring Counter",
+      "group": "REG"
+    },
+    {
+      "id": 219,
+      "label": "Johnson Counter",
+      "group": "REG"
+    },
+    {
+      "id": 220,
+      "label": "Counter State Diagram",
+      "group": "REG"
+    },
+    {
+      "id": 221,
+      "label": "Counter Overflow",
+      "group": "REG"
+    },
+    {
+      "id": 222,
+      "label": "Register",
+      "group": "REG"
+    },
+    {
+      "id": 223,
+      "label": "Parallel Load Register",
+      "group": "REG"
+    },
+    {
+      "id": 224,
+      "label": "Shift Register",
+      "group": "REG"
+    },
+    {
+      "id": 225,
+      "label": "Serial In Serial Out",
+      "group": "REG"
+    },
+    {
+      "id": 226,
+      "label": "Serial In Parallel Out",
+      "group": "REG"
+    },
+    {
+      "id": 227,
+      "label": "Parallel In Serial Out",
+      "group": "REG"
+    },
+    {
+      "id": 228,
+      "label": "Parallel In Parallel Out",
+      "group": "REG"
+    },
+    {
+      "id": 229,
+      "label": "Bidirectional Shift",
+      "group": "REG"
+    },
+    {
+      "id": 230,
+      "label": "Universal Shift Register",
+      "group": "REG"
+    },
+    {
+      "id": 231,
+      "label": "Enable Signal",
+      "group": "REG"
+    },
+    {
+      "id": 232,
+      "label": "Load Signal",
+      "group": "REG"
+    },
+    {
+      "id": 233,
+      "label": "Clear Signal",
+      "group": "REG"
+    },
+    {
+      "id": 234,
+      "label": "Register File",
+      "group": "REG"
+    },
+    {
+      "id": 235,
+      "label": "Datapath Concept",
+      "group": "REG"
+    },
+    {
+      "id": 236,
+      "label": "Control Unit",
+      "group": "REG"
+    },
+    {
+      "id": 237,
+      "label": "Register Transfer Level",
+      "group": "REG"
+    },
+    {
+      "id": 238,
+      "label": "RTL Notation",
+      "group": "REG"
+    },
+    {
+      "id": 239,
+      "label": "Verilog HDL",
+      "group": "HDL",
+      "shape": "box"
+    },
+    {
+      "id": 240,
+      "label": "HDL vs Programming",
+      "group": "HDL"
+    },
+    {
+      "id": 241,
+      "label": "Module Definition",
+      "group": "HDL"
+    },
+    {
+      "id": 242,
+      "label": "Port Declaration",
+      "group": "HDL"
+    },
+    {
+      "id": 243,
+      "label": "Input Port",
+      "group": "HDL"
+    },
+    {
+      "id": 244,
+      "label": "Output Port",
+      "group": "HDL"
+    },
+    {
+      "id": 245,
+      "label": "Inout Port",
+      "group": "HDL"
+    },
+    {
+      "id": 246,
+      "label": "Wire Data Type",
+      "group": "HDL"
+    },
+    {
+      "id": 247,
+      "label": "Reg Data Type",
+      "group": "HDL"
+    },
+    {
+      "id": 248,
+      "label": "Parameter",
+      "group": "HDL"
+    },
+    {
+      "id": 249,
+      "label": "Assign Statement",
+      "group": "HDL"
+    },
+    {
+      "id": 250,
+      "label": "Continuous Assignment",
+      "group": "HDL"
+    },
+    {
+      "id": 251,
+      "label": "Always Block",
+      "group": "HDL"
+    },
+    {
+      "id": 252,
+      "label": "Sensitivity List",
+      "group": "HDL"
+    },
+    {
+      "id": 253,
+      "label": "Blocking Assignment",
+      "group": "HDL"
+    },
+    {
+      "id": 254,
+      "label": "Non-Blocking Assignment",
+      "group": "HDL"
+    },
+    {
+      "id": 255,
+      "label": "If-Else in Verilog",
+      "group": "HDL"
+    },
+    {
+      "id": 256,
+      "label": "Case Statement",
+      "group": "HDL"
+    },
+    {
+      "id": 257,
+      "label": "Combinational Always",
+      "group": "HDL"
+    },
+    {
+      "id": 258,
+      "label": "Sequential Always",
+      "group": "HDL"
+    },
+    {
+      "id": 259,
+      "label": "Posedge Keyword",
+      "group": "HDL"
+    },
+    {
+      "id": 260,
+      "label": "Negedge Keyword",
+      "group": "HDL"
+    },
+    {
+      "id": 261,
+      "label": "Initial Block",
+      "group": "HDL"
+    },
+    {
+      "id": 262,
+      "label": "Structural Modeling",
+      "group": "HDL"
+    },
+    {
+      "id": 263,
+      "label": "Behavioral Modeling",
+      "group": "HDL"
+    },
+    {
+      "id": 264,
+      "label": "Gate-Level Verilog",
+      "group": "HDL"
+    },
+    {
+      "id": 265,
+      "label": "RTL Verilog",
+      "group": "HDL"
+    },
+    {
+      "id": 266,
+      "label": "Module Instantiation",
+      "group": "HDL"
+    },
+    {
+      "id": 267,
+      "label": "Hierarchical Design",
+      "group": "HDL"
+    },
+    {
+      "id": 268,
+      "label": "Testbench",
+      "group": "VERIFY"
+    },
+    {
+      "id": 269,
+      "label": "Stimulus Generation",
+      "group": "VERIFY"
+    },
+    {
+      "id": 270,
+      "label": "Clock Generation",
+      "group": "VERIFY"
+    },
+    {
+      "id": 271,
+      "label": "Test Vector",
+      "group": "VERIFY"
+    },
+    {
+      "id": 272,
+      "label": "Self-Checking Testbench",
+      "group": "VERIFY"
+    },
+    {
+      "id": 273,
+      "label": "Simulation",
+      "group": "VERIFY"
+    },
+    {
+      "id": 274,
+      "label": "Simulation Time",
+      "group": "VERIFY"
+    },
+    {
+      "id": 275,
+      "label": "Waveform Viewer",
+      "group": "VERIFY"
+    },
+    {
+      "id": 276,
+      "label": "Debugging Waveforms",
+      "group": "VERIFY"
+    },
+    {
+      "id": 277,
+      "label": "Synthesis",
+      "group": "VERIFY"
+    },
+    {
+      "id": 278,
+      "label": "Synthesizable Code",
+      "group": "VERIFY"
+    },
+    {
+      "id": 279,
+      "label": "Non-Synthesizable Code",
+      "group": "VERIFY"
+    },
+    {
+      "id": 280,
+      "label": "FPGA Architecture",
+      "group": "VERIFY",
+      "shape": "box"
+    },
+    {
+      "id": 281,
+      "label": "FPGA LUT",
+      "group": "VERIFY"
+    },
+    {
+      "id": 282,
+      "label": "FPGA Flip-Flop",
+      "group": "VERIFY"
+    },
+    {
+      "id": 283,
+      "label": "FPGA Routing",
+      "group": "VERIFY"
+    },
+    {
+      "id": 284,
+      "label": "FPGA Implementation",
+      "group": "VERIFY"
+    },
+    {
+      "id": 285,
+      "label": "Pin Assignment",
+      "group": "VERIFY"
+    },
+    {
+      "id": 286,
+      "label": "Breadboard Prototyping",
+      "group": "VERIFY"
+    },
+    {
+      "id": 287,
+      "label": "Logic Probe",
+      "group": "VERIFY"
+    },
+    {
+      "id": 288,
+      "label": "Logic Analyzer",
+      "group": "VERIFY"
+    },
+    {
+      "id": 289,
+      "label": "LED Indicator",
+      "group": "VERIFY"
+    },
+    {
+      "id": 290,
+      "label": "Switch Input",
+      "group": "VERIFY"
+    },
+    {
+      "id": 291,
+      "label": "Debouncing",
+      "group": "VERIFY"
+    },
+    {
+      "id": 292,
+      "label": "Design Verification",
+      "group": "VERIFY"
+    },
+    {
+      "id": 293,
+      "label": "Functional Verification",
+      "group": "VERIFY"
+    },
+    {
+      "id": 294,
+      "label": "Timing Verification",
+      "group": "VERIFY"
+    },
+    {
+      "id": 295,
+      "label": "Hardware-Software Boundary",
+      "group": "VERIFY"
+    },
+    {
+      "id": 296,
+      "label": "Abstraction Levels",
+      "group": "VERIFY"
+    },
+    {
+      "id": 297,
+      "label": "Design Hierarchy",
+      "group": "VERIFY"
+    },
+    {
+      "id": 298,
+      "label": "Design Reuse",
+      "group": "VERIFY"
+    },
+    {
+      "id": 299,
+      "label": "Design Documentation",
+      "group": "VERIFY"
+    },
+    {
+      "id": 300,
+      "label": "Digital System Design",
+      "group": "VERIFY"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 1
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 1
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 11,
+      "to": 7
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 1
+    },
+    {
+      "from": 12,
+      "to": 3
+    },
+    {
+      "from": 13,
+      "to": 1
+    },
+    {
+      "from": 14,
+      "to": 1
+    },
+    {
+      "from": 14,
+      "to": 12
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 20,
+      "to": 15
+    },
+    {
+      "from": 20,
+      "to": 16
+    },
+    {
+      "from": 21,
+      "to": 15
+    },
+    {
+      "from": 21,
+      "to": 16
+    },
+    {
+      "from": 22,
+      "to": 15
+    },
+    {
+      "from": 22,
+      "to": 16
+    },
+    {
+      "from": 23,
+      "to": 15
+    },
+    {
+      "from": 23,
+      "to": 20
+    },
+    {
+      "from": 23,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 23
+    },
+    {
+      "from": 26,
+      "to": 23
+    },
+    {
+      "from": 27,
+      "to": 23
+    },
+    {
+      "from": 27,
+      "to": 22
+    },
+    {
+      "from": 28,
+      "to": 23
+    },
+    {
+      "from": 29,
+      "to": 23
+    },
+    {
+      "from": 30,
+      "to": 23
+    },
+    {
+      "from": 31,
+      "to": 23
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 23
+    },
+    {
+      "from": 32,
+      "to": 22
+    },
+    {
+      "from": 32,
+      "to": 20
+    },
+    {
+      "from": 32,
+      "to": 21
+    },
+    {
+      "from": 33,
+      "to": 23
+    },
+    {
+      "from": 33,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 23
+    },
+    {
+      "from": 34,
+      "to": 31
+    },
+    {
+      "from": 35,
+      "to": 23
+    },
+    {
+      "from": 35,
+      "to": 24
+    },
+    {
+      "from": 35,
+      "to": 25
+    },
+    {
+      "from": 35,
+      "to": 26
+    },
+    {
+      "from": 35,
+      "to": 27
+    },
+    {
+      "from": 35,
+      "to": 28
+    },
+    {
+      "from": 35,
+      "to": 29
+    },
+    {
+      "from": 35,
+      "to": 30
+    },
+    {
+      "from": 35,
+      "to": 31
+    },
+    {
+      "from": 35,
+      "to": 32
+    },
+    {
+      "from": 36,
+      "to": 18
+    },
+    {
+      "from": 36,
+      "to": 19
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 37,
+      "to": 20
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 21
+    },
+    {
+      "from": 39,
+      "to": 36
+    },
+    {
+      "from": 39,
+      "to": 22
+    },
+    {
+      "from": 40,
+      "to": 36
+    },
+    {
+      "from": 41,
+      "to": 36
+    },
+    {
+      "from": 41,
+      "to": 37
+    },
+    {
+      "from": 41,
+      "to": 39
+    },
+    {
+      "from": 42,
+      "to": 36
+    },
+    {
+      "from": 42,
+      "to": 38
+    },
+    {
+      "from": 42,
+      "to": 39
+    },
+    {
+      "from": 43,
+      "to": 36
+    },
+    {
+      "from": 43,
+      "to": 20
+    },
+    {
+      "from": 43,
+      "to": 21
+    },
+    {
+      "from": 43,
+      "to": 22
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 44,
+      "to": 39
+    },
+    {
+      "from": 45,
+      "to": 36
+    },
+    {
+      "from": 46,
+      "to": 45
+    },
+    {
+      "from": 47,
+      "to": 36
+    },
+    {
+      "from": 47,
+      "to": 41
+    },
+    {
+      "from": 47,
+      "to": 42
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 41
+    },
+    {
+      "from": 49,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 42
+    },
+    {
+      "from": 50,
+      "to": 47
+    },
+    {
+      "from": 50,
+      "to": 48
+    },
+    {
+      "from": 51,
+      "to": 36
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 52
+    },
+    {
+      "from": 55,
+      "to": 36
+    },
+    {
+      "from": 56,
+      "to": 36
+    },
+    {
+      "from": 57,
+      "to": 36
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 59,
+      "to": 57
+    },
+    {
+      "from": 60,
+      "to": 57
+    },
+    {
+      "from": 61,
+      "to": 60
+    },
+    {
+      "from": 62,
+      "to": 60
+    },
+    {
+      "from": 63,
+      "to": 57
+    },
+    {
+      "from": 64,
+      "to": 63
+    },
+    {
+      "from": 65,
+      "to": 58
+    },
+    {
+      "from": 65,
+      "to": 63
+    },
+    {
+      "from": 66,
+      "to": 36
+    },
+    {
+      "from": 66,
+      "to": 18
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 67,
+      "to": 135
+    },
+    {
+      "from": 68,
+      "to": 36
+    },
+    {
+      "from": 68,
+      "to": 66
+    },
+    {
+      "from": 69,
+      "to": 17
+    },
+    {
+      "from": 69,
+      "to": 36
+    },
+    {
+      "from": 69,
+      "to": 68
+    },
+    {
+      "from": 70,
+      "to": 68
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 68
+    },
+    {
+      "from": 71,
+      "to": 69
+    },
+    {
+      "from": 72,
+      "to": 17
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 72,
+      "to": 74
+    },
+    {
+      "from": 73,
+      "to": 17
+    },
+    {
+      "from": 73,
+      "to": 71
+    },
+    {
+      "from": 73,
+      "to": 75
+    },
+    {
+      "from": 74,
+      "to": 17
+    },
+    {
+      "from": 74,
+      "to": 19
+    },
+    {
+      "from": 75,
+      "to": 17
+    },
+    {
+      "from": 75,
+      "to": 19
+    },
+    {
+      "from": 76,
+      "to": 72
+    },
+    {
+      "from": 76,
+      "to": 73
+    },
+    {
+      "from": 76,
+      "to": 74
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 77
+    },
+    {
+      "from": 78,
+      "to": 79
+    },
+    {
+      "from": 79,
+      "to": 17
+    },
+    {
+      "from": 79,
+      "to": 23
+    },
+    {
+      "from": 80,
+      "to": 79
+    },
+    {
+      "from": 80,
+      "to": 35
+    },
+    {
+      "from": 81,
+      "to": 80
+    },
+    {
+      "from": 82,
+      "to": 80
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 83,
+      "to": 19
+    },
+    {
+      "from": 83,
+      "to": 79
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 85,
+      "to": 83
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 86,
+      "to": 83
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 83
+    },
+    {
+      "from": 87,
+      "to": 84
+    },
+    {
+      "from": 88,
+      "to": 87
+    },
+    {
+      "from": 89,
+      "to": 83
+    },
+    {
+      "from": 89,
+      "to": 19
+    },
+    {
+      "from": 90,
+      "to": 83
+    },
+    {
+      "from": 90,
+      "to": 87
+    },
+    {
+      "from": 90,
+      "to": 88
+    },
+    {
+      "from": 91,
+      "to": 90
+    },
+    {
+      "from": 92,
+      "to": 90
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 72
+    },
+    {
+      "from": 93,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 94,
+      "to": 73
+    },
+    {
+      "from": 94,
+      "to": 91
+    },
+    {
+      "from": 94,
+      "to": 92
+    },
+    {
+      "from": 95,
+      "to": 90
+    },
+    {
+      "from": 95,
+      "to": 91
+    },
+    {
+      "from": 95,
+      "to": 92
+    },
+    {
+      "from": 96,
+      "to": 66
+    },
+    {
+      "from": 96,
+      "to": 52
+    },
+    {
+      "from": 97,
+      "to": 96
+    },
+    {
+      "from": 98,
+      "to": 96
+    },
+    {
+      "from": 98,
+      "to": 97
+    },
+    {
+      "from": 99,
+      "to": 97
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 99,
+      "to": 83
+    },
+    {
+      "from": 100,
+      "to": 66
+    },
+    {
+      "from": 100,
+      "to": 37
+    },
+    {
+      "from": 100,
+      "to": 38
+    },
+    {
+      "from": 101,
+      "to": 100
+    },
+    {
+      "from": 102,
+      "to": 100
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 103,
+      "to": 100
+    },
+    {
+      "from": 103,
+      "to": 102
+    },
+    {
+      "from": 104,
+      "to": 102
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 100
+    },
+    {
+      "from": 105,
+      "to": 18
+    },
+    {
+      "from": 106,
+      "to": 66
+    },
+    {
+      "from": 106,
+      "to": 100
+    },
+    {
+      "from": 107,
+      "to": 106
+    },
+    {
+      "from": 108,
+      "to": 66
+    },
+    {
+      "from": 108,
+      "to": 1
+    },
+    {
+      "from": 109,
+      "to": 66
+    },
+    {
+      "from": 109,
+      "to": 1
+    },
+    {
+      "from": 109,
+      "to": 108
+    },
+    {
+      "from": 110,
+      "to": 109
+    },
+    {
+      "from": 111,
+      "to": 109
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 109
+    },
+    {
+      "from": 113,
+      "to": 108
+    },
+    {
+      "from": 115,
+      "to": 109
+    },
+    {
+      "from": 115,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 66
+    },
+    {
+      "from": 116,
+      "to": 43
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 44
+    },
+    {
+      "from": 119,
+      "to": 66
+    },
+    {
+      "from": 119,
+      "to": 7
+    },
+    {
+      "from": 119,
+      "to": 43
+    },
+    {
+      "from": 120,
+      "to": 119
+    },
+    {
+      "from": 120,
+      "to": 121
+    },
+    {
+      "from": 121,
+      "to": 119
+    },
+    {
+      "from": 122,
+      "to": 119
+    },
+    {
+      "from": 123,
+      "to": 120
+    },
+    {
+      "from": 123,
+      "to": 121
+    },
+    {
+      "from": 124,
+      "to": 123
+    },
+    {
+      "from": 124,
+      "to": 52
+    },
+    {
+      "from": 125,
+      "to": 123
+    },
+    {
+      "from": 125,
+      "to": 124
+    },
+    {
+      "from": 126,
+      "to": 123
+    },
+    {
+      "from": 126,
+      "to": 9
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 127,
+      "to": 11
+    },
+    {
+      "from": 128,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 117
+    },
+    {
+      "from": 128,
+      "to": 66
+    },
+    {
+      "from": 129,
+      "to": 43
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 130,
+      "to": 43
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 129
+    },
+    {
+      "from": 132,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 40
+    },
+    {
+      "from": 133,
+      "to": 57
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 135,
+      "to": 66
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 137,
+      "to": 36
+    },
+    {
+      "from": 137,
+      "to": 135
+    },
+    {
+      "from": 138,
+      "to": 137
+    },
+    {
+      "from": 139,
+      "to": 138
+    },
+    {
+      "from": 139,
+      "to": 41
+    },
+    {
+      "from": 139,
+      "to": 42
+    },
+    {
+      "from": 140,
+      "to": 139
+    },
+    {
+      "from": 140,
+      "to": 19
+    },
+    {
+      "from": 141,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 139
+    },
+    {
+      "from": 142,
+      "to": 148
+    },
+    {
+      "from": 143,
+      "to": 142
+    },
+    {
+      "from": 144,
+      "to": 143
+    },
+    {
+      "from": 144,
+      "to": 148
+    },
+    {
+      "from": 145,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 146,
+      "to": 145
+    },
+    {
+      "from": 147,
+      "to": 146
+    },
+    {
+      "from": 147,
+      "to": 137
+    },
+    {
+      "from": 149,
+      "to": 148
+    },
+    {
+      "from": 150,
+      "to": 149
+    },
+    {
+      "from": 151,
+      "to": 149
+    },
+    {
+      "from": 152,
+      "to": 148
+    },
+    {
+      "from": 153,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 152
+    },
+    {
+      "from": 155,
+      "to": 143
+    },
+    {
+      "from": 155,
+      "to": 149
+    },
+    {
+      "from": 155,
+      "to": 156
+    },
+    {
+      "from": 156,
+      "to": 149
+    },
+    {
+      "from": 157,
+      "to": 156
+    },
+    {
+      "from": 157,
+      "to": 150
+    },
+    {
+      "from": 158,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 151
+    },
+    {
+      "from": 159,
+      "to": 155
+    },
+    {
+      "from": 159,
+      "to": 143
+    },
+    {
+      "from": 160,
+      "to": 155
+    },
+    {
+      "from": 160,
+      "to": 139
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 161
+    },
+    {
+      "from": 163,
+      "to": 155
+    },
+    {
+      "from": 163,
+      "to": 160
+    },
+    {
+      "from": 163,
+      "to": 162
+    },
+    {
+      "from": 164,
+      "to": 155
+    },
+    {
+      "from": 165,
+      "to": 155
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 167,
+      "to": 165
+    },
+    {
+      "from": 167,
+      "to": 149
+    },
+    {
+      "from": 168,
+      "to": 155
+    },
+    {
+      "from": 168,
+      "to": 156
+    },
+    {
+      "from": 169,
+      "to": 155
+    },
+    {
+      "from": 169,
+      "to": 156
+    },
+    {
+      "from": 170,
+      "to": 155
+    },
+    {
+      "from": 170,
+      "to": 52
+    },
+    {
+      "from": 171,
+      "to": 148
+    },
+    {
+      "from": 171,
+      "to": 155
+    },
+    {
+      "from": 172,
+      "to": 168
+    },
+    {
+      "from": 172,
+      "to": 169
+    },
+    {
+      "from": 173,
+      "to": 172
+    },
+    {
+      "from": 174,
+      "to": 155
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 174
+    },
+    {
+      "from": 176,
+      "to": 155
+    },
+    {
+      "from": 176,
+      "to": 148
+    },
+    {
+      "from": 177,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 178,
+      "to": 174
+    },
+    {
+      "from": 179,
+      "to": 178
+    },
+    {
+      "from": 179,
+      "to": 155
+    },
+    {
+      "from": 180,
+      "to": 67
+    },
+    {
+      "from": 180,
+      "to": 136
+    },
+    {
+      "from": 180,
+      "to": 155
+    },
+    {
+      "from": 181,
+      "to": 180
+    },
+    {
+      "from": 182,
+      "to": 180
+    },
+    {
+      "from": 182,
+      "to": 181
+    },
+    {
+      "from": 183,
+      "to": 181
+    },
+    {
+      "from": 184,
+      "to": 182
+    },
+    {
+      "from": 184,
+      "to": 183
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 185,
+      "to": 66
+    },
+    {
+      "from": 186,
+      "to": 180
+    },
+    {
+      "from": 186,
+      "to": 66
+    },
+    {
+      "from": 187,
+      "to": 180
+    },
+    {
+      "from": 187,
+      "to": 186
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 180
+    },
+    {
+      "from": 189,
+      "to": 186
+    },
+    {
+      "from": 190,
+      "to": 189
+    },
+    {
+      "from": 191,
+      "to": 180
+    },
+    {
+      "from": 191,
+      "to": 182
+    },
+    {
+      "from": 192,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 19
+    },
+    {
+      "from": 194,
+      "to": 180
+    },
+    {
+      "from": 194,
+      "to": 1
+    },
+    {
+      "from": 195,
+      "to": 194
+    },
+    {
+      "from": 196,
+      "to": 194
+    },
+    {
+      "from": 197,
+      "to": 194
+    },
+    {
+      "from": 197,
+      "to": 13
+    },
+    {
+      "from": 198,
+      "to": 194
+    },
+    {
+      "from": 198,
+      "to": 195
+    },
+    {
+      "from": 198,
+      "to": 196
+    },
+    {
+      "from": 199,
+      "to": 193
+    },
+    {
+      "from": 199,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 185
+    },
+    {
+      "from": 200,
+      "to": 193
+    },
+    {
+      "from": 201,
+      "to": 186
+    },
+    {
+      "from": 201,
+      "to": 193
+    },
+    {
+      "from": 202,
+      "to": 191
+    },
+    {
+      "from": 202,
+      "to": 193
+    },
+    {
+      "from": 202,
+      "to": 200
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 203,
+      "to": 202
+    },
+    {
+      "from": 203,
+      "to": 171
+    },
+    {
+      "from": 204,
+      "to": 180
+    },
+    {
+      "from": 204,
+      "to": 202
+    },
+    {
+      "from": 205,
+      "to": 204
+    },
+    {
+      "from": 206,
+      "to": 204
+    },
+    {
+      "from": 207,
+      "to": 204
+    },
+    {
+      "from": 207,
+      "to": 206
+    },
+    {
+      "from": 208,
+      "to": 202
+    },
+    {
+      "from": 209,
+      "to": 202
+    },
+    {
+      "from": 209,
+      "to": 208
+    },
+    {
+      "from": 210,
+      "to": 180
+    },
+    {
+      "from": 210,
+      "to": 155
+    },
+    {
+      "from": 211,
+      "to": 210
+    },
+    {
+      "from": 212,
+      "to": 210
+    },
+    {
+      "from": 212,
+      "to": 211
+    },
+    {
+      "from": 213,
+      "to": 211
+    },
+    {
+      "from": 213,
+      "to": 212
+    },
+    {
+      "from": 214,
+      "to": 210
+    },
+    {
+      "from": 215,
+      "to": 210
+    },
+    {
+      "from": 215,
+      "to": 1
+    },
+    {
+      "from": 216,
+      "to": 215
+    },
+    {
+      "from": 216,
+      "to": 12
+    },
+    {
+      "from": 217,
+      "to": 216
+    },
+    {
+      "from": 218,
+      "to": 210
+    },
+    {
+      "from": 218,
+      "to": 224
+    },
+    {
+      "from": 219,
+      "to": 218
+    },
+    {
+      "from": 220,
+      "to": 210
+    },
+    {
+      "from": 220,
+      "to": 191
+    },
+    {
+      "from": 221,
+      "to": 210
+    },
+    {
+      "from": 221,
+      "to": 11
+    },
+    {
+      "from": 222,
+      "to": 155
+    },
+    {
+      "from": 222,
+      "to": 176
+    },
+    {
+      "from": 223,
+      "to": 222
+    },
+    {
+      "from": 223,
+      "to": 231
+    },
+    {
+      "from": 224,
+      "to": 222
+    },
+    {
+      "from": 225,
+      "to": 224
+    },
+    {
+      "from": 226,
+      "to": 224
+    },
+    {
+      "from": 226,
+      "to": 225
+    },
+    {
+      "from": 227,
+      "to": 224
+    },
+    {
+      "from": 228,
+      "to": 224
+    },
+    {
+      "from": 228,
+      "to": 223
+    },
+    {
+      "from": 229,
+      "to": 224
+    },
+    {
+      "from": 230,
+      "to": 225
+    },
+    {
+      "from": 230,
+      "to": 226
+    },
+    {
+      "from": 230,
+      "to": 227
+    },
+    {
+      "from": 230,
+      "to": 228
+    },
+    {
+      "from": 230,
+      "to": 229
+    },
+    {
+      "from": 231,
+      "to": 222
+    },
+    {
+      "from": 232,
+      "to": 222
+    },
+    {
+      "from": 232,
+      "to": 223
+    },
+    {
+      "from": 233,
+      "to": 222
+    },
+    {
+      "from": 233,
+      "to": 165
+    },
+    {
+      "from": 234,
+      "to": 222
+    },
+    {
+      "from": 235,
+      "to": 222
+    },
+    {
+      "from": 235,
+      "to": 128
+    },
+    {
+      "from": 235,
+      "to": 66
+    },
+    {
+      "from": 236,
+      "to": 180
+    },
+    {
+      "from": 236,
+      "to": 235
+    },
+    {
+      "from": 237,
+      "to": 235
+    },
+    {
+      "from": 237,
+      "to": 236
+    },
+    {
+      "from": 238,
+      "to": 237
+    },
+    {
+      "from": 240,
+      "to": 239
+    },
+    {
+      "from": 241,
+      "to": 239
+    },
+    {
+      "from": 242,
+      "to": 241
+    },
+    {
+      "from": 243,
+      "to": 242
+    },
+    {
+      "from": 244,
+      "to": 242
+    },
+    {
+      "from": 245,
+      "to": 242
+    },
+    {
+      "from": 245,
+      "to": 133
+    },
+    {
+      "from": 246,
+      "to": 239
+    },
+    {
+      "from": 246,
+      "to": 66
+    },
+    {
+      "from": 247,
+      "to": 239
+    },
+    {
+      "from": 247,
+      "to": 67
+    },
+    {
+      "from": 248,
+      "to": 241
+    },
+    {
+      "from": 249,
+      "to": 239
+    },
+    {
+      "from": 249,
+      "to": 246
+    },
+    {
+      "from": 250,
+      "to": 249
+    },
+    {
+      "from": 251,
+      "to": 239
+    },
+    {
+      "from": 251,
+      "to": 247
+    },
+    {
+      "from": 252,
+      "to": 251
+    },
+    {
+      "from": 253,
+      "to": 251
+    },
+    {
+      "from": 254,
+      "to": 251
+    },
+    {
+      "from": 254,
+      "to": 253
+    },
+    {
+      "from": 255,
+      "to": 251
+    },
+    {
+      "from": 256,
+      "to": 251
+    },
+    {
+      "from": 256,
+      "to": 255
+    },
+    {
+      "from": 257,
+      "to": 251
+    },
+    {
+      "from": 257,
+      "to": 252
+    },
+    {
+      "from": 257,
+      "to": 66
+    },
+    {
+      "from": 258,
+      "to": 251
+    },
+    {
+      "from": 258,
+      "to": 252
+    },
+    {
+      "from": 258,
+      "to": 67
+    },
+    {
+      "from": 259,
+      "to": 258
+    },
+    {
+      "from": 259,
+      "to": 150
+    },
+    {
+      "from": 260,
+      "to": 258
+    },
+    {
+      "from": 260,
+      "to": 151
+    },
+    {
+      "from": 261,
+      "to": 239
+    },
+    {
+      "from": 262,
+      "to": 239
+    },
+    {
+      "from": 262,
+      "to": 241
+    },
+    {
+      "from": 262,
+      "to": 266
+    },
+    {
+      "from": 263,
+      "to": 239
+    },
+    {
+      "from": 263,
+      "to": 251
+    },
+    {
+      "from": 264,
+      "to": 262
+    },
+    {
+      "from": 264,
+      "to": 36
+    },
+    {
+      "from": 265,
+      "to": 263
+    },
+    {
+      "from": 265,
+      "to": 237
+    },
+    {
+      "from": 266,
+      "to": 241
+    },
+    {
+      "from": 267,
+      "to": 266
+    },
+    {
+      "from": 267,
+      "to": 262
+    },
+    {
+      "from": 268,
+      "to": 239
+    },
+    {
+      "from": 268,
+      "to": 261
+    },
+    {
+      "from": 269,
+      "to": 268
+    },
+    {
+      "from": 270,
+      "to": 268
+    },
+    {
+      "from": 270,
+      "to": 148
+    },
+    {
+      "from": 271,
+      "to": 268
+    },
+    {
+      "from": 271,
+      "to": 269
+    },
+    {
+      "from": 272,
+      "to": 268
+    },
+    {
+      "from": 272,
+      "to": 271
+    },
+    {
+      "from": 273,
+      "to": 268
+    },
+    {
+      "from": 273,
+      "to": 239
+    },
+    {
+      "from": 274,
+      "to": 273
+    },
+    {
+      "from": 275,
+      "to": 273
+    },
+    {
+      "from": 275,
+      "to": 171
+    },
+    {
+      "from": 276,
+      "to": 275
+    },
+    {
+      "from": 277,
+      "to": 239
+    },
+    {
+      "from": 277,
+      "to": 265
+    },
+    {
+      "from": 278,
+      "to": 277
+    },
+    {
+      "from": 279,
+      "to": 277
+    },
+    {
+      "from": 279,
+      "to": 278
+    },
+    {
+      "from": 281,
+      "to": 280
+    },
+    {
+      "from": 281,
+      "to": 66
+    },
+    {
+      "from": 282,
+      "to": 280
+    },
+    {
+      "from": 282,
+      "to": 155
+    },
+    {
+      "from": 283,
+      "to": 280
+    },
+    {
+      "from": 284,
+      "to": 280
+    },
+    {
+      "from": 284,
+      "to": 277
+    },
+    {
+      "from": 285,
+      "to": 284
+    },
+    {
+      "from": 286,
+      "to": 36
+    },
+    {
+      "from": 287,
+      "to": 286
+    },
+    {
+      "from": 287,
+      "to": 57
+    },
+    {
+      "from": 288,
+      "to": 287
+    },
+    {
+      "from": 288,
+      "to": 171
+    },
+    {
+      "from": 289,
+      "to": 286
+    },
+    {
+      "from": 290,
+      "to": 286
+    },
+    {
+      "from": 291,
+      "to": 290
+    },
+    {
+      "from": 291,
+      "to": 155
+    },
+    {
+      "from": 292,
+      "to": 273
+    },
+    {
+      "from": 292,
+      "to": 203
+    },
+    {
+      "from": 293,
+      "to": 292
+    },
+    {
+      "from": 294,
+      "to": 292
+    },
+    {
+      "from": 294,
+      "to": 172
+    },
+    {
+      "from": 295,
+      "to": 239
+    },
+    {
+      "from": 295,
+      "to": 240
+    },
+    {
+      "from": 296,
+      "to": 68
+    },
+    {
+      "from": 296,
+      "to": 237
+    },
+    {
+      "from": 296,
+      "to": 265
+    },
+    {
+      "from": 297,
+      "to": 267
+    },
+    {
+      "from": 297,
+      "to": 296
+    },
+    {
+      "from": 298,
+      "to": 241
+    },
+    {
+      "from": 298,
+      "to": 297
+    },
+    {
+      "from": 299,
+      "to": 298
+    },
+    {
+      "from": 300,
+      "to": 235
+    },
+    {
+      "from": 300,
+      "to": 236
+    },
+    {
+      "from": 300,
+      "to": 292
+    },
+    {
+      "from": 300,
+      "to": 297
+    }
+  ]
+}
