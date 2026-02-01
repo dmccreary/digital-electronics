@@ -16,48 +16,63 @@ nav:
     - 1. Number Systems: 
       - Content: chapters/01-number-systems-binary-arithmetic/index.md
       - Quiz: chapters/01-number-systems-binary-arithmetic/quiz.md
+      - Annotated References: chapters/01-number-systems-binary-arithmetic/references.md
     - 2. Boolean Algebra:
       - Content: chapters/02-boolean-algebra-fundamentals/index.md
       - Quiz: chapters/02-boolean-algebra-fundamentals/quiz.md
+      - Annotated References: chapters/02-boolean-algebra-fundamentals/references.md
     - 3. Logic Gates:
       - Content: chapters/03-logic-gates-digital-signals/index.md
       - Quiz: chapters/03-logic-gates-digital-signals/quiz.md
+      - Annotated References: chapters/03-logic-gates-digital-signals/references.md
     - 4. Combinational Design:
       - Content: chapters/04-combinational-logic-design/index.md
       - Quiz: chapters/04-combinational-logic-design/quiz.md
+      - Annotated References: chapters/04-combinational-logic-design/references.md
     - 5. K-Maps:
       - Content: chapters/05-logic-minimization-kmaps/index.md
       - Quiz: chapters/05-logic-minimization-kmaps/quiz.md
+      - Annotated References: chapters/05-logic-minimization-kmaps/references.md
     - 6. Building Blocks:
       - Content: chapters/06-combinational-building-blocks/index.md
       - Quiz: chapters/06-combinational-building-blocks/quiz.md
+      - Annotated References: chapters/06-combinational-building-blocks/references.md
     - 7. Sequential Logic:
       - Content: chapters/07-intro-sequential-logic/index.md
       - Quiz: chapters/07-intro-sequential-logic/quiz.md
+      - Annotated References: chapters/07-intro-sequential-logic/references.md
     - 8. Flip-Flops:
       - Content: chapters/08-flip-flops-timing/index.md
       - Quiz: chapters/08-flip-flops-timing/quiz.md
+      - Annotated References: chapters/08-flip-flops-timing/references.md
     - 9. FSM Fundamentals:
       - Content: chapters/09-fsm-fundamentals/index.md
       - Quiz: chapters/09-fsm-fundamentals/quiz.md
+      - Annotated References: chapters/09-fsm-fundamentals/references.md
     - 10. FSM Applications:
       - Content: chapters/10-fsm-design-applications/index.md
       - Quiz: chapters/10-fsm-design-applications/quiz.md
+      - Annotated References: chapters/10-fsm-design-applications/references.md
     - 11. Registers & Counters:
       - Content: chapters/11-registers-counters-datapath/index.md
       - Quiz: chapters/11-registers-counters-datapath/quiz.md
+      - Annotated References: chapters/11-registers-counters-datapath/references.md
     - 12. Verilog Basics:
       - Content: chapters/12-verilog-hdl-fundamentals/index.md
       - Quiz: chapters/12-verilog-hdl-fundamentals/quiz.md
+      - Annotated References: chapters/12-verilog-hdl-fundamentals/references.md
     - 13. Verilog Modeling:
       - Content: chapters/13-verilog-modeling/index.md
       - Quiz: chapters/13-verilog-modeling/quiz.md
+      - Annotated References: chapters/13-verilog-modeling/references.md
     - 14. Testbenches:
       - Content: chapters/14-testbenches-simulation/index.md
       - Quiz: chapters/14-testbenches-simulation/quiz.md
+      - Annotated References: chapters/14-testbenches-simulation/references.md
     - 15. FPGA & Lab:
       - Content: chapters/15-fpga-lab-skills/index.md
       - Quiz: chapters/15-fpga-lab-skills/quiz.md
+      - Annotated References: chapters/15-fpga-lab-skills/references.md
   
   - Lessons:
     - Introduction: lessons/index.md
@@ -154,8 +169,14 @@ extra_javascript:
   - js/katex.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
-#extra:
-#  analytics:
-#    provider: google
-    # https://analytics.google.com/analytics/web/#/a1420179p349994530/admin/streams/table/4433129821
-#    property: G-XXXX
+
+
+copyright: Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+
+extra:
+  # remove the "Built with MkDocs" footer
+  generator: false
+
+  analytics:
+    provider: google
+    property: G-E7S8QWP8T0

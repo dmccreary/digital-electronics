@@ -1435,3 +1435,5 @@ Test your understanding with these exercises:
 
     This is why RISC processors with 32 registers need 5-bit register fields, and instructions that specify 3 registers use 15 bits just for register addressing!
 
+[See Annotated References](./references.md)
+

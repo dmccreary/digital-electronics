@@ -1461,3 +1461,5 @@ Test your mastery of FSM design with these exercises:
     - UNLOCKED: any button → LOCKED (auto-relock)
 
     This gives a 4-state FSM with 2 flip-flops. The wrong-input reset is handled by transitions back to LOCKED from any intermediate state.
+
+[See Annotated References](./references.md)

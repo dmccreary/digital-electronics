@@ -1107,3 +1107,5 @@ Test your mastery with these challenges:
     - 101–: \(A\overline{B}C\)
 
     Coverage analysis would determine which are essential.
+
+[See Annotated References](./references.md)

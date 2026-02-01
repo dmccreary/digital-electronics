@@ -1548,3 +1548,5 @@ Test your understanding with these exercises:
     - **Release**: When reset is released, the release is synchronized to the clock edge (synchronous) to avoid metastability during the transition back to normal operation
 
     This gives you the best of both worlds: guaranteed initialization at power-up and clean timing during normal operation.
+
+[See Annotated References](./references.md)
