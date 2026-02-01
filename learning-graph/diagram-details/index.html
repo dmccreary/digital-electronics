@@ -1,0 +1,5082 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Website content for a college course in digital electronics with MicroSims. All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/digital-electronics/learning-graph/diagram-details/">
+      
+      
+        <link rel="prev" href="../chapter-metrics/">
+      
+      
+        <link rel="next" href="../diagram-table/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Diagram Details - Digital Electronics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-E7S8QWP8T0"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-E7S8QWP8T0",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-E7S8QWP8T0",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="maroon" data-md-color-accent="gold">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#diagram-and-microsim-details" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Digital Electronics" class="md-header__button md-logo" aria-label="Digital Electronics" data-md-component="logo">
+      
+  <img src="../../img/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digital Electronics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Diagram Details
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/digital-electronics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Digital Electronics" class="md-nav__button md-logo" aria-label="Digital Electronics" data-md-component="logo">
+      
+  <img src="../../img/logo.jpg" alt="logo">
+
+    </a>
+    Digital Electronics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/digital-electronics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../lessons/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Lessons
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Learning Graph
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course-description-assessment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description Assessment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-taxonomy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept Taxonomy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality-metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quality Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../taxonomy-distribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taxonomy Distribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary-quality-report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary Quality Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq-quality-report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ Quality Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../book-metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter-metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter Metrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Diagram Details
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Diagram Details
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-1-number-systems-binary-arithmetic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 1: Number Systems Binary Arithmetic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 1: Number Systems Binary Arithmetic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-addition-practice-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Addition Practice Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-place-value-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Place Value Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decimal-to-binary-conversion-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimal to Binary Conversion Stepper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gray-code-vs-binary-counter-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gray Code vs Binary Counter Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number-base-converter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Number Base Converter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overflow-detection-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overflow Detection Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#twos-complement-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two's Complement Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weighted-codes-comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weighted Codes Comparison Table
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-boolean-algebra-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 2: Boolean Algebra Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 2: Boolean Algebra Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean-algebra-laws-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Algebra Laws Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-simplification-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Simplification Stepper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-morgans-theorem-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      De Morgan's Theorem Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#three-fundamental-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three Fundamental Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#truth-table-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truth Table Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-logic-gates-digital-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 3: Logic Gates Digital Signals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 3: Logic Gates Digital Signals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#and-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      AND Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-logic-gates-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Logic Gates Gallery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-to-gates-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean to Gates Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer-gate-symbol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buffer Gate Symbol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fan-in-and-fan-out-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fan-In and Fan-Out Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-family-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Family Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-levels-and-noise-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Levels and Noise Margin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nand-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAND Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nand-universal-gate-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAND Universal Gate Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nor-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOR Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nor-universal-gate-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOR Universal Gate Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not-gate-inverter-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOT Gate (Inverter) Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      OR Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagation-delay-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagation Delay Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signal-integrity-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signal Integrity Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xnor-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      XNOR Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xor-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      XOR Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-combinational-logic-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 4: Combinational Logic Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 4: Combinational Logic Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-variable-k-map-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-Variable K-Map Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-variable-k-map-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-Variable K-Map Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algebraic-simplification-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algebraic Simplification Stepper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-to-gates-mapper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean to Gates Mapper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinational-vs-sequential-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combinational vs Sequential Logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-design-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Design Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minterm-and-maxterm-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minterm and Maxterm Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-level-vs-multi-level-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Level vs Multi-Level Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-logic-minimization-kmaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 5: Logic Minimization Kmaps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 5: Logic Minimization Kmaps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-variable-k-map-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-Variable K-Map Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-care-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't Care Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-free-design-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hazard-Free Design Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-map-grouping-rules-demonstrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      K-Map Grouping Rules Demonstrator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prime-implicant-finder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prime Implicant Finder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quine-mccluskey-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quine-McCluskey Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sop-vs-pos-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOP vs POS Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-hazard-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Hazard Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-6-combinational-building-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 6: Combinational Building Blocks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 6: Combinational Building Blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-to-4-demux-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-to-4 DEMUX Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-to-1-mux-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-to-1 MUX Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-to-4-decoder-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-to-4 Decoder Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-bit-ripple-carry-adder" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-Bit Ripple Carry Adder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-to-1-mux-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-to-1 MUX Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-segment-display-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      7-Segment Display Driver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adder-subtractor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adder-Subtractor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoder-with-enable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoder with Enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#half-and-full-adder-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Half and Full Adder Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mux-function-implementer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MUX Function Implementer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mux-tree-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      MUX Tree Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magnitude-comparator-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnitude Comparator Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parity-generator-and-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parity Generator and Checker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-encoder-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority Encoder Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-alu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple ALU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tri-state-buffer-and-bus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tri-State Buffer and Bus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-7-intro-sequential-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 7: Intro Sequential Logic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 7: Intro Sequential Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bistable-element-concept" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bistable Element Concept
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clock-signal-and-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clock Signal and Edges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-latch-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      D Latch Operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duty-cycle-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duty Cycle Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invalid-state-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invalid State Demonstration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#period-and-frequency-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      Period and Frequency Relationship
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#race-condition-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Race Condition Demonstration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sr-latch-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      SR Latch Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-concept-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Concept Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transparent-latch-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparent Latch Timing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-8-flip-flops-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 8: Flip Flops Timing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 8: Flip Flops Timing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d-flip-flop-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      D Flip-Flop Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#double-flop-synchronizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Double Flop Synchronizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jk-flip-flop-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      JK Flip-Flop Modes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#master-slave-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Master-Slave Operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preset-and-clear-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preset and Clear Operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-and-hold-time-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup and Hold Time Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t-flip-flop-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      T Flip-Flop Counter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timing-diagram-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing Diagram Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timing-violation-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing Violation Detector
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-9-fsm-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 9: Fsm Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 9: Fsm Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-fsm-design-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete FSM Design Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-state-to-next-state-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current State to Next State Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fsm-state-concept-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      FSM State Concept Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mealy-machine-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mealy Machine Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moore-machine-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moore Machine Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-diagram-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Diagram Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-encoding-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Encoding Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-minimization-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Minimization Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-table-to-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Table to Circuit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-10-fsm-design-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 10: Fsm Design Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 10: Fsm Design Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fsm-design-process-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      FSM Design Process Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fsm-verification-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      FSM Verification Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moore-vs-mealy-output-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moore vs Mealy Output Timing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-state-equation-derivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next State Equation Derivation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlapping-vs-non-overlapping-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overlapping vs Non-Overlapping Detector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-recognition-fsm-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern Recognition FSM Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traffic-light-controller-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traffic Light Controller Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vending-machine-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vending Machine Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-11-registers-counters-datapath" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 11: Registers Counters Datapath
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 11: Registers Counters Datapath">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bcd-decade-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      BCD Decade Counter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datapath-with-control-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datapath with Control Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rtl-operations-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTL Operations Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-control-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register Control Signals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ring-vs-johnson-counter-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ring vs Johnson Counter Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shift-register-modes-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shift Register Modes Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#universal-shift-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      Universal Shift Register
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#up-down-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Up-Down Counter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-12-verilog-hdl-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 12: Verilog Hdl Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 12: Verilog Hdl Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuous-assignment-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous Assignment Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hdl-vs-programming-mental-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      HDL vs Programming Mental Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-block-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initial Block Timeline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-hierarchy-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Hierarchy Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-declaration-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Port Declaration Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wire-vs-reg-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wire vs Reg Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-13-verilog-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 13: Verilog Modeling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 13: Verilog Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#always-block-execution-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Always Block Execution Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocking-vs-non-blocking-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blocking vs Non-Blocking Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-statement-decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Statement Decoder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-detection-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edge Detection Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchical-design-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hierarchical Design Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-priority-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      If-Else Priority Chain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rtl-datapath-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTL Datapath Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequential-always-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequential Always Timing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structural-vs-behavioral-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structural vs Behavioral Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-14-testbenches-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 14: Testbenches Simulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 14: Testbenches Simulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clock-waveform-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clock Waveform Generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-workflow-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Workflow Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-checking-testbench-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Checking Testbench Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulation-time-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulation Time Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stimulus-pattern-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stimulus Pattern Generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthesizable-vs-non-synthesizable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synthesizable vs Non-Synthesizable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testbench-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testbench Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waveform-viewer-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waveform Viewer Interface
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-15-fpga-lab-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 15: Fpga Lab Skills
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 15: Fpga Lab Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breadboard-layout-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breadboard Layout Guide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-design-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Design Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fpga-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      FPGA Architecture Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fpga-implementation-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      FPGA Implementation Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fpga-routing-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      FPGA Routing Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lut-function-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      LUT Function Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-analyzer-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Analyzer Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-debouncing-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch Debouncing Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagram-table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagram Table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/equation-standards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How we built this site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-1-number-systems-binary-arithmetic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 1: Number Systems Binary Arithmetic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 1: Number Systems Binary Arithmetic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-addition-practice-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Addition Practice Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary-place-value-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Place Value Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decimal-to-binary-conversion-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimal to Binary Conversion Stepper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gray-code-vs-binary-counter-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gray Code vs Binary Counter Animation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number-base-converter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Number Base Converter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overflow-detection-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overflow Detection Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#twos-complement-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two's Complement Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weighted-codes-comparison-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weighted Codes Comparison Table
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-boolean-algebra-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 2: Boolean Algebra Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 2: Boolean Algebra Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#boolean-algebra-laws-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Algebra Laws Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-simplification-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean Simplification Stepper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-morgans-theorem-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      De Morgan's Theorem Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#three-fundamental-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Three Fundamental Operations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#truth-table-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Truth Table Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-logic-gates-digital-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 3: Logic Gates Digital Signals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 3: Logic Gates Digital Signals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#and-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      AND Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-logic-gates-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Logic Gates Gallery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-to-gates-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean to Gates Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buffer-gate-symbol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buffer Gate Symbol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fan-in-and-fan-out-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fan-In and Fan-Out Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-family-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Family Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-levels-and-noise-margin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Levels and Noise Margin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nand-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAND Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nand-universal-gate-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAND Universal Gate Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nor-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOR Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nor-universal-gate-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOR Universal Gate Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not-gate-inverter-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOT Gate (Inverter) Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      OR Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propagation-delay-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propagation Delay Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signal-integrity-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signal Integrity Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xnor-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      XNOR Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xor-gate-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      XOR Gate Interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-combinational-logic-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 4: Combinational Logic Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 4: Combinational Logic Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-variable-k-map-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-Variable K-Map Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-variable-k-map-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-Variable K-Map Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algebraic-simplification-stepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algebraic Simplification Stepper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-to-gates-mapper" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean to Gates Mapper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinational-vs-sequential-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combinational vs Sequential Logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complete-design-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Design Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minterm-and-maxterm-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minterm and Maxterm Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-level-vs-multi-level-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Level vs Multi-Level Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-logic-minimization-kmaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 5: Logic Minimization Kmaps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 5: Logic Minimization Kmaps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-variable-k-map-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-Variable K-Map Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-care-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't Care Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hazard-free-design-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hazard-Free Design Tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#k-map-grouping-rules-demonstrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      K-Map Grouping Rules Demonstrator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prime-implicant-finder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prime Implicant Finder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quine-mccluskey-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quine-McCluskey Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sop-vs-pos-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      SOP vs POS Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static-hazard-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Hazard Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-6-combinational-building-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 6: Combinational Building Blocks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 6: Combinational Building Blocks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-to-4-demux-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-to-4 DEMUX Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-to-1-mux-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-to-1 MUX Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-to-4-decoder-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-to-4 Decoder Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-bit-ripple-carry-adder" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-Bit Ripple Carry Adder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-to-1-mux-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-to-1 MUX Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-segment-display-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      7-Segment Display Driver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adder-subtractor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adder-Subtractor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decoder-with-enable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoder with Enable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#half-and-full-adder-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Half and Full Adder Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mux-function-implementer" class="md-nav__link">
+    <span class="md-ellipsis">
+      MUX Function Implementer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mux-tree-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      MUX Tree Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magnitude-comparator-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnitude Comparator Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parity-generator-and-checker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parity Generator and Checker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-encoder-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority Encoder Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-alu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple ALU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tri-state-buffer-and-bus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tri-State Buffer and Bus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-7-intro-sequential-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 7: Intro Sequential Logic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 7: Intro Sequential Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bistable-element-concept" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bistable Element Concept
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clock-signal-and-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clock Signal and Edges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-latch-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      D Latch Operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duty-cycle-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duty Cycle Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invalid-state-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invalid State Demonstration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#period-and-frequency-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      Period and Frequency Relationship
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#race-condition-demonstration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Race Condition Demonstration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sr-latch-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      SR Latch Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-concept-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Concept Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transparent-latch-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transparent Latch Timing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-8-flip-flops-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 8: Flip Flops Timing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 8: Flip Flops Timing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d-flip-flop-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      D Flip-Flop Interactive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#double-flop-synchronizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Double Flop Synchronizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jk-flip-flop-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      JK Flip-Flop Modes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#master-slave-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Master-Slave Operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preset-and-clear-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preset and Clear Operation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setup-and-hold-time-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup and Hold Time Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#t-flip-flop-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      T Flip-Flop Counter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timing-diagram-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing Diagram Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timing-violation-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing Violation Detector
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-9-fsm-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 9: Fsm Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 9: Fsm Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-fsm-design-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete FSM Design Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-state-to-next-state-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current State to Next State Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fsm-state-concept-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      FSM State Concept Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mealy-machine-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mealy Machine Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moore-machine-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moore Machine Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-diagram-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Diagram Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-encoding-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Encoding Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-minimization-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Minimization Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-table-to-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Table to Circuit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-10-fsm-design-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 10: Fsm Design Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 10: Fsm Design Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fsm-design-process-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      FSM Design Process Flowchart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fsm-verification-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      FSM Verification Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moore-vs-mealy-output-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moore vs Mealy Output Timing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-state-equation-derivation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next State Equation Derivation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overlapping-vs-non-overlapping-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overlapping vs Non-Overlapping Detector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-recognition-fsm-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern Recognition FSM Builder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traffic-light-controller-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Traffic Light Controller Simulator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vending-machine-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vending Machine Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-11-registers-counters-datapath" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 11: Registers Counters Datapath
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 11: Registers Counters Datapath">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bcd-decade-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      BCD Decade Counter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datapath-with-control-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datapath with Control Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rtl-operations-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTL Operations Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-control-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register Control Signals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ring-vs-johnson-counter-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ring vs Johnson Counter Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shift-register-modes-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shift Register Modes Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#universal-shift-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      Universal Shift Register
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#up-down-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Up-Down Counter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-12-verilog-hdl-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 12: Verilog Hdl Fundamentals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 12: Verilog Hdl Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuous-assignment-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous Assignment Behavior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hdl-vs-programming-mental-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      HDL vs Programming Mental Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initial-block-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initial Block Timeline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-hierarchy-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Hierarchy Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port-declaration-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Port Declaration Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wire-vs-reg-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wire vs Reg Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-13-verilog-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 13: Verilog Modeling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 13: Verilog Modeling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#always-block-execution-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Always Block Execution Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocking-vs-non-blocking-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blocking vs Non-Blocking Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-statement-decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Statement Decoder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-detection-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edge Detection Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hierarchical-design-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hierarchical Design Explorer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-priority-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      If-Else Priority Chain
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rtl-datapath-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      RTL Datapath Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequential-always-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sequential Always Timing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structural-vs-behavioral-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structural vs Behavioral Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-14-testbenches-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 14: Testbenches Simulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 14: Testbenches Simulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clock-waveform-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clock Waveform Generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-workflow-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Workflow Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self-checking-testbench-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Checking Testbench Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simulation-time-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulation Time Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stimulus-pattern-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stimulus Pattern Generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#synthesizable-vs-non-synthesizable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synthesizable vs Non-Synthesizable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testbench-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testbench Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#waveform-viewer-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Waveform Viewer Interface
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-15-fpga-lab-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter 15: Fpga Lab Skills
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter 15: Fpga Lab Skills">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breadboard-layout-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breadboard Layout Guide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-design-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Digital Design Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fpga-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      FPGA Architecture Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fpga-implementation-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      FPGA Implementation Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fpga-routing-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      FPGA Routing Visualization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lut-function-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      LUT Function Implementation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-analyzer-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Analyzer Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-debouncing-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch Debouncing Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="diagram-and-microsim-details">Diagram and MicroSim Details</h1>
+<p><strong>Total Visual Elements:</strong> 138
+<strong>Diagrams:</strong> 0
+<strong>MicroSims:</strong> 137</p>
+<h2 id="chapter-1-number-systems-binary-arithmetic">Chapter 1: Number Systems Binary Arithmetic</h2>
+<p><strong>Total elements:</strong> 8</p>
+<h3 id="binary-addition-practice-tool"><a href="../../chapters/01-number-systems-binary-arithmetic/#diagram-binary-addition-practice-tool">Binary Addition Practice Tool</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="binary-place-value-visualizer"><a href="../../chapters/01-number-systems-binary-arithmetic/#diagram-binary-place-value-visualizer">Binary Place Value Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 16</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="decimal-to-binary-conversion-stepper"><a href="../../chapters/01-number-systems-binary-arithmetic/#diagram-decimal-to-binary-conversion-stepper">Decimal to Binary Conversion Stepper</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="gray-code-vs-binary-counter-animation"><a href="../../chapters/01-number-systems-binary-arithmetic/#diagram-gray-code-vs-binary-counter-animation">Gray Code vs Binary Counter Animation</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Very Hard</li>
+</ul>
+<h3 id="number-base-converter"><a href="../../chapters/01-number-systems-binary-arithmetic/#diagram-number-base-converter">Number Base Converter</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 15</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="overflow-detection-simulator"><a href="../../chapters/01-number-systems-binary-arithmetic/#diagram-overflow-detection-simulator">Overflow Detection Simulator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="twos-complement-visualizer"><a href="../../chapters/01-number-systems-binary-arithmetic/#diagram-twos-complement-visualizer">Two's Complement Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="weighted-codes-comparison-table"><a href="../../chapters/01-number-systems-binary-arithmetic/#diagram-weighted-codes-comparison-table">Weighted Codes Comparison Table</a></h3>
+<ul>
+<li><strong>Type:</strong> Unknown</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h2 id="chapter-2-boolean-algebra-fundamentals">Chapter 2: Boolean Algebra Fundamentals</h2>
+<p><strong>Total elements:</strong> 5</p>
+<h3 id="boolean-algebra-laws-explorer"><a href="../../chapters/02-boolean-algebra-fundamentals/#diagram-boolean-algebra-laws-explorer">Boolean Algebra Laws Explorer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="boolean-simplification-stepper"><a href="../../chapters/02-boolean-algebra-fundamentals/#diagram-boolean-simplification-stepper">Boolean Simplification Stepper</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="de-morgans-theorem-visualizer"><a href="../../chapters/02-boolean-algebra-fundamentals/#diagram-de-morgans-theorem-visualizer">De Morgan's Theorem Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 13</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="three-fundamental-operations"><a href="../../chapters/02-boolean-algebra-fundamentals/#diagram-three-fundamental-operations">Three Fundamental Operations</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 22</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="truth-table-builder"><a href="../../chapters/02-boolean-algebra-fundamentals/#diagram-truth-table-builder">Truth Table Builder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h2 id="chapter-3-logic-gates-digital-signals">Chapter 3: Logic Gates Digital Signals</h2>
+<p><strong>Total elements:</strong> 17</p>
+<h3 id="and-gate-interactive"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-and-gate-interactive">AND Gate Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 13</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="all-logic-gates-gallery"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-all-logic-gates-gallery">All Logic Gates Gallery</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="boolean-to-gates-workflow"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-boolean-to-gates-workflow">Boolean to Gates Workflow</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="buffer-gate-symbol"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-buffer-gate-symbol">Buffer Gate Symbol</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="fan-in-and-fan-out-explorer"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-fan-in-and-fan-out-explorer">Fan-In and Fan-Out Explorer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="logic-family-comparison"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-logic-family-comparison">Logic Family Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="logic-levels-and-noise-margin"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-logic-levels-and-noise-margin">Logic Levels and Noise Margin</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="nand-gate-interactive"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-nand-gate-interactive">NAND Gate Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="nand-universal-gate-builder"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-nand-universal-gate-builder">NAND Universal Gate Builder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="nor-gate-interactive"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-nor-gate-interactive">NOR Gate Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="nor-universal-gate-builder"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-nor-universal-gate-builder">NOR Universal Gate Builder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="not-gate-inverter-interactive"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-not-gate-inverter-interactive">NOT Gate (Inverter) Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="or-gate-interactive"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-or-gate-interactive">OR Gate Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="propagation-delay-visualizer"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-propagation-delay-visualizer">Propagation Delay Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="signal-integrity-issues"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-signal-integrity-issues">Signal Integrity Issues</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="xnor-gate-interactive"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-xnor-gate-interactive">XNOR Gate Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="xor-gate-interactive"><a href="../../chapters/03-logic-gates-digital-signals/#diagram-xor-gate-interactive">XOR Gate Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h2 id="chapter-4-combinational-logic-design">Chapter 4: Combinational Logic Design</h2>
+<p><strong>Total elements:</strong> 8</p>
+<h3 id="2-variable-k-map-interactive"><a href="../../chapters/04-combinational-logic-design/#diagram-2-variable-k-map-interactive">2-Variable K-Map Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="3-variable-k-map-interactive"><a href="../../chapters/04-combinational-logic-design/#diagram-3-variable-k-map-interactive">3-Variable K-Map Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="algebraic-simplification-stepper"><a href="../../chapters/04-combinational-logic-design/#diagram-algebraic-simplification-stepper">Algebraic Simplification Stepper</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="boolean-to-gates-mapper"><a href="../../chapters/04-combinational-logic-design/#diagram-boolean-to-gates-mapper">Boolean to Gates Mapper</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="combinational-vs-sequential-logic"><a href="../../chapters/04-combinational-logic-design/#diagram-combinational-vs-sequential-logic">Combinational vs Sequential Logic</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 21</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="complete-design-flow"><a href="../../chapters/04-combinational-logic-design/#diagram-complete-design-flow">Complete Design Flow</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="minterm-and-maxterm-explorer"><a href="../../chapters/04-combinational-logic-design/#diagram-minterm-and-maxterm-explorer">Minterm and Maxterm Explorer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="two-level-vs-multi-level-comparison"><a href="../../chapters/04-combinational-logic-design/#diagram-two-level-vs-multi-level-comparison">Two-Level vs Multi-Level Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Very Hard</li>
+</ul>
+<h2 id="chapter-5-logic-minimization-kmaps">Chapter 5: Logic Minimization Kmaps</h2>
+<p><strong>Total elements:</strong> 8</p>
+<h3 id="4-variable-k-map-interactive"><a href="../../chapters/05-logic-minimization-kmaps/#diagram-4-variable-k-map-interactive">4-Variable K-Map Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="dont-care-optimization"><a href="../../chapters/05-logic-minimization-kmaps/#diagram-dont-care-optimization">Don't Care Optimization</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="hazard-free-design-tool"><a href="../../chapters/05-logic-minimization-kmaps/#diagram-hazard-free-design-tool">Hazard-Free Design Tool</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="k-map-grouping-rules-demonstrator"><a href="../../chapters/05-logic-minimization-kmaps/#diagram-k-map-grouping-rules-demonstrator">K-Map Grouping Rules Demonstrator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="prime-implicant-finder"><a href="../../chapters/05-logic-minimization-kmaps/#diagram-prime-implicant-finder">Prime Implicant Finder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="quine-mccluskey-visualizer"><a href="../../chapters/05-logic-minimization-kmaps/#diagram-quine-mccluskey-visualizer">Quine-McCluskey Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="sop-vs-pos-comparison"><a href="../../chapters/05-logic-minimization-kmaps/#diagram-sop-vs-pos-comparison">SOP vs POS Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="static-hazard-visualizer"><a href="../../chapters/05-logic-minimization-kmaps/#diagram-static-hazard-visualizer">Static Hazard Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h2 id="chapter-6-combinational-building-blocks">Chapter 6: Combinational Building Blocks</h2>
+<p><strong>Total elements:</strong> 16</p>
+<h3 id="1-to-4-demux-interactive"><a href="../../chapters/06-combinational-building-blocks/#diagram-1-to-4-demux-interactive">1-to-4 DEMUX Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="2-to-1-mux-interactive"><a href="../../chapters/06-combinational-building-blocks/#diagram-2-to-1-mux-interactive">2-to-1 MUX Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 15</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="2-to-4-decoder-interactive"><a href="../../chapters/06-combinational-building-blocks/#diagram-2-to-4-decoder-interactive">2-to-4 Decoder Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="4-bit-ripple-carry-adder"><a href="../../chapters/06-combinational-building-blocks/#diagram-4-bit-ripple-carry-adder">4-Bit Ripple Carry Adder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="4-to-1-mux-interactive"><a href="../../chapters/06-combinational-building-blocks/#diagram-4-to-1-mux-interactive">4-to-1 MUX Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 17</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="7-segment-display-driver"><a href="../../chapters/06-combinational-building-blocks/#diagram-7-segment-display-driver">7-Segment Display Driver</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 18</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="adder-subtractor"><a href="../../chapters/06-combinational-building-blocks/#diagram-adder-subtractor">Adder-Subtractor</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="decoder-with-enable"><a href="../../chapters/06-combinational-building-blocks/#diagram-decoder-with-enable">Decoder with Enable</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="half-and-full-adder-interactive"><a href="../../chapters/06-combinational-building-blocks/#diagram-half-and-full-adder-interactive">Half and Full Adder Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="mux-function-implementer"><a href="../../chapters/06-combinational-building-blocks/#diagram-mux-function-implementer">MUX Function Implementer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="mux-tree-builder"><a href="../../chapters/06-combinational-building-blocks/#diagram-mux-tree-builder">MUX Tree Builder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="magnitude-comparator-interactive"><a href="../../chapters/06-combinational-building-blocks/#diagram-magnitude-comparator-interactive">Magnitude Comparator Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="parity-generator-and-checker"><a href="../../chapters/06-combinational-building-blocks/#diagram-parity-generator-and-checker">Parity Generator and Checker</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="priority-encoder-interactive"><a href="../../chapters/06-combinational-building-blocks/#diagram-priority-encoder-interactive">Priority Encoder Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 15</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="simple-alu"><a href="../../chapters/06-combinational-building-blocks/#diagram-simple-alu">Simple ALU</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="tri-state-buffer-and-bus"><a href="../../chapters/06-combinational-building-blocks/#diagram-tri-state-buffer-and-bus">Tri-State Buffer and Bus</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h2 id="chapter-7-intro-sequential-logic">Chapter 7: Intro Sequential Logic</h2>
+<p><strong>Total elements:</strong> 10</p>
+<h3 id="bistable-element-concept"><a href="../../chapters/07-intro-sequential-logic/#diagram-bistable-element-concept">Bistable Element Concept</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="clock-signal-and-edges"><a href="../../chapters/07-intro-sequential-logic/#diagram-clock-signal-and-edges">Clock Signal and Edges</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="d-latch-operation"><a href="../../chapters/07-intro-sequential-logic/#diagram-d-latch-operation">D Latch Operation</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="duty-cycle-visualizer"><a href="../../chapters/07-intro-sequential-logic/#diagram-duty-cycle-visualizer">Duty Cycle Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="invalid-state-demonstration"><a href="../../chapters/07-intro-sequential-logic/#diagram-invalid-state-demonstration">Invalid State Demonstration</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="period-and-frequency-relationship"><a href="../../chapters/07-intro-sequential-logic/#diagram-period-and-frequency-relationship">Period and Frequency Relationship</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="race-condition-demonstration"><a href="../../chapters/07-intro-sequential-logic/#diagram-race-condition-demonstration">Race Condition Demonstration</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="sr-latch-interactive"><a href="../../chapters/07-intro-sequential-logic/#diagram-sr-latch-interactive">SR Latch Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Very Hard</li>
+</ul>
+<h3 id="state-concept-visualizer"><a href="../../chapters/07-intro-sequential-logic/#diagram-state-concept-visualizer">State Concept Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 14</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="transparent-latch-timing"><a href="../../chapters/07-intro-sequential-logic/#diagram-transparent-latch-timing">Transparent Latch Timing</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h2 id="chapter-8-flip-flops-timing">Chapter 8: Flip Flops Timing</h2>
+<p><strong>Total elements:</strong> 9</p>
+<h3 id="d-flip-flop-interactive"><a href="../../chapters/08-flip-flops-timing/#diagram-d-flip-flop-interactive">D Flip-Flop Interactive</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="double-flop-synchronizer"><a href="../../chapters/08-flip-flops-timing/#diagram-double-flop-synchronizer">Double Flop Synchronizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="jk-flip-flop-modes"><a href="../../chapters/08-flip-flops-timing/#diagram-jk-flip-flop-modes">JK Flip-Flop Modes</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 15</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="master-slave-operation"><a href="../../chapters/08-flip-flops-timing/#diagram-master-slave-operation">Master-Slave Operation</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="preset-and-clear-operation"><a href="../../chapters/08-flip-flops-timing/#diagram-preset-and-clear-operation">Preset and Clear Operation</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 14</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="setup-and-hold-time-visualizer"><a href="../../chapters/08-flip-flops-timing/#diagram-setup-and-hold-time-visualizer">Setup and Hold Time Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="t-flip-flop-counter"><a href="../../chapters/08-flip-flops-timing/#diagram-t-flip-flop-counter">T Flip-Flop Counter</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 13</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="timing-diagram-builder"><a href="../../chapters/08-flip-flops-timing/#diagram-timing-diagram-builder">Timing Diagram Builder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="timing-violation-detector"><a href="../../chapters/08-flip-flops-timing/#diagram-timing-violation-detector">Timing Violation Detector</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h2 id="chapter-9-fsm-fundamentals">Chapter 9: Fsm Fundamentals</h2>
+<p><strong>Total elements:</strong> 9</p>
+<h3 id="complete-fsm-design-flow"><a href="../../chapters/09-fsm-fundamentals/#diagram-complete-fsm-design-flow">Complete FSM Design Flow</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="current-state-to-next-state-flow"><a href="../../chapters/09-fsm-fundamentals/#diagram-current-state-to-next-state-flow">Current State to Next State Flow</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="fsm-state-concept-visualizer"><a href="../../chapters/09-fsm-fundamentals/#diagram-fsm-state-concept-visualizer">FSM State Concept Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="mealy-machine-simulator"><a href="../../chapters/09-fsm-fundamentals/#diagram-mealy-machine-simulator">Mealy Machine Simulator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 16</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="moore-machine-simulator"><a href="../../chapters/09-fsm-fundamentals/#diagram-moore-machine-simulator">Moore Machine Simulator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 15</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="state-diagram-builder"><a href="../../chapters/09-fsm-fundamentals/#diagram-state-diagram-builder">State Diagram Builder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="state-encoding-comparison"><a href="../../chapters/09-fsm-fundamentals/#diagram-state-encoding-comparison">State Encoding Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="state-minimization-visualizer"><a href="../../chapters/09-fsm-fundamentals/#diagram-state-minimization-visualizer">State Minimization Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="state-table-to-circuit"><a href="../../chapters/09-fsm-fundamentals/#diagram-state-table-to-circuit">State Table to Circuit</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h2 id="chapter-10-fsm-design-applications">Chapter 10: Fsm Design Applications</h2>
+<p><strong>Total elements:</strong> 8</p>
+<h3 id="fsm-design-process-flowchart"><a href="../../chapters/10-fsm-design-applications/#diagram-fsm-design-process-flowchart">FSM Design Process Flowchart</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="fsm-verification-simulator"><a href="../../chapters/10-fsm-design-applications/#diagram-fsm-verification-simulator">FSM Verification Simulator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="moore-vs-mealy-output-timing"><a href="../../chapters/10-fsm-design-applications/#diagram-moore-vs-mealy-output-timing">Moore vs Mealy Output Timing</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="next-state-equation-derivation"><a href="../../chapters/10-fsm-design-applications/#diagram-next-state-equation-derivation">Next State Equation Derivation</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="overlapping-vs-non-overlapping-detector"><a href="../../chapters/10-fsm-design-applications/#diagram-overlapping-vs-non-overlapping-detector">Overlapping vs Non-Overlapping Detector</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="pattern-recognition-fsm-builder"><a href="../../chapters/10-fsm-design-applications/#diagram-pattern-recognition-fsm-builder">Pattern Recognition FSM Builder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="traffic-light-controller-simulator"><a href="../../chapters/10-fsm-design-applications/#diagram-traffic-light-controller-simulator">Traffic Light Controller Simulator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="vending-machine-simulator"><a href="../../chapters/10-fsm-design-applications/#diagram-vending-machine-simulator">Vending Machine Simulator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h2 id="chapter-11-registers-counters-datapath">Chapter 11: Registers Counters Datapath</h2>
+<p><strong>Total elements:</strong> 9</p>
+<h3 id="bcd-decade-counter"><a href="../../chapters/11-registers-counters-datapath/#diagram-bcd-decade-counter">BCD Decade Counter</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="datapath-with-control-unit"><a href="../../chapters/11-registers-counters-datapath/#diagram-datapath-with-control-unit">Datapath with Control Unit</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 14</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="rtl-operations-visualizer"><a href="../../chapters/11-registers-counters-datapath/#diagram-rtl-operations-visualizer">RTL Operations Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="register-control-signals"><a href="../../chapters/11-registers-counters-datapath/#diagram-register-control-signals">Register Control Signals</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 18</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="register-file"><a href="../../chapters/11-registers-counters-datapath/#diagram-register-file">Register File</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="ring-vs-johnson-counter-comparison"><a href="../../chapters/11-registers-counters-datapath/#diagram-ring-vs-johnson-counter-comparison">Ring vs Johnson Counter Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="shift-register-modes-comparison"><a href="../../chapters/11-registers-counters-datapath/#diagram-shift-register-modes-comparison">Shift Register Modes Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="universal-shift-register"><a href="../../chapters/11-registers-counters-datapath/#diagram-universal-shift-register">Universal Shift Register</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 18</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="up-down-counter"><a href="../../chapters/11-registers-counters-datapath/#diagram-up-down-counter">Up-Down Counter</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 13</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h2 id="chapter-12-verilog-hdl-fundamentals">Chapter 12: Verilog Hdl Fundamentals</h2>
+<p><strong>Total elements:</strong> 6</p>
+<h3 id="continuous-assignment-behavior"><a href="../../chapters/12-verilog-hdl-fundamentals/#diagram-continuous-assignment-behavior">Continuous Assignment Behavior</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 15</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="hdl-vs-programming-mental-model"><a href="../../chapters/12-verilog-hdl-fundamentals/#diagram-hdl-vs-programming-mental-model">HDL vs Programming Mental Model</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="initial-block-timeline"><a href="../../chapters/12-verilog-hdl-fundamentals/#diagram-initial-block-timeline">Initial Block Timeline</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 8</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="module-hierarchy-visualization"><a href="../../chapters/12-verilog-hdl-fundamentals/#diagram-module-hierarchy-visualization">Module Hierarchy Visualization</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="port-declaration-anatomy"><a href="../../chapters/12-verilog-hdl-fundamentals/#diagram-port-declaration-anatomy">Port Declaration Anatomy</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="wire-vs-reg-comparison"><a href="../../chapters/12-verilog-hdl-fundamentals/#diagram-wire-vs-reg-comparison">Wire vs Reg Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 12</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h2 id="chapter-13-verilog-modeling">Chapter 13: Verilog Modeling</h2>
+<p><strong>Total elements:</strong> 9</p>
+<h3 id="always-block-execution-model"><a href="../../chapters/13-verilog-modeling/#diagram-always-block-execution-model">Always Block Execution Model</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 10</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="blocking-vs-non-blocking-comparison"><a href="../../chapters/13-verilog-modeling/#diagram-blocking-vs-non-blocking-comparison">Blocking vs Non-Blocking Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="case-statement-decoder"><a href="../../chapters/13-verilog-modeling/#diagram-case-statement-decoder">Case Statement Decoder</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 13</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="edge-detection-visualizer"><a href="../../chapters/13-verilog-modeling/#diagram-edge-detection-visualizer">Edge Detection Visualizer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="hierarchical-design-explorer"><a href="../../chapters/13-verilog-modeling/#diagram-hierarchical-design-explorer">Hierarchical Design Explorer</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="if-else-priority-chain"><a href="../../chapters/13-verilog-modeling/#diagram-if-else-priority-chain">If-Else Priority Chain</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="rtl-datapath-visualization"><a href="../../chapters/13-verilog-modeling/#diagram-rtl-datapath-visualization">RTL Datapath Visualization</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 5</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="sequential-always-timing"><a href="../../chapters/13-verilog-modeling/#diagram-sequential-always-timing">Sequential Always Timing</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 15</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="structural-vs-behavioral-comparison"><a href="../../chapters/13-verilog-modeling/#diagram-structural-vs-behavioral-comparison">Structural vs Behavioral Comparison</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 11</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h2 id="chapter-14-testbenches-simulation">Chapter 14: Testbenches Simulation</h2>
+<p><strong>Total elements:</strong> 8</p>
+<h3 id="clock-waveform-generator"><a href="../../chapters/14-testbenches-simulation/#diagram-clock-waveform-generator">Clock Waveform Generator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="debug-workflow-visualization"><a href="../../chapters/14-testbenches-simulation/#diagram-debug-workflow-visualization">Debug Workflow Visualization</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="self-checking-testbench-flow"><a href="../../chapters/14-testbenches-simulation/#diagram-self-checking-testbench-flow">Self-Checking Testbench Flow</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="simulation-time-visualization"><a href="../../chapters/14-testbenches-simulation/#diagram-simulation-time-visualization">Simulation Time Visualization</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="stimulus-pattern-generator"><a href="../../chapters/14-testbenches-simulation/#diagram-stimulus-pattern-generator">Stimulus Pattern Generator</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="synthesizable-vs-non-synthesizable"><a href="../../chapters/14-testbenches-simulation/#diagram-synthesizable-vs-non-synthesizable">Synthesizable vs Non-Synthesizable</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="testbench-architecture"><a href="../../chapters/14-testbenches-simulation/#diagram-testbench-architecture">Testbench Architecture</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 2</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="waveform-viewer-interface"><a href="../../chapters/14-testbenches-simulation/#diagram-waveform-viewer-interface">Waveform Viewer Interface</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 6</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h2 id="chapter-15-fpga-lab-skills">Chapter 15: Fpga Lab Skills</h2>
+<p><strong>Total elements:</strong> 8</p>
+<h3 id="breadboard-layout-guide"><a href="../../chapters/15-fpga-lab-skills/#diagram-breadboard-layout-guide">Breadboard Layout Guide</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="digital-design-flow"><a href="../../chapters/15-fpga-lab-skills/#diagram-digital-design-flow">Digital Design Flow</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 0</li>
+<li><strong>Difficulty:</strong> Easy</li>
+</ul>
+<h3 id="fpga-architecture-overview"><a href="../../chapters/15-fpga-lab-skills/#diagram-fpga-architecture-overview">FPGA Architecture Overview</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 1</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="fpga-implementation-flow"><a href="../../chapters/15-fpga-lab-skills/#diagram-fpga-implementation-flow">FPGA Implementation Flow</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 4</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="fpga-routing-visualization"><a href="../../chapters/15-fpga-lab-skills/#diagram-fpga-routing-visualization">FPGA Routing Visualization</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 3</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="lut-function-implementation"><a href="../../chapters/15-fpga-lab-skills/#diagram-lut-function-implementation">LUT Function Implementation</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 16</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+<h3 id="logic-analyzer-interface"><a href="../../chapters/15-fpga-lab-skills/#diagram-logic-analyzer-interface">Logic Analyzer Interface</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 7</li>
+<li><strong>Difficulty:</strong> Medium</li>
+</ul>
+<h3 id="switch-debouncing-visualization"><a href="../../chapters/15-fpga-lab-skills/#diagram-switch-debouncing-visualization">Switch Debouncing Visualization</a></h3>
+<ul>
+<li><strong>Type:</strong> Microsim</li>
+<li><strong>Bloom's Taxonomy:</strong> Not specified</li>
+<li><strong>UI Elements:</strong> 9</li>
+<li><strong>Difficulty:</strong> Hard</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../chapter-metrics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter Metrics">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Chapter Metrics
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../diagram-table/" class="md-footer__link md-footer__link--next" aria-label="Next: Diagram Table">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Diagram Table
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
