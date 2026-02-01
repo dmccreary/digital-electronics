@@ -1682,3 +1682,5 @@ Test your understanding with these exercises:
     - Device C: disabled → high-Z (disconnected)
 
     The bus value is 0.
+
+[See Annotated References](./references.md)

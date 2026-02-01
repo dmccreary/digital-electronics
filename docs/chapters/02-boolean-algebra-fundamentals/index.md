@@ -821,3 +821,5 @@ Test your understanding with these exercises:
     Swap AND↔OR and 0↔1 (no constants here):
     \(A + (B \cdot C) = (A + B) \cdot (A + C)\)
     (This is the OR-over-AND distributive law!)
+
+[See Annotated References](./references.md)

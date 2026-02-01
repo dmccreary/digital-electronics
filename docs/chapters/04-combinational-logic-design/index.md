@@ -1031,3 +1031,5 @@ Test your understanding with these exercises:
     The POS uses maxterms for where F=0:
     \[F = \prod M(0, 2, 3) = M_0 \cdot M_2 \cdot M_3\]
     \[F = (A+B+C)(A+\overline{B}+C)(A+\overline{B}+\overline{C})\]
+
+[See Annotated References](./references.md)

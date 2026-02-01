@@ -1385,3 +1385,5 @@ Test your understanding with these exercises:
     - Octal: `8'o52`
     - Decimal: `8'd42`
     - Hexadecimal: `8'h2A`
+
+[See Annotated References](./references.md)

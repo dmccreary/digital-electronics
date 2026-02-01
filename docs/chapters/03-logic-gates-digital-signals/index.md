@@ -1391,3 +1391,5 @@ These concepts form the foundation for everything that follows—combinational l
 
     Both noise margins are 0.4V, meaning signals can tolerate up to 0.4V of noise in either direction.
 
+[See Annotated References](./references.md)
+

@@ -1157,3 +1157,5 @@ Test your understanding with these exercises:
     - D=1 → Q=1
 
     Final Q = 1. The latch captures every transition while transparent.
+
+[See Annotated References](./references.md)

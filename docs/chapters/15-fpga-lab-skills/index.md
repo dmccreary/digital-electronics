@@ -1403,3 +1403,5 @@ Test your understanding with these exercises:
     - button_debounce serves pedestrian_crossing specifically
     - seven_segment_display is independent I/O, parallel to controller
     - top_level connects everything and handles I/O pads
+
+[See Annotated References](./references.md)

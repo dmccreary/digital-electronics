@@ -1790,3 +1790,5 @@ Test your understanding with these exercises:
 
     endmodule
     ```
+
+[See Annotated References](./references.md)

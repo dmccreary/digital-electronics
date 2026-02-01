@@ -949,3 +949,5 @@ These fundamentals will appear constantly throughout your digital electronics jo
     Interpretation: This represents \(-100\) in signed 8-bit format.
 
 In the next chapter, we'll put these number systems to work as we explore Boolean algebra—the mathematical framework that governs all digital logic.
+
+[See Annotated References](./references.md)
