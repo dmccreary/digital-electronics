@@ -52,7 +52,7 @@ function drawInverter(x, y, w, h, l) {
 
   // Draw small circle at the right tip of the triangle
   push();
-  fill('black')
+  // fill('black')
   circle(x + w, y + h / 2, w / 5);
   pop();
 }
@@ -102,7 +102,7 @@ function drawNAND(x, y, w, h, l) {
   line(x + w, y + h / 2, x + w + l, y + h / 2);
   // Draw small circle at the right of the gate
   push(); // keep the drawing context
-  fill('black')
+  // fill('black')
   circle(x + w + l / 4, y + h / 2, w / 5);
   pop();
 }
@@ -162,7 +162,7 @@ function drawNOR(x, y, w, h, l) {
   let circleRadius = w * 0.20; // 1/5 of the width
   let outputX = x + w + circleRadius / 2;
   push();
-  fill('black')
+  // fill('black')
   circle(outputX, outputY, circleRadius);
   pop();
 }
@@ -330,8 +330,6 @@ function drawXNOR(x, y, w, h, l) {
   let outputX = x + w + l*.1;
   let outputY = y + h / 2;
   let circleRadius = l * 0.4;
-  push();
-  fill('black')
+  // fill('black')
   circle(outputX, outputY, circleRadius);
-  pop();
 } 

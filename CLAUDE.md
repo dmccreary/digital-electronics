@@ -80,6 +80,28 @@ drawXNOR(x, y, w, h, l);
 
 The library uses `push()`/`pop()` to preserve drawing context around fills.
 
+### Responsive Canvas Width
+
+Never use `Math.min()` to limit canvas width. Let the canvas use the full container width for proper responsive behavior:
+```javascript
+// BAD - limits width artificially
+canvasWidth = Math.min(container.offsetWidth - 20, 500);
+
+// GOOD - uses full container width
+canvasWidth = container.offsetWidth;
+```
+
+### UI Controls
+
+Always use native p5.js DOM controls instead of custom canvas-based controls:
+- `createSelect()` for dropdowns
+- `createSlider()` for range inputs
+- `createButton()` for buttons
+- `createInput()` for text fields
+- `createCheckbox()` for toggles
+
+Native controls provide better accessibility, keyboard navigation, and mobile support.
+
 ### Embedding MicroSims in Markdown
 
 Use iframes without style attributes:

@@ -8,12 +8,12 @@ quality_score: 85
 
 # Single Logic Gate MicroSim
 
-<iframe src="main.html" width="100%" height="400px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="460px" scrolling="no"></iframe>
 
 **Copy this iframe to your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/digital-electronics/sims/single-logic-gate/main.html" width="100%" height="400px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/digital-electronics/sims/single-logic-gate/main.html" width="100%" height="500px" scrolling="no"></iframe>
 ```
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
