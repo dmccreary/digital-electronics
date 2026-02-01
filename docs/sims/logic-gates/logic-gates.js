@@ -1,105 +1,186 @@
-// Test Logic Gate Lib Test Program
-// Four sliders to change the size, fill color, stroke color and stroke weight
-// Note that the 
-canvasWidth = 400;
-drawHeight = 200;
-canvasHeight = drawHeight + 120; // room for 4 sliders
-sliderLeftMargin = 150;
-lm = 40; // left margin
-tm = 20; // top margin
-hspace = 90; // horizontal spacing between gates
-vspace = 85; // vertical spacing between gates
-sg = 25; // slider gap
+// Logic Gates Library Test Program
+// Canvas-based sliders for size, fill color, stroke color and stroke weight
+
+let canvasWidth = 400;
+let drawHeight = 200;
+let controlHeight = 120;
+let canvasHeight = drawHeight + controlHeight;
+let sliderLeftMargin = 130;
+let sliderWidth;
+let lm = 40; // left margin
+let tm = 20; // top margin
+let hspace = 90; // horizontal spacing between gates
+let vspace = 85; // vertical spacing between gates
+
+// Slider values
+let sizeValue = 40;
+let colorValue = 130;
+let strokeColorValue = 150;
+let strokeWeightValue = 1;
+
+// Slider parameters
+let sliderY = [10, 35, 60, 85]; // Y offsets from drawHeight
+let sliderHeight = 20;
+let activeSlider = -1; // Which slider is being dragged
 
 function setup() {
+    updateCanvasSize();
     const canvas = createCanvas(canvasWidth, canvasHeight);
     var mainElement = document.querySelector('main');
     canvas.parent(mainElement);
     colorMode(HSB, 255);
     textSize(16);
+    sliderWidth = canvasWidth - sliderLeftMargin - 20;
+}
 
-    // slider to adjust the width and height
-    sizeSlider = createSlider(0, 60, 40, 1);
-    sizeSlider.position(sliderLeftMargin, drawHeight + 10);
-    sizeSlider.size(canvasWidth -  sliderLeftMargin - 20);
-  
-    // slider to adjust the fill color
-    colorSlider = createSlider(0, 255, 130, 1);
-    colorSlider.position(sliderLeftMargin, drawHeight + 10+sg);
-    colorSlider.size(canvasWidth - sliderLeftMargin - 20);
-  
-    // slider to adjust the stroke color
-    strokeColorSlider = createSlider(0, 255, 150, 1);
-    strokeColorSlider.position(sliderLeftMargin, drawHeight + 10+sg*2);
-    strokeColorSlider.size(canvasWidth - sliderLeftMargin - 20);
-  
-    // slider to adjust the stroke weight
-    strokeWeightSlider = createSlider(0, 5, 1, .1);
-    strokeWeightSlider.position(sliderLeftMargin, drawHeight + 10+sg*3);
-    strokeWeightSlider.size(canvasWidth - sliderLeftMargin - 20);
+function updateCanvasSize() {
+    const container = document.querySelector('main')?.parentElement;
+    if (container) {
+        canvasWidth = Math.min(container.offsetWidth - 20, 450);
+        sliderWidth = canvasWidth - sliderLeftMargin - 20;
+    }
 }
 
 function draw() {
-    // make the background drawing region light gray
+    // Make the background drawing region light gray
     fill('ghostwhite');
     stroke('silver');
-    rect(0,0,canvasWidth, canvasWidth);
-    // make the background of the controls white
-    fill('white')
-    rect(0,drawHeight,canvasWidth, canvasHeight-drawHeight);
+    rect(0, 0, canvasWidth, drawHeight);
 
-    // get the updated slider value
-    sz = sizeSlider.value();
-    colorVal = colorSlider.value();
-    strokecolor = strokeColorSlider.value();
-    strokeweight = strokeWeightSlider.value();
-  
-    fill(colorVal, 255, 255, 255);
-    stroke(strokecolor, 255, 255, 255);
-    strokeWeight(strokeweight);
-  
-    drawBuffer(lm, tm, sz, sz, sz/2);
-    drawLabel('Buffer', lm, tm, sz, sz);
-  
-    drawInverter(lm + hspace, tm, sz, sz, sz/2);
-    drawLabel('Inverter', lm + hspace, tm, sz, sz);
-    
-    drawAND(lm + hspace*2, tm, sz, sz, sz/2);
-    drawLabel('AND', lm  + hspace*2, tm, sz, sz);
-  
-    drawNAND(lm + hspace*3, tm, sz, sz, sz/2);
-    drawLabel('NAND', lm + hspace*3, tm, sz, sz);
-  
-    drawOR(lm, tm + vspace, sz, sz, sz/2, sz, sz);
-    drawLabel('OR', lm, tm + vspace, tm, sz, sz);
-  
-    drawNOR(lm + hspace, tm + vspace, sz, sz, sz/2);
-    drawLabel('NOR', lm + hspace, tm + vspace, tm, sz, sz);
-  
-    drawXOR(lm + hspace*2, tm + vspace, sz, sz, sz/2);
-    drawLabel('NOR', lm + hspace*2, tm + vspace, tm, sz, sz);
-  
-    drawXNOR(lm + hspace*3, tm + vspace, sz, sz, sz/2);
-    drawLabel('XNOR', lm + hspace*3, tm + vspace, tm, sz, sz);
-
-
-    // draw label and value
-    fill('black');
+    // Make the background of the controls white
+    fill('white');
     noStroke();
-    textAlign(RIGHT);
-    text("Size: " +  sz, sliderLeftMargin-10, drawHeight + sg);
-    text("Fill Color: " +  colorVal, sliderLeftMargin-10, drawHeight + sg*2);
-    text("Stroke Color: " +  strokecolor, sliderLeftMargin-10, drawHeight + sg*3);
-    text("Stroke Weight: " +  strokeweight, sliderLeftMargin-10, drawHeight + sg*4)
+    rect(0, drawHeight, canvasWidth, controlHeight);
+
+    // Set gate drawing style
+    fill(colorValue, 255, 255, 255);
+    stroke(strokeColorValue, 255, 255, 255);
+    strokeWeight(strokeWeightValue);
+
+    // Draw all gates
+    drawBuffer(lm, tm, sizeValue, sizeValue, sizeValue / 2);
+    drawLabel('Buffer', lm, tm, sizeValue, sizeValue);
+
+    drawInverter(lm + hspace, tm, sizeValue, sizeValue, sizeValue / 2);
+    drawLabel('Inverter', lm + hspace, tm, sizeValue, sizeValue);
+
+    drawAND(lm + hspace * 2, tm, sizeValue, sizeValue, sizeValue / 2);
+    drawLabel('AND', lm + hspace * 2, tm, sizeValue, sizeValue);
+
+    drawNAND(lm + hspace * 3, tm, sizeValue, sizeValue, sizeValue / 2);
+    drawLabel('NAND', lm + hspace * 3, tm, sizeValue, sizeValue);
+
+    drawOR(lm, tm + vspace, sizeValue, sizeValue, sizeValue / 2);
+    drawLabel('OR', lm, tm + vspace, sizeValue, sizeValue);
+
+    drawNOR(lm + hspace, tm + vspace, sizeValue, sizeValue, sizeValue / 2);
+    drawLabel('NOR', lm + hspace, tm + vspace, sizeValue, sizeValue);
+
+    drawXOR(lm + hspace * 2, tm + vspace, sizeValue, sizeValue, sizeValue / 2);
+    drawLabel('XOR', lm + hspace * 2, tm + vspace, sizeValue, sizeValue);
+
+    drawXNOR(lm + hspace * 3, tm + vspace, sizeValue, sizeValue, sizeValue / 2);
+    drawLabel('XNOR', lm + hspace * 3, tm + vspace, sizeValue, sizeValue);
+
+    // Draw sliders
+    drawSliders();
 }
 
-// draw black text without losing the drawing context
-// place the label under the logic gate
+function drawSliders() {
+    // Slider 1: Size (0-60)
+    drawSlider(0, "Size:", sizeValue, 0, 60);
+
+    // Slider 2: Fill Color (0-255)
+    drawSlider(1, "Fill Color:", colorValue, 0, 255);
+
+    // Slider 3: Stroke Color (0-255)
+    drawSlider(2, "Stroke Color:", strokeColorValue, 0, 255);
+
+    // Slider 4: Stroke Weight (0-5)
+    drawSlider(3, "Stroke Weight:", strokeWeightValue.toFixed(1), 0, 5);
+}
+
+function drawSlider(index, label, value, minVal, maxVal) {
+    let y = drawHeight + sliderY[index];
+
+    // Label
+    fill('black');
+    noStroke();
+    textAlign(RIGHT, CENTER);
+    textSize(14);
+    text(label + " " + (typeof value === 'number' ? Math.round(value) : value), sliderLeftMargin - 10, y + sliderHeight / 2);
+
+    // Track
+    fill(220);
+    stroke(180);
+    strokeWeight(1);
+    rect(sliderLeftMargin, y, sliderWidth, sliderHeight, 5);
+
+    // Filled portion
+    let fillWidth = map(parseFloat(value), minVal, maxVal, 0, sliderWidth);
+    fill('steelblue');
+    noStroke();
+    rect(sliderLeftMargin, y, fillWidth, sliderHeight, 5, 0, 0, 5);
+
+    // Handle
+    fill('white');
+    stroke('steelblue');
+    strokeWeight(2);
+    let handleX = sliderLeftMargin + fillWidth;
+    ellipse(handleX, y + sliderHeight / 2, sliderHeight + 4, sliderHeight + 4);
+}
+
+function mousePressed() {
+    // Check which slider was clicked
+    for (let i = 0; i < 4; i++) {
+        let y = drawHeight + sliderY[i];
+        if (mouseX >= sliderLeftMargin && mouseX <= sliderLeftMargin + sliderWidth &&
+            mouseY >= y && mouseY <= y + sliderHeight) {
+            activeSlider = i;
+            updateSliderValue();
+            return;
+        }
+    }
+}
+
+function mouseDragged() {
+    if (activeSlider >= 0) {
+        updateSliderValue();
+    }
+}
+
+function mouseReleased() {
+    activeSlider = -1;
+}
+
+function updateSliderValue() {
+    let x = constrain(mouseX, sliderLeftMargin, sliderLeftMargin + sliderWidth);
+    let percent = (x - sliderLeftMargin) / sliderWidth;
+
+    switch (activeSlider) {
+        case 0: // Size
+            sizeValue = map(percent, 0, 1, 0, 60);
+            break;
+        case 1: // Fill Color
+            colorValue = map(percent, 0, 1, 0, 255);
+            break;
+        case 2: // Stroke Color
+            strokeColorValue = map(percent, 0, 1, 0, 255);
+            break;
+        case 3: // Stroke Weight
+            strokeWeightValue = map(percent, 0, 1, 0, 5);
+            break;
+    }
+}
+
+// Draw black text without losing the drawing context
+// Place the label under the logic gate
 function drawLabel(textStr, x, y, w, h) {
-  push();
-  fill('black');
-  noStroke();
-  textAlign(CENTER);
-  text(textStr, x+w/2, y+h + 20);
-  pop();
+    push();
+    fill('black');
+    noStroke();
+    textAlign(CENTER);
+    textSize(12);
+    text(textStr, x + w / 2, y + h + 20);
+    pop();
 }
