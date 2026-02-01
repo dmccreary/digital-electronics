@@ -8,15 +8,15 @@ quality_score: 85
 
 # Logic Gates MicroSim
 
-<iframe src="main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="350px" scrolling="no"></iframe>
 
 **Copy this iframe to your website:**
 
 ```html
-<iframe src="https://dmccreary.github.io/digital-electronics/sims/logic-gates/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/digital-electronics/sims/logic-gates/main.html" width="100%" height="350px" scrolling="no"></iframe>
 ```
 
-[Run the Logic Gates MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 [Edit in the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/SpFEWepWj){ .md-button }
 
 ## Description
