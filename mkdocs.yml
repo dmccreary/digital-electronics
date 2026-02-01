@@ -175,6 +175,9 @@ extra_javascript:
 copyright: Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
 
 extra:
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: Digital Electronics
+  textbook_version: "1.0"
   # remove the "Built with MkDocs" footer
   generator: false
 
