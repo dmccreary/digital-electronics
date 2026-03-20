@@ -6,34 +6,34 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Website content for a college course in digital electronics with MicroSims. All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+        <meta name="description" content="Interactive simulation displaying one digital logic gate at a time with dropdown selection for AND, OR, NOT, NAND, NOR, XOR, XNOR, and Buffer gates.">
       
       
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/digital-electronics/learning-graph/">
+        <link rel="canonical" href="https://dmccreary.github.io/digital-electronics/sims/single-logic-gate/">
       
       
-        <link rel="prev" href="../sims/shift-register/">
+        <link rel="prev" href="../logic-gates/">
       
       
-        <link rel="next" href="course-description-assessment/">
+        <link rel="next" href="../logic-gates/01-drawing-gates/">
       
       
-      <link rel="icon" href="../img/favicon.ico">
+      <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>Introduction - Digital Electronics</title>
+        <title>Single Logic Gate MicroSim - Digital Electronics</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#learning-graph-for-digital-electronics" class="md-skip">
+        <a href="#single-logic-gate-microsim" class="md-skip">
           Skip to content
         </a>
       
@@ -106,9 +106,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Digital Electronics" class="md-header__button md-logo" aria-label="Digital Electronics" data-md-component="logo">
+    <a href="../.." title="Digital Electronics" class="md-header__button md-logo" aria-label="Digital Electronics" data-md-component="logo">
       
-  <img src="../img/logo.jpg" alt="logo">
+  <img src="../../img/logo.jpg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Single Logic Gate MicroSim
             
           </span>
         </div>
@@ -212,9 +212,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Digital Electronics" class="md-nav__button md-logo" aria-label="Digital Electronics" data-md-component="logo">
+    <a href="../.." title="Digital Electronics" class="md-nav__button md-logo" aria-label="Digital Electronics" data-md-component="logo">
       
-  <img src="../img/logo.jpg" alt="logo">
+  <img src="../../img/logo.jpg" alt="logo">
 
     </a>
     Digital Electronics
@@ -241,7 +241,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -261,7 +261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -281,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../course-description/" class="md-nav__link">
+      <a href="../../course-description/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -350,7 +350,7 @@
         
   
   
-    <a href="../chapters/" class="md-nav__link">
+    <a href="../../chapters/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -399,7 +399,7 @@
         
   
   
-    <a href="../lessons/" class="md-nav__link">
+    <a href="../../lessons/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -422,10 +422,16 @@
       
   
   
+    
+  
   
   
     
     
+      
+        
+          
+        
       
         
           
@@ -444,10 +450,6 @@
         
       
         
-          
-        
-      
-        
       
         
           
@@ -459,75 +461,6 @@
       
         
           
-        
-      
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../sims/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    Sims
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
         
       
     
@@ -539,32 +472,32 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
-    Learning Graph
+    Sims
   </span>
   
 
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_7" id="__nav_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Learning Graph
+            Sims
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -577,11 +510,11 @@
   
   
     <li class="md-nav__item">
-      <a href="course-description-assessment/" class="md-nav__link">
+      <a href="../binary-place-value/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Course Description Assessment
+    Binary Place Value
   </span>
   
 
@@ -598,11 +531,11 @@
   
   
     <li class="md-nav__item">
-      <a href="concept-list/" class="md-nav__link">
+      <a href="../decimal-to-binary-stepper/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Concept List
+    Decimal to Binary Stepper
   </span>
   
 
@@ -619,11 +552,195 @@
   
   
     <li class="md-nav__item">
-      <a href="concept-taxonomy/" class="md-nav__link">
+      <a href="../logic-gates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Concept Taxonomy
+    Logic Gates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Single Logic Gate
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Single Logic Gate
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logic-gate-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logic Gate Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target Audience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logic-gates/01-drawing-gates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Gates
   </span>
   
 
@@ -640,11 +757,11 @@
   
   
     <li class="md-nav__item">
-      <a href="quality-metrics/" class="md-nav__link">
+      <a href="../flip-flop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Quality Metrics
+    Flip-flop
   </span>
   
 
@@ -661,11 +778,11 @@
   
   
     <li class="md-nav__item">
-      <a href="taxonomy-distribution/" class="md-nav__link">
+      <a href="../graph-viewer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Taxonomy Distribution
+    Learning Graph Viewer
   </span>
   
 
@@ -682,116 +799,11 @@
   
   
     <li class="md-nav__item">
-      <a href="glossary-quality-report/" class="md-nav__link">
+      <a href="../shift-register/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Glossary Quality Report
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="faq-quality-report/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    FAQ Quality Report
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="book-metrics/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Book Metrics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapter-metrics/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter Metrics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="diagram-details/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Diagram Details
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="diagram-table/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Diagram Table
+    Shift Register
   </span>
   
 
@@ -818,6 +830,24 @@
     
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
         
       
@@ -838,7 +868,56 @@
         
   
   
-    <a href="../prompts/equation-standards/" class="md-nav__link">
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/equation-standards/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -864,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -884,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -904,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
+      <a href="../../license/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -924,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../how-we-built-this-site/" class="md-nav__link">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -944,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contact/" class="md-nav__link">
+      <a href="../../contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -984,82 +1063,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-graph-statistics" class="md-nav__link">
+  <a href="#description" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning Graph Statistics
+      Description
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#course-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      Course Description
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-of-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      List of Concepts
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#concept-dependency-list" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concept Dependency List
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#analysis-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Analysis &amp; Documentation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Analysis & Documentation">
+    <nav class="md-nav" aria-label="Description">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#course-description-quality-assessment" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Course Description Quality Assessment
+      Key Features
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#learning-graph-quality-validation" class="md-nav__link">
+  <a href="#how-to-use" class="md-nav__link">
     <span class="md-ellipsis">
-      Learning Graph Quality Validation
+      How to Use
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#concept-taxonomy" class="md-nav__link">
+  <a href="#logic-gate-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Concept Taxonomy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#taxonomy-distribution" class="md-nav__link">
-    <span class="md-ellipsis">
-      Taxonomy Distribution
+      Logic Gate Types
     </span>
   </a>
   
@@ -1067,6 +1101,66 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#target-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Target Audience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
   
 </li>
       
@@ -1088,95 +1182,132 @@
   
 
 
-<h1 id="learning-graph-for-digital-electronics">Learning Graph for Digital Electronics</h1>
-<p>This section contains the learning graph for this textbook. A learning graph is
-a graph of concepts used in this textbook. Each concept is represented by a
-node in a network graph. Concepts are connected by directed edges that indicate
-what concepts each node depends on before that concept is understood by the student.</p>
-<p>A learning graph is the foundational data structure for intelligent textbooks that can recommend learning paths.
-A learning graph is like a roadmap of concepts to help students arrive at their learning goals.</p>
-<p>At the left of the learning graph are prerequisite or foundational concepts. They
-have no outbound edges. They only have inbound edges for other concepts that depend on
-understanding these foundational prerequisite concepts. At the far right
-we have the most advanced concepts in the course. To master these concepts you
-must understand all the concepts that they point to.</p>
-<h2 id="learning-graph-statistics">Learning Graph Statistics</h2>
+<h1 id="single-logic-gate-microsim">Single Logic Gate MicroSim</h1>
+<iframe src="main.html" width="100%" height="460px" scrolling="no"></iframe>
+
+<p><strong>Copy this iframe to your website:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/digital-electronics/sims/single-logic-gate/main.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;500px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p><a class="md-button md-button--primary" href="main.html">Run MicroSim in Fullscreen</a>
+<a class="md-button" href="https://editor.p5js.org/dmccreary/sketches/">Edit in the p5.js Editor</a></p>
+<h2 id="description">Description</h2>
+<p>This interactive simulation allows you to focus on one digital logic gate at a time. Use the dropdown menu to select from eight common gate types and see its standard IEEE symbol rendered in the display area.</p>
+<h3 id="key-features">Key Features</h3>
 <ul>
-<li><strong>Total Concepts</strong>: 300</li>
-<li><strong>Foundational Concepts</strong>: 6</li>
-<li><strong>Total Dependencies</strong>: 526 edges</li>
-<li><strong>Taxonomy Categories</strong>: 11</li>
-<li><strong>Longest Learning Path</strong>: 24 concepts</li>
+<li>Single gate display for focused learning</li>
+<li>Dropdown selector with all common gate types</li>
+<li>Large, clear gate symbols for easy identification</li>
+<li>Standard IEEE gate notation</li>
+<li>Canvas-based controls for reliable embedding</li>
 </ul>
-<p>Here are other files used by the learning graph.</p>
-<h2 id="course-description">Course Description</h2>
-<p>We use the <a href="../course-description/">Course Description</a> as
-the source document for the concepts that are included in this course.
-The course description uses the 2001 Bloom taxonomy to order learning objectives.</p>
-<h2 id="list-of-concepts">List of Concepts</h2>
-<p>We use generative AI to convert the course description into a <a href="concept-list/">Concept List</a>.
-Each concept is in the form of a short Title Case label with most labels under 32 characters long.</p>
-<h2 id="concept-dependency-list">Concept Dependency List</h2>
-<p>We next use generative AI to create a Directed Acyclic Graph (DAG). DAGs do not have cycles where
-concepts depend on themselves. We provide the DAG in two formats. One is a <a href="learning-graph.csv">CSV file</a> and the other
-format is a <a href="learning-graph.json">JSON file</a> that uses the vis-network JavaScript library format. The vis-network format uses <code>nodes</code>, <code>edges</code> and <code>metadata</code>
-elements with edges containing <code>from</code> and <code>to</code> properties. This makes it easy for you to view and edit the learning
-graph using an editor built with the vis-network tools.</p>
-<h2 id="analysis-documentation">Analysis &amp; Documentation</h2>
-<h3 id="course-description-quality-assessment">Course Description Quality Assessment</h3>
-<p>This report rates the overall quality of the course description for the purpose of generating a learning graph.</p>
+<h3 id="how-to-use">How to Use</h3>
+<ol>
+<li>Click the "Gate Type" dropdown in the control area</li>
+<li>Select any gate from the list: Buffer, Inverter, AND, NAND, OR, NOR, XOR, or XNOR</li>
+<li>The selected gate symbol is displayed prominently in the center</li>
+<li>Study the gate shape to memorize its symbol for circuit diagrams</li>
+</ol>
+<h3 id="logic-gate-types">Logic Gate Types</h3>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Function</th>
+<th>Symbol Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buffer</td>
+<td>Output equals input</td>
+<td>Triangle</td>
+</tr>
+<tr>
+<td>Inverter</td>
+<td>Inverts the input</td>
+<td>Triangle with bubble</td>
+</tr>
+<tr>
+<td>AND</td>
+<td>Output is 1 only when ALL inputs are 1</td>
+<td>Flat back, curved front</td>
+</tr>
+<tr>
+<td>NAND</td>
+<td>Inverted AND output</td>
+<td>AND with bubble</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>Output is 1 when ANY input is 1</td>
+<td>Curved back, pointed front</td>
+</tr>
+<tr>
+<td>NOR</td>
+<td>Inverted OR output</td>
+<td>OR with bubble</td>
+</tr>
+<tr>
+<td>XOR</td>
+<td>Output is 1 when inputs DIFFER</td>
+<td>OR with extra curved line</td>
+</tr>
+<tr>
+<td>XNOR</td>
+<td>Output is 1 when inputs are SAME</td>
+<td>XOR with bubble</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lesson-plan">Lesson Plan</h2>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>After completing this lesson, students will be able to:</p>
 <ul>
-<li>Course description fields and content depth analysis</li>
-<li>Validates course description has sufficient depth for generating 200 concepts</li>
-<li>Compares course description against similar courses</li>
-<li>Identifies content gaps and strengths</li>
-<li>Suggests areas of improvement</li>
+<li>Identify and draw the standard IEEE symbol for each logic gate type</li>
+<li>Distinguish between basic gates (AND, OR, NOT) and derived gates (NAND, NOR, XOR, XNOR)</li>
+<li>Explain the function of the "bubble" symbol on inverted gates</li>
+<li>Recognize gates by their distinctive shapes in circuit diagrams</li>
 </ul>
-<p><a href="course-description-assessment/">View the Course Description Quality Assessment</a></p>
-<h3 id="learning-graph-quality-validation">Learning Graph Quality Validation</h3>
-<p>This report gives you an overall assessment of the quality of the learning graph.
-It uses graph algorithms to look for specific quality patterns in the graph.</p>
+<h3 id="target-audience">Target Audience</h3>
 <ul>
-<li>Graph structure validation - all concepts are connected</li>
-<li>DAG validation (no cycles detected)</li>
-<li>Foundational concepts: 6 entry points</li>
-<li>Indegree distribution analysis</li>
-<li>Longest dependency chains</li>
-<li>Connectivity: all nodes connected to the main cluster</li>
+<li>High school electronics and computer science students</li>
+<li>College students in introductory digital logic courses</li>
+<li>Prerequisites: Understanding of binary numbers (0 and 1)</li>
 </ul>
-<p><a href="quality-metrics/">View the Learning Graph Quality Validation</a></p>
-<h3 id="concept-taxonomy">Concept Taxonomy</h3>
-<p>In order to see patterns in the learning graph, it is useful to assign colors
-to each concept based on the concept type. We use generative AI to
-create about a dozen categories for our concepts and then place each concept
-into a single primary classifier.</p>
+<h3 id="activities">Activities</h3>
+<ol>
+<li>
+<p><strong>Symbol Recognition</strong>: Cycle through each gate and sketch its symbol from memory</p>
+</li>
+<li>
+<p><strong>Shape Association</strong>: Create mnemonics linking gate shapes to their functions (e.g., AND has a "D" shape for "all inputs Determined")</p>
+</li>
+<li>
+<p><strong>Flash Card Practice</strong>: Use the dropdown to quiz yourself on identifying gates</p>
+</li>
+</ol>
+<h3 id="assessment">Assessment</h3>
 <ul>
-<li>11 taxonomy categories covering digital electronics topics</li>
-<li>Category organization - foundational elements first, verification and lab skills last</li>
-<li>Balanced categories (4.7% - 12.3% each)</li>
-<li>All categories under 30% threshold</li>
-<li>Pedagogical flow from Boolean algebra through Verilog</li>
-<li>Clear 3-5 letter abbreviations for use in CSV file</li>
+<li>Draw the symbol for each of the eight logic gates from memory</li>
+<li>Given a gate symbol, identify the gate type and describe its function</li>
+<li>Explain what the bubble at a gate output indicates</li>
 </ul>
-<p><a href="concept-taxonomy/">View the Concept Taxonomy</a></p>
-<h3 id="taxonomy-distribution">Taxonomy Distribution</h3>
-<p>This reports shows how many concepts fit into each category of the taxonomy.
-Our goal is a somewhat balanced taxonomy where each category holds an
-equal number of concepts. We also don't want any category to contain
-over 30% of our concepts.</p>
+<h2 id="references">References</h2>
 <ul>
-<li>Statistical breakdown by category</li>
-<li>Detailed concept listing by category</li>
-<li>Visual distribution table</li>
-<li>Balance verification</li>
+<li><a href="https://en.wikipedia.org/wiki/Logic_gate">Wikipedia: Logic Gate</a> - Overview of logic gate types and applications</li>
+<li><a href="https://www.allaboutcircuits.com/textbook/digital/chpt-3/logic-gate-introduction/">All About Circuits: Logic Gates</a> - Comprehensive tutorial on digital logic gates</li>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a> - Documentation for the p5.js library used in this simulation</li>
+<li><a href="https://standards.ieee.org/standard/91-1984.html">IEEE Std 91-1984</a> - Standard for logic gate symbols</li>
 </ul>
-<p><a href="taxonomy-distribution/">View the Taxonomy Distribution Report</a></p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1208,7 +1339,7 @@ over 30% of our concepts.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../sims/shift-register/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Shift Register">
+          <a href="../logic-gates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Logic Gates">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1218,20 +1349,20 @@ over 30% of our concepts.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Shift Register
+                Logic Gates
               </div>
             </div>
           </a>
         
         
           
-          <a href="course-description-assessment/" class="md-footer__link md-footer__link--next" aria-label="Next: Course Description Assessment">
+          <a href="../logic-gates/01-drawing-gates/" class="md-footer__link md-footer__link--next" aria-label="Next: Drawing Gates">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Course Description Assessment
+                Drawing Gates
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1264,14 +1395,14 @@ over 30% of our concepts.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="../js/extra.js"></script>
+        <script src="../../js/extra.js"></script>
       
-        <script src="../js/katex.js"></script>
+        <script src="../../js/katex.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
       

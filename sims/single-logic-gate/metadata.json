@@ -1,0 +1,78 @@
+{
+  "title": "Single Logic Gate MicroSim",
+  "description": "Interactive simulation displaying one digital logic gate at a time with dropdown selection for studying AND, OR, NOT, NAND, NOR, XOR, XNOR, and Buffer gate symbols.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-31",
+  "subject": [
+    "Digital Electronics",
+    "Logic Gates",
+    "Boolean Algebra",
+    "Circuit Symbols",
+    "IEEE Standards"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude AI"
+  ],
+  "identifier": "https://dmccreary.github.io/digital-electronics/sims/single-logic-gate/",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "High School",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Remember",
+    "Understand"
+  ],
+  "concepts": [
+    "AND Gate",
+    "OR Gate",
+    "NOT Gate",
+    "NAND Gate",
+    "NOR Gate",
+    "XOR Gate",
+    "XNOR Gate",
+    "Buffer Gate",
+    "Logic Gate Symbols"
+  ],
+  "prerequisites": [
+    "Binary Numbers",
+    "Boolean Values"
+  ],
+  "library": "p5.js",
+  "visualizationType": [
+    "interactive-demo"
+  ],
+  "learningObjectives": [
+    "Identify standard IEEE symbols for each logic gate type",
+    "Distinguish between basic and derived logic gates",
+    "Recognize gates by their distinctive shapes"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "remember",
+      "understand"
+    ],
+    "bloomVerbs": [
+      "identify",
+      "recognize",
+      "distinguish",
+      "describe"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate"
+    ],
+    "interactionStyle": "explore"
+  }
+}
